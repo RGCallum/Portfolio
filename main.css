@@ -1,0 +1,35 @@
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+}
+
+#first {
+    background: url(https://serving.photos.photobox.com/20350793b148f09fdc0e9b2e240b3c8148e489a33a88cbc68bd62b856f0d1580277398e9.jpg);
+    color: white;
+    height: 720px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    background-position: bottom !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#first .bg {
+    background: url(https://image.ibb.co/dN2w76/bounty_top.png);
+    height: 720px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    z-index: 200;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#third{
+	background: #ffffff;
+	color: white;
+	height: 650px;
+	padding: 100px 0 0 0;	
+}
