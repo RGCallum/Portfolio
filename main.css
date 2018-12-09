@@ -1,8 +1,8 @@
 #tunnel {
     position: relative;
     top: 0; left: 0;
-    background: url(http://stash.rachelnabors.com/codepen/alice/bg-tunnel-border-left.svg?1) 0 0 repeat-y, url(http://stash.rachelnabors.com/codepen/alice/bg-tunnel-border-right.svg?1) 100% 0 repeat-y, url(http://stash.rachelnabors.com/codepen/alice/bg-tunnel-furniture-comp900.svg) top center repeat-y, url(http://stash.rachelnabors.com/codepen/alice/bg-tunnel-specks.png), #6c373f;
-    background-size: 20px 150px,  20px 150px,  80% auto, auto auto;
+    background: url(/images/pinkbkgd.png);
+    background-size: 100vw;
   }
   
   .page {
