@@ -1,5 +1,16 @@
 
-
+  /* .alice-falling {
+    background-image: url('/images/spriteStand.png');
+    background-size: 100%;
+    width: 30%;
+    padding-top: 40%;
+    top: 10%;
+    left: 50%;
+    margin-left: -15.625%;
+    position: fixed;
+    z-index: 20;
+  } */
+  
   .spriteScene{
   }
 
