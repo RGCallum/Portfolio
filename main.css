@@ -1,7 +1,17 @@
 
 
-  
-  .camGirlReporter {
+  .spriteScene{
+  }
+
+ .camGirl {
+    /* background-image: url('/images/SpriteSheet.png'); */
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  #camGirlReporter {
     /* background-image: url('/images/camRepStreetBkgd.png'); */
     background-size: 100%;
     background-repeat: no-repeat;
@@ -9,12 +19,14 @@
     position: absolute;
     z-index: -20;
   }
-  .fire{
+  #fire{
+    background-image: url(/images/fire.gif);
    background-size: 50%;
+   background-repeat: no-repeat;
 
   }
   
-  .camGirlShip {
+  #camGirlShip {
     background-image: url('/images/waterMoving.gif');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -22,6 +34,16 @@
     position: relative;
     z-index: 1;
   }
+  
+  #girlWorkDesk {
+    /* background-image: url('images/girlWorkDesk.png'); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    position: relative;
+    z-index: 1;
+  }
+
 
   /* @keyframes freak-out {
     0% {
