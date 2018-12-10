@@ -1,67 +1,29 @@
-#tunnel {
+
+
+  
+  .camGirlReporter {
+    /* background-image: url('/images/camRepStreetBkgd.png'); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    z-index: -20;
+  }
+  .fire{
+   background-size: 50%;
+
+  }
+  
+  .camGirlShip {
+    background-image: url('/images/waterMoving.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 90%;
     position: relative;
-    top: 0; left: 0;
-    background: url(/images/pinkbkgd.png);
-    background-size: 100vw;
+    z-index: 1;
   }
-  
-  .page {
-    /* Each page has a 3/4 ratio */
-    padding-top: 75%;
-    /* Hide the text */
-    text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-  }
-  
-  .alice-falling {
-    background-image: url('/images/spriteStand.png');
-    background-size: 100%;
-    width: 30%;
-    padding-top: 40%;
-    top: 10%;
-    left: 50%;
-    margin-left: -15.625%;
-    position: fixed;
-    z-index: 20;
-  }
-  
-  .alice-falling2 {
-    background-image: url('http://www.pngmart.com/files/3/Video-Camera-Tripod-PNG-Clipart.png');
-    background-size: 100%;
-    width: 30%;
-    padding-top: 40%;
-    top: 10%;
-    left: 60%;
-    margin-left: -15.625%;
-    position: fixed;
-    z-index: 20;
-  }
-  .curious .alice-falling {
-    background-position: 0 20%;
-  }
-  
-  .bored .alice-falling {
-    background-position: 0 80%;
-  }
-  
-  .sleeping .alice-falling {
-    background-position: 0 60%;
-  }
-  
-  .waking .alice-falling {
-    background-position: 0 100%;
-  }
-  
-  .weird .alice-falling {
-    background-position: 0 0;
-  }
-  
-  .jolted .alice-falling {
-    background-position: 0 40%;
-  }
-  
-  @keyframes freak-out {
+
+  /* @keyframes freak-out {
     0% {
       background-position: 0 0;
     }
@@ -74,4 +36,4 @@
     animation: freak-out 1.5s steps(2) infinite;
     background: url('http://stash.rachelnabors.com/codepen/alice/alice-frightened-s41f9b8ddd1.png') 0 0 no-repeat;
     background-size: 100% auto;
-  }
+  } */
