@@ -13,12 +13,13 @@ import Ship from "./components/Ship";
 import Skills from "./components/Skills";
 import Studio from "./components/Studio";
 import TheEnd from "./components/TheEnd";
-
+import NavBar from "./components/NavBar";
 
 class App extends Component {
   render() {
     return (
     <div>
+      <NavBar />
 <Router>
   <div>
     <Switch>
@@ -38,8 +39,6 @@ class App extends Component {
     </Switch>
   </div>
 </Router>
-
-
     </div>
     );
   }
