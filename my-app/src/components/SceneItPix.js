@@ -4,7 +4,7 @@ class SceneItPix extends Component {
     render() {
         return (
             <div>
-                
+                SceneItPix
             </div>
         );
     }

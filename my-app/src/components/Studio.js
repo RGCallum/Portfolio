@@ -4,7 +4,7 @@ class Studio extends Component {
     render() {
         return (
             <div>
-                
+              Studio  
             </div>
         );
     }

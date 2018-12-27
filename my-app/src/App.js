@@ -1,29 +1,46 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Desk1Happy from "./components/Desk1Happy";
+import Desk2Sleep from "./components/Desk2Sleep";
+import News from "./components/News";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
+import SceneItPix from "./components/SceneItPix";
+import School from "./components/School";
+import Ship from "./components/Ship";
+import Skills from "./components/Skills";
+import Studio from "./components/Studio";
+import TheEnd from "./components/TheEnd";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> 
-            <br />
-            <br />
-            Hello Motherfucking World! 
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+    <div>
+<Router>
+  <div>
+    <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/contact" component={Contact}/>
+      <Route exact path="/desk1" component={Desk1Happy}/>
+      <Route exact path="/desk2" component={Desk2Sleep}/>
+      <Route exact path="/news" component={News}/>
+      <Route exact path="/portfolio" component={Portfolio}/>
+      <Route exact path="/resume" component={Resume}/>
+      <Route exact path="/scene" component={SceneItPix}/>
+      <Route exact path="/school" component={School}/>
+      <Route exact path="/ship" component={Ship}/>
+      <Route exact path="/skills" component={Skills}/>
+      <Route exact path="/studio" component={Studio}/>
+      <Route exact path="/end" component={TheEnd}/>
+    </Switch>
+  </div>
+</Router>
+
+
+    </div>
     );
   }
 }
