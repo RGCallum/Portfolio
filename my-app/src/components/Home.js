@@ -22,8 +22,6 @@ repeat 0 0;
     from { background-position: 0 0; }
     to { background-position: -8000px 0; }
 }
-
-
 `
 
 const Bus = styled.div`
@@ -77,21 +75,16 @@ class Home extends Component {
                     <div>
                         <h1>
                             Home
-                            </h1>
-
-
+                        </h1>
                     </div>
                 </Container>
-                <Birds>
+                    <Birds>
                     <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds"/>
-                </Birds>
-                <Child>
-
-                </Child>
-                <Bus>
-                    <img src="https://i.ibb.co/qrWcHwt/bus.png" alt="bus" />
-                </Bus>
-
+                    </Birds>
+                        <Child/>
+                            <Bus>
+                                <img src="https://i.ibb.co/qrWcHwt/bus.png" alt="bus" />
+                            </Bus>
             </div>
         );
     }
