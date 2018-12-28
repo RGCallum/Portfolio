@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import img from '../images/streetBkgd.jpg';
+import img from '../images/streetBkgd3.jpg';
 import camGirl from '../images/camGirlRunning.gif';
 
 const Container = styled.div`
@@ -16,28 +16,45 @@ repeat 0 0;
   text-align: center;
   height: 100vw;
   box-sizing: border-box;
-  animation: slide2 80s linear infinite;
+  animation: slide2 120s linear infinite;
 
   @keyframes slide2 {
     from { background-position: 0 0; }
     to { background-position: -8000px 0; }
 }
+
+
 `
+
+const Bus = styled.div`
+
+    margin-top: 60%;
+    position: absolute;
+    z-index: 200;
+    margin-left: 100%;
+    animation: slide3 40s linear infinite;
+    @keyframes slide3 {
+    from { margin-left: 100%; }
+   to { margin-left: -110%;  }
+}
+
+`
+
 const Child = styled.div`
 background-image: url(${camGirl});
 background-repeat: no-repeat;
-background-size: 20%;
-margin-top: 28%;
+background-size: 17%;
+margin-top: 58%;
 position: absolute;
 z-index: 100;
 height: 100%;
 width: 100%;
-// margin-left: -100%;
-// animation: slide 20s linear infinite;
+margin-left: -100%;
+animation: slide 25s linear infinite;
 
 @keyframes slide {
-    from { margin-left: -100%; }
-   to { margin-left: 200%;  }
+    from { margin-left: -10%; }
+   to { margin-left: 110%;  }
 }
 `
 
@@ -51,14 +68,16 @@ class Home extends Component {
                         <h1>
                             Home
                             </h1>
-<Child>
-    
-</Child>
-                       
-                        <img src='../images/camGirlRunning.gif' alt='' />
+
 
                     </div>
                 </Container>
+                <Child>
+
+                </Child>
+                <Bus>
+                    <img src="https://i.ibb.co/qrWcHwt/bus.png" alt="bus" />
+                </Bus>
             </div>
         );
     }
