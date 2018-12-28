@@ -7,22 +7,33 @@ const Container = styled.div`
 color: red;
 font-size: 45px;
 background-image: url(${img});
-background-size: cover;
-background-repeat: no-repeat;
-height: 100vh;
-width: 100vw;
 position: fixed;
 z-index: -100;
+repeat 0 0;
+  width: 100%;
+  margin: 0;
+  margin-top: -5%;
+  text-align: center;
+  height: 100vw;
+  box-sizing: border-box;
+  animation: slide2 80s linear infinite;
+
+  @keyframes slide2 {
+    from { background-position: 0 0; }
+    to { background-position: -8000px 0; }
+}
 `
 const Child = styled.div`
 background-image: url(${camGirl});
 background-repeat: no-repeat;
+background-size: 20%;
+margin-top: 28%;
 position: absolute;
 z-index: 100;
-height: 100vh;
-width: 100vw;
+height: 100%;
+width: 100%;
 // margin-left: -100%;
-animation: slide 10s linear 1;
+// animation: slide 20s linear infinite;
 
 @keyframes slide {
     from { margin-left: -100%; }
