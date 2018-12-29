@@ -37,6 +37,7 @@ repeat 0 0;
   margin-top: 0;
   height: 100vh;
   animation: slide2 520s linear infinite;
+  
   @keyframes slide2 {
     from { background-position: 0 -0; }
     to { background-position: 8000px 0; }
@@ -49,12 +50,12 @@ background-repeat: no-repeat;
     margin-top: 18%;
     position: fixed;
     z-index: 100;
-    margin-left: 50%;
+    margin-left: 80%;
     width: 100vw;
     height: 100vw;
-    animation: slide3 55s linear infinite;
+    animation: slide3 55s linear infinite ;
     @keyframes slide3 {
-    from { margin-left: 50%; }
+    from { margin-left: 80%; }
    to { margin-left: -110%;  }
 }
 
@@ -144,9 +145,8 @@ class Ship extends Component {
                     <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds"/>
                     </Birds>
                         <Sky/>
-                        <Water>fwdffewfr</Water>
-                            {/* <ShipGif>
-                            </ShipGif> */}
+                        <Water></Water>
+                       
                             <CruiseBtn>
                             {() => this.operation()}
                     {this.state.startCruise ?
