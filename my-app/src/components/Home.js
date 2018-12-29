@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import img from '../images/streetBkgd3.jpg';
 import camGirl from '../images/camGirlRunSteady.gif';
+import { Link } from "react-router-dom";
 
-const Container = styled.div`
+const Background = styled.div`
 color: red;
 font-size: 45px;
 background-image: url(${img});
@@ -65,26 +66,39 @@ animation: slide 25s linear infinite;
    to { margin-left: 110%;  }
 }
 `
+const NextBtn = styled.div`
+button{
+    display: flex ;
+    justify-content: center ;
+    height: 50px;
+    position: relative;
+    z-index: 1000;
+    margin-left: 50%;
+    border-radius: 15px;
+    font-size: 30px;   
+}
+a:link{
+    text-decoration: none;
+}
+
+`
 
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <Container>
-                    <div>
-                        <h1>
-                            Home
-                        </h1>
-                    </div>
-                </Container>
+                <Background></Background>
                     <Birds>
                     <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds"/>
                     </Birds>
                         <Child/>
                             <Bus>
-                                <img src="https://im2.ezgif.com/tmp/ezgif-2-2f068f03cce9.gif" alt="bus" />
+                                <img src="https://media.giphy.com/media/1k0AlwzpknA4TeDERT/giphy.gif" alt="bus" />
                             </Bus>
+                            <NextBtn>
+                            <Link to="/news"><button>Next Chapter</button></Link> 
+                            </NextBtn>
             </div>
         );
     }

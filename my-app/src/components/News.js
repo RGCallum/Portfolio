@@ -4,10 +4,10 @@ import img from '../images/StreetNews2.png';
 import img2 from '../images/sky2.jpg';
 import camGirl from '../images/camGirlRunSteadyReverse.gif';
 import camGirl2 from '../images/camGirlStillReverse.png';
+import { Link } from "react-router-dom";
 
 
-
-const Container = styled.div`
+const Background = styled.div`
 color: red;
 font-size: 45px;
 background-image: url(${img});
@@ -23,27 +23,32 @@ z-index: -100;
   height: 100vw;
 
 `
-const NextBtn = styled.div`
+
+
+const BothBtns = styled.div`
 button{
-    width: 100px;
+    display: flex ;
+    justify-content: center ;
     height: 50px;
-    position: fixed;
+    position: relative;
     z-index: 1000;
     margin-left: 50%;
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 30px;   
+}
+a:link{
+    text-decoration: none;
+}
+
+`
+const RunBtn = styled.div`
+button{
+    width: 100px;
 }
 `
 const WeatherBtn = styled.div`
 button{
     width: 150px;
-    height: 50px;
-    position: fixed;
-    z-index: 1000;
-    margin-left: 40%;
-    border-radius: 15px;
-    font-size: 30px;
-
 }
 `
 const GirlStill1 = styled.div`
@@ -183,14 +188,7 @@ class News extends Component {
     render() {
         return (
             <div>
-                <Container>
-                    <div>
-                        <h1>
-                            News
-                        </h1>
-                    </div>
-
-                </Container>
+                <Background></Background>
                 <Sky></Sky>
 
                 <Reporter></Reporter>
@@ -217,22 +215,23 @@ class News extends Component {
                         : !null
                     }
                 </GirlRun>
-
-                <NextBtn>
-                    <button onClick={() => { this.operation2(); this.operation3(); }}>Run! </button>
-                </NextBtn>
-                <WeatherBtn>
-                    <button onClick={() => this.operation()}>Hurricane</button>
-                </WeatherBtn>
-                {
-                    this.state.showWeather ?
-                        <div>
-                            <Rain></Rain>
-                            <Tornado></Tornado>
-                        </div>
-                        : null
-                }
-
+                <BothBtns>
+                    <WeatherBtn>
+                        <button onClick={() => this.operation()}>Hurricane</button>
+                    </WeatherBtn>
+                    {
+                        this.state.showWeather ?
+                            <div>
+                                <Rain></Rain>
+                                <Tornado></Tornado>
+                            </div>
+                            : null
+                    }
+                    <RunBtn>
+                        <button onClick={() => { this.operation2(); this.operation3(); }}>Run! </button>
+                    </RunBtn>
+                    <Link to="/ship"><button>Next Chapter</button></Link> 
+                </BothBtns>
             </div>
         );
     }
