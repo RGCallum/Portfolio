@@ -14,6 +14,7 @@ class NavBar extends Component {
         return (
             <div>
                 <NavStyle>
+                    
                 Portfolio
                 Skills
                 Contact 
