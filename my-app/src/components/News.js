@@ -23,8 +23,41 @@ z-index: -100;
   height: 100vw;
 
 `
+const NextBtn = styled.div`
+button{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 50%;
+    border-radius: 15px;
+    font-size: 30px;
+}
+`
 const WeatherBtn = styled.div`
 button{
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 40%;
+    border-radius: 15px;
+    font-size: 30px;
+
+}
+`
+const GirlStill1 = styled.div`
+button{
+    margin-top 10%;
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+}
+`
+const GirlRun = styled.div`
+button{
+    margin-top 20%;
     width: 100px;
     height: 50px;
     position: fixed;
@@ -78,32 +111,39 @@ display: block;
 const Child1 = styled.div`
 background-image: url(${camGirl});
 background-repeat: no-repeat;
-background-size: 20%;
-margin-top: 38%;
-margin-left: 50%;
+background-size: 22%;
+margin-top: 40.2%;
+margin-left: 49.7%;
 position: absolute;
-z-index: -100;
+z-index: 3;
 height: 100%;
 width: 100%;
+animation: slide 5s linear 1;
+animation-fill-mode: forwards;
+
+@keyframes slide {
+    from { margin-left: 50%; }
+   to { margin-left: -140%;  }
+}
 `
 const Child2 = styled.div`
 background-image: url(${camGirl2});
 background-repeat: no-repeat;
 background-size: 25%;
-margin-top: 35%;
+margin-top: 39%;
 margin-left: 48%;
 position: absolute;
-z-index: -100;
+z-index: 3;
 height: 100%;
 width: 100%;
 `
 
 const Reporter = styled.div`
 background-image: url('https://i.ibb.co/5MG8S57/reporter.png');
-margin-top: 35%;
+margin-top: 38%;
 margin-left: 32%;
 position: absolute;
-z-index: 2;
+z-index: -4;
 background-size: 20%;
 width: 80vw;
 height: 80vh;
@@ -116,14 +156,29 @@ class News extends Component {
     constructor() {
         super()
         this.state = {
-            showWeather: false
+            showWeather: false,
+            girlStill1: true,
+            girlRun: false,
         }
     }
     operation() {
         this.setState({
-            showWeather: !this.state.showWeather
+            showWeather: !this.state.showWeather,
         })
     }
+    operation2() {
+        this.setState({
+            girlStill1: !this.state.girlStill1,
+
+        })
+    }
+    operation3() {
+        this.setState({
+            girlRun: !this.state.girlRun,
+
+        })
+    }
+
 
     render() {
         return (
@@ -139,11 +194,35 @@ class News extends Component {
                 <Sky></Sky>
 
                 <Reporter></Reporter>
-                {/* <Child1></Child1> */}
 
-                <Child2></Child2>
+
+                <GirlStill1>
+                    {() => this.operation2()}
+
+                    {
+                        this.state.girlStill1 ?
+                            <div>
+                                <Child2></Child2>
+                            </div>
+                            : null
+                    }
+                </GirlStill1>
+                <GirlRun>
+                    {() => this.operation3()}
+                    {this.state.girlRun ?
+                        <div>
+                            <Child1></Child1>
+
+                        </div>
+                        : !null
+                    }
+                </GirlRun>
+
+                <NextBtn>
+                    <button onClick={() => { this.operation2(); this.operation3(); }}>Run! </button>
+                </NextBtn>
                 <WeatherBtn>
-                <button onClick={() => this.operation()}>Change Weather</button>
+                    <button onClick={() => this.operation()}>Hurricane</button>
                 </WeatherBtn>
                 {
                     this.state.showWeather ?
