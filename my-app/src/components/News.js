@@ -102,7 +102,7 @@ const Tornado = styled.div`
 `
 const Rain = styled.div`
 background-image: url('https://gifimage.net/wp-content/uploads/2018/04/rain-transparent-gif-9.gif');
-margin-top: 0%;
+margin-top: -3%;
 margin-left: 0%;
 position: absolute;
 z-index: 100;
