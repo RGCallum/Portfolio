@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import img from '../images/streetBkgd3.jpg';
-import camGirl from '../images/camGirlRunning.gif';
+import camGirl from '../images/camGirlRunSteady.gif';
 
 const Container = styled.div`
 color: red;
@@ -25,11 +25,11 @@ repeat 0 0;
 `
 
 const Bus = styled.div`
-    margin-top: 40%;
-    position: absolute;
+    margin-top: 38%;
+    position: fixed;
     z-index: 200;
     margin-left: 100%;
-    animation: slide3 40s linear infinite;
+    animation: slide3 15s linear infinite;
     @keyframes slide3 {
     from { margin-left: 100%; }
    to { margin-left: -110%;  }
@@ -37,7 +37,7 @@ const Bus = styled.div`
 
 `
 const Birds = styled.div`
-position: absolute;
+position: fixed;
 z-index: 200;
 margin-top: -5%;
 margin-left: 100%;
@@ -51,9 +51,9 @@ to { margin-left: -110%;  }
 const Child = styled.div`
 background-image: url(${camGirl});
 background-repeat: no-repeat;
-background-size: 17%;
-margin-top: 36%;
-position: absolute;
+background-size: 11%;
+margin-top: 37%;
+position: fixed;
 z-index: 100;
 height: 100%;
 width: 100%;
@@ -83,7 +83,7 @@ class Home extends Component {
                     </Birds>
                         <Child/>
                             <Bus>
-                                <img src="https://i.ibb.co/qrWcHwt/bus.png" alt="bus" />
+                                <img src="https://im2.ezgif.com/tmp/ezgif-2-2f068f03cce9.gif" alt="bus" />
                             </Bus>
             </div>
         );
