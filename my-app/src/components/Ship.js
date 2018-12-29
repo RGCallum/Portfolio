@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import img from '../images/waterMoving4.gif';
+import img from '../images/shipBounce.gif';
 import img2 from '../images/cartoonSky.png';
 import { Link } from "react-router-dom";
 
 const Background = styled.div`
 color: red;
 font-size: 45px;
-// background-image: url(${img});
 background-repeat: repeat-x;
 background-size: 10%;
 position: fixed;
@@ -34,18 +33,20 @@ position: fixed;
 z-index: -101;
 repeat 0 0;
   width: 100%;
-  margin-top: -45;
+  margin-top: 0;
   height: 100vh;
-  animation: slide2 320s linear infinite;
+  animation: slide2 820s linear infinite;
   @keyframes slide2 {
-    from { background-position: 0 0; }
-    to { background-position: -8000px 0; }
+    from { background-position: 0 -0; }
+    to { background-position: 8000px 0; }
 }
 `
 const ShipGif = styled.div`
+background-image: url(${img});
+background-size: 750%;
     margin-top: 33%;
     position: fixed;
-    z-index: 200;
+    z-index: 100;
     margin-left: 100%;
     width: 150px;
     animation: slide3 65s linear infinite;
@@ -60,7 +61,7 @@ position: fixed;
 z-index: 200;
 margin-top: -5%;
 margin-left: 100%;
-animation: slide4 20s linear infinite;
+animation: slide4 40s linear infinite;
 @keyframes slide4 {
 from { margin-left: 150%; }
 to { margin-left: -110%;  }
