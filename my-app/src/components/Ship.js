@@ -160,7 +160,7 @@ class Ship extends Component {
                     </CruiseBtn>
 
                             <NextBtn>
-                            <Link to="/studio"><button>Next Chapter</button></Link> 
+                            <Link to="/scene"><button>Next Chapter</button></Link> 
                             </NextBtn>
             </div>
         );

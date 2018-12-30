@@ -22,6 +22,16 @@ animation: Gradient 15s ease infinite;
 	}
 }
 
+
+`
+const FlashBtn = styled.div`
+button{
+    background: #f49;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    color: white;
+}
 `
 
 const People = styled.div`
@@ -75,16 +85,23 @@ a:link{
 
 `
 
+
+
 class SceneItPix extends Component {
+
+
     render() {
         return (
             <div>
                 <Container>
-                <People />
-                <SceneItDesk />
-                <NextBtn>
-                    <Link to="/studio"><button>Next Chapter</button></Link>
-                </NextBtn>
+                    <People />
+                    <SceneItDesk />
+                    <NextBtn>
+                        <Link to="/school"><button>Next Chapter</button></Link>
+
+                    </NextBtn>
+                    <FlashBtn>
+                    </FlashBtn>
                 </Container>
             </div>
         );
