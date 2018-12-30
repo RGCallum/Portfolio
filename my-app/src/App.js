@@ -11,7 +11,6 @@ import SceneItPix from "./components/SceneItPix";
 import School from "./components/School";
 import Ship from "./components/Ship";
 import Skills from "./components/Skills";
-import Studio from "./components/Studio";
 import TheEnd from "./components/TheEnd";
 import NavBar from "./components/NavBar";
 
@@ -34,7 +33,6 @@ class App extends Component {
       <Route exact path="/school" component={School}/>
       <Route exact path="/ship" component={Ship}/>
       <Route exact path="/skills" component={Skills}/>
-      <Route exact path="/studio" component={Studio}/>
       <Route exact path="/end" component={TheEnd}/>
     </Switch>
   </div>

@@ -28,7 +28,8 @@ class NavBar extends Component {
                     <BrowserRouter>
                         <div>
                             <h3>
-                            <Link to="/"><i class="far fa-images"></i> Portfolio </Link>
+                            <Link to="/"><i class="fas fa-home"></i> Home </Link>
+                            <Link to="/portfolio"><i class="far fa-images"></i> Portfolio </Link>
                             <Link to="/skills"><i class="fas fa-magic"></i> Skills </Link>
                             <Link to="/contact"><i class="far fa-comment-alt"></i> Contact </Link>
                             <Link to="/resume"><i class="far fa-list-alt"></i> Resume </Link>        
