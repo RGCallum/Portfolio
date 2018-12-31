@@ -70,12 +70,12 @@ const NextBtn = styled.div`
 button{
     display: flex ;
     justify-content: center ;
-    height: 50px;
+    height: 40px;
+    font-size: 20px;   
     position: relative;
     z-index: 1000;
     margin-left: 50%;
     border-radius: 15px;
-    font-size: 30px;   
 }
 a:link{
     text-decoration: none;

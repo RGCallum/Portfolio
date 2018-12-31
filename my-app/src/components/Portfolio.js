@@ -89,8 +89,5 @@ export default class Portfolio extends React.Component {
 
 };
 
-    // ReactDOM.render(
-    //   <Container></Container>,
-    //   document.querySelector('.example_4')
-    // );
+
 

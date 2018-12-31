@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Contact from "./components/Contact";
 import Desk1Happy from "./components/Desk1Happy";
 import Desk2Sleep from "./components/Desk2Sleep";
 import News from "./components/News";
@@ -13,7 +12,7 @@ import Ship from "./components/Ship";
 import Skills from "./components/Skills";
 import TheEnd from "./components/TheEnd";
 import NavBar from "./components/NavBar";
-import SipWeb from "./components/SipWeb";
+import Footer from "./components/Footer";
 class App extends Component {
   render() {
     return (
@@ -23,7 +22,6 @@ class App extends Component {
   <div>
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/contact" component={Contact}/>
       <Route exact path="/desk1" component={Desk1Happy}/>
       <Route exact path="/desk2" component={Desk2Sleep}/>
       <Route exact path="/news" component={News}/>
@@ -34,11 +32,11 @@ class App extends Component {
       <Route exact path="/ship" component={Ship}/>
       <Route exact path="/skills" component={Skills}/>
       <Route exact path="/end" component={TheEnd}/>
-      <Route exact path="/sipweb" component={SipWeb}/>
 
     </Switch>
   </div>
 </Router>
+{/* <Footer /> */}
     </div>
     );
   }
