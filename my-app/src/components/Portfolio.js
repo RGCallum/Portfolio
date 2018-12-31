@@ -43,6 +43,8 @@ export default class Portfolio extends React.Component {
             <div>
                 
                 <Container>
+                    <br/>
+                    <br/>
                     <h1>Portfolio</h1>
                     <h2>Click thumbnail to view Apps</h2>
                 
@@ -77,10 +79,10 @@ export default class Portfolio extends React.Component {
               <img src='images/.png' alt='four' data-action="http://"/> */}
                
                 </Coverflow>
-                <NextBtn>
+                {/* <NextBtn>
                         <Link to="/Skills"><button>Skills</button></Link>
 
-                    </NextBtn>
+                    </NextBtn> */}
                 </Container>
             </div>
         );
