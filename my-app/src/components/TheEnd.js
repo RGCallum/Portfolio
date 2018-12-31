@@ -34,7 +34,12 @@ button{
     z-index: 1000;
     margin-left: 50%;
     border-radius: 15px;
-    font-size: 30px;   
+    font-size: 15px;  
+    border-radius: 15px;
+    border: inset rgb(228, 228, 228)2px;
+    margin: auto;
+background-color: rgba(255, 255, 255, 0.8);
+    
 }
 a:link{
     text-decoration: none;
@@ -44,11 +49,13 @@ a:link{
 const JumpBtn = styled.div`
 button{
     width: 100px;
+    margin-top: .5em;
 }
 `
 const ConfettiBtn = styled.div`
 button{
     width: 150px;
+    margin-top: .5em;
 }
 `
 const GirlStill1 = styled.div`
@@ -106,7 +113,12 @@ z-index: 3;
 height: 100%;
 width: 100%;
 `
-
+const NextBtn = styled.div`
+button{
+margin-top: -6.5em;
+margin-left: 75vw;
+background-color: rgba(255, 255, 255, 0.619);
+`
 class TheEnd extends Component {
     constructor() {
         super()
@@ -173,7 +185,10 @@ class TheEnd extends Component {
                     <JumpBtn>
                         <button onClick={() => { this.operation2(); this.operation3(); }}>Jump! </button>
                     </JumpBtn>
+                    <NextBtn>
                     <Link to="/portfolio"><button>Portfolio</button></Link> 
+                    </NextBtn>
+
                 </BothBtns>
             </div>
         );

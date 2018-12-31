@@ -71,11 +71,15 @@ button{
     display: flex ;
     justify-content: center ;
     height: 40px;
-    font-size: 20px;   
-    position: relative;
+    font-size: 15px;   
+    position: absolute;
     z-index: 1000;
-    margin-left: 50%;
     border-radius: 15px;
+    border: inset rgb(228, 228, 228)2px;
+    margin: auto;
+margin-top: .5em;
+margin-left: 75vw;
+background-color: rgba(255, 255, 255, 0.619);
 }
 a:link{
     text-decoration: none;

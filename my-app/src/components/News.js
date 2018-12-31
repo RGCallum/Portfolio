@@ -34,7 +34,12 @@ button{
     z-index: 1000;
     margin-left: 50%;
     border-radius: 15px;
-    font-size: 30px;   
+    font-size: 25px;  
+    border-radius: 15px;
+    border: inset rgb(228, 228, 228)2px;
+    margin: auto;
+background-color: rgba(255, 255, 255, 0.8);
+    
 }
 a:link{
     text-decoration: none;
@@ -44,11 +49,13 @@ a:link{
 const RunBtn = styled.div`
 button{
     width: 100px;
+    margin-top: .5em;
 }
 `
 const WeatherBtn = styled.div`
 button{
     width: 150px;
+    margin-top: .5em;
 }
 `
 const GirlStill1 = styled.div`
@@ -156,7 +163,13 @@ background-repeat: no-repeat;
 
 `
 
-
+const NextBtn = styled.div`
+button{
+    font-size: 15px;  
+margin-top: -6.8em;
+margin-left: 75vw;
+background-color: rgba(255, 255, 255, 0.619);
+`
 class News extends Component {
     constructor() {
         super()
@@ -230,7 +243,9 @@ class News extends Component {
                     <RunBtn>
                         <button onClick={() => { this.operation2(); this.operation3(); }}>Run! </button>
                     </RunBtn>
-                    <Link to="/ship"><button>Next Chapter</button></Link> 
+                    <NextBtn>
+                        <Link to="/ship"><button>Next Chapter</button></Link>
+                    </NextBtn>
                 </BothBtns>
             </div>
         );

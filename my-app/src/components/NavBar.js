@@ -11,13 +11,16 @@ margin-left: 85vw;
 overflow: hidden;
 background-color: rgba(255, 255, 255, 0.619);
 border-radius: 5px;
+// border: inset rgb(228, 228, 228)1px;
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
-  
+
+ }
   nav {
     float: right;
     a {
@@ -36,6 +39,7 @@ nav ul {
       }
     }
     &:hover {
+        
       a {
         background: rgba(255, 255, 255, 0.2);
         font-size: 16px !important;
@@ -43,10 +47,17 @@ nav ul {
         &:hover {
           color: #23A6D5;
           background: #000;
+
         }
+
       }
     }
   }
+  @media only screen and (min-device-width: 320px) and (max-width: 480px) {
+    {
+        &:hover{margin-left: 65vw;
+        }
+   }
 `
 
 class NavBar extends Component {

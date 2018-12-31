@@ -27,7 +27,7 @@ background-repeat: no-repeat;
     margin-left: 24%;
     width: 100%;
     height: 100vw;
-    animation: slide3 1s linear 1;
+    animation: slide3 .8s linear 1;
     @keyframes slide3 {
         from { margin-top: -50%; }
         to { margin-top: -10% 0; }
@@ -40,18 +40,20 @@ const NextBtn = styled.div`
 button{
     display: flex ;
     justify-content: center ;
-    height: 50px;
-    position: relative;
+    height: 40px;
+    font-size: 15px;   
+    position: absolute;
     z-index: 1000;
-    margin-left: 50%;
-    margin-top: 15%;
     border-radius: 15px;
-    font-size: 30px;   
+    border: inset rgb(228, 228, 228)2px;
+    margin: auto;
+    margin-top: 15%;
+margin-left: 75vw;
+background-color: rgba(255, 255, 255, 0.619);
 }
 a:link{
     text-decoration: none;
 }
-
 `
 
 

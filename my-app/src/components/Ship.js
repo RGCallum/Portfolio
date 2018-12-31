@@ -19,12 +19,6 @@ repeat 0 0;
   height: 120vw;
   width: 300vh;
 
-//   animation: slide2 120s linear infinite;
-
-//   @keyframes slide2 {
-//     from { background-position: 0 0; }
-//     to { background-position: -8000px 0; }
-// }
 `
 const Sky = styled.div`
 color: red;
@@ -91,7 +85,6 @@ to { margin-left: -110%;  }
 
 const CruiseBtn = styled.div`
 button{
-    width: 150px;
     display: flex ;
     justify-content: center ;
     height: 50px;
@@ -99,7 +92,12 @@ button{
     z-index: 1000;
     margin-left: 50%;
     border-radius: 15px;
-    font-size: 30px;   
+    font-size: 25px;  
+    border-radius: 15px;
+    border: inset rgb(228, 228, 228)2px;
+    margin: auto;
+background-color: rgba(255, 255, 255, 0.8);
+    
 }
 a:link{
     text-decoration: none;
@@ -110,12 +108,16 @@ const NextBtn = styled.div`
 button{
     display: flex ;
     justify-content: center ;
-    height: 50px;
-    position: relative;
+    height: 40px;
+    font-size: 15px;   
+    position: absolute;
     z-index: 1000;
-    margin-left: 50%;
     border-radius: 15px;
-    font-size: 30px;   
+    border: inset rgb(228, 228, 228)2px;
+    margin: auto;
+    margin-top: -2.5em;
+margin-left: 75vw;
+background-color: rgba(255, 255, 255, 0.619);
 }
 a:link{
     text-decoration: none;

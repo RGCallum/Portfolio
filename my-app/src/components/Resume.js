@@ -10,6 +10,7 @@ background-size: contain;
 width: 100vh;
 height: 100vh;
 text-align: center;
+margin: auto;
 `
 const Contact = styled.div`
 display: flex;
@@ -23,16 +24,16 @@ class Resume extends Component {
             <div>
                 <br></br>
                 <br></br>
-              <a href='https://i.ibb.co/bm5G5Hw/RGCallum.png' download> <h1>Download Resume</h1>  </a> 
-              <ResStyle></ResStyle>
-                        <div>
-                            <h1>
+              <a href='https://i.ibb.co/bm5G5Hw/RGCallum.png' download> <h1>Download Resume</h1>  </a>                             <h1>
                                 <Contact>
                             <a href="mailto:rguy129@yahoo.com"><i class="far fa-envelope"></i>  </a>
                             <a href="https://github.com/RGCallum"><i class="fab fa-github"></i>  </a>
                             <a href="https://www.linkedin.com/in/rashaundaguy/"><i class="fab fa-linkedin"></i>  </a>
                             </Contact>
-                            </h1>                 
+                            </h1>   
+              <ResStyle></ResStyle>
+                        <div>
+              
                         </div>
             </div>
         );

@@ -19,7 +19,7 @@ const SkillStyle = styled.div`
 // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 background-repeat: no-repeat;
 background-size: 100%;
-position: fixed;
+position: absolute;
 z-index: -100;
 width: 100vw;
 height: 100vw;
