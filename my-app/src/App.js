@@ -13,7 +13,7 @@ import Ship from "./components/Ship";
 import Skills from "./components/Skills";
 import TheEnd from "./components/TheEnd";
 import NavBar from "./components/NavBar";
-
+import SipWeb from "./components/SipWeb";
 class App extends Component {
   render() {
     return (
@@ -34,6 +34,8 @@ class App extends Component {
       <Route exact path="/ship" component={Ship}/>
       <Route exact path="/skills" component={Skills}/>
       <Route exact path="/end" component={TheEnd}/>
+      <Route exact path="/sipweb" component={SipWeb}/>
+
     </Switch>
   </div>
 </Router>

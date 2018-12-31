@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Coverflow from 'react-coverflow';
 import styled from "styled-components";
+
 var fn = function () {
     /* do your action */
 }
 
 const Container = styled.div`
 text-align: center;
-
 `
+
+
 export default class Portfolio extends React.Component {
     constructor(props) {
         super(props);
@@ -25,15 +26,15 @@ export default class Portfolio extends React.Component {
                 
                 <Container>
                     <h1>Portfolio</h1>
-                    <h2>Info</h2>
-                </Container>
+                    <h2>Click thumbnail to view Apps</h2>
+                
                 <Coverflow
-                    width={960}
-                    height={480}
-                    displayQuantityOfSide={2}
+                    width={560}
+                    height={680}
+                    displayQuantityOfSide={1.4}
                     navigation={true}
-                    enableHeading={false}
-                    active={this.state.active}
+                    enableHeading={true}
+                    active={this.state.active}     
                 >
 
                     <div
@@ -42,32 +43,28 @@ export default class Portfolio extends React.Component {
                         role="menuitem"
                         tabIndex="0"
                     >
+                    {/* Scroll or click Next button to view my work */}
 
-                        {/* <img src='https://i.ibb.co/ZWD3mL4/sceneitweb.png' alt='Album one' data-action="https://sceneitpix.com"/> */}
                     </div>
-                    <img src='https://i.ibb.co/ZWD3mL4/sceneitweb.png' alt='SceneItPix' data-action="https://sceneitpix.com" />
-                    <img src='https://i.ibb.co/s3FcP6n/Major-Keys.png' alt='MajorKeys' data-action="https://majorkeys.netlify.com" />
-                    <img src='https://i.ibb.co/wY2FYNY/Callum-Ent.png' alt='CallumEnt' data-action="https://callumenterprise.com" />
-                    <img src='https://i.ibb.co/5RwrNpJ/CCXMobile.png' alt='CCXMobile' />
-                    <img src='https://i.ibb.co/931K29J/Nobu.png' alt='NobuShorts' data-action="https://nobu-filmmakers.herokuapp.com" />
-                    <img src='https://i.ibb.co/w0XPx52/PicList2.png' alt='PicList' data-action="https://piclist.herokuapp.com" />
-                    <img src='https://i.ibb.co/SrR50Xb/hhgttgweb.png' alt='Hitchhiker42' data-action="https://hitchhiker42.netlify.com" />
-                    <img src='https://i.ibb.co/F5WT0jc/Schmalculator.png' alt='Schmalculator' data-action="https://schmalculator.netlify.com" />
+                    
+                    <img src='https://i.ibb.co/ZWD3mL4/sceneitweb.png' alt='SceneIt Pictures Interactive Website' data-action="https://sceneitpix.com" /> 
+                    <img src='https://i.ibb.co/s3FcP6n/Major-Keys.png' alt='Major Keys Javacript Trivia Game' data-action="https://majorkeys.netlify.com" />
+                    <img src='https://i.ibb.co/wY2FYNY/Callum-Ent.png' alt='Callum Enterprise website' data-action="https://callumenterprise.com" />
+                    <img src='https://i.ibb.co/5RwrNpJ/CCXMobile.png' alt='Social Media App for Creative Freelancers' data-action="https://creative-freedom.herokuapp.com"/>
+                    <img src='https://i.ibb.co/931K29J/Nobu.png' alt='Independent Filmmaker Database App' data-action="https://nobu-filmmakers.herokuapp.com" />
+                    <img src='https://i.ibb.co/w0XPx52/PicList2.png' alt='Event Management Database App' data-action="https://piclist.herokuapp.com" />
+                    <img src='https://i.ibb.co/SrR50Xb/hhgttgweb.png' alt="Hitchhiker's Guide to The Galaxy Fansite" data-action="https://hitchhiker42.netlify.com" />
+                    <img src='https://i.ibb.co/F5WT0jc/Schmalculator.png' alt='Javascript Calculator' data-action="https://schmalculator.netlify.com" />
                     {/* <img src='images/.png' alt='two' data-action="http://"/>
               <img src='images/.png' alt='three' data-action="https://"/>
               <img src='images/.png' alt='four' data-action="http://"/> */}
                 </Coverflow>
-
+                </Container>
             </div>
         );
     }
 
-    _handleClick() {
-        var num = Math.floor((Math.random() * 10) + 1);
-        this.setState({
-            active: num
-        });
-    }
+
 };
 
     // ReactDOM.render(
