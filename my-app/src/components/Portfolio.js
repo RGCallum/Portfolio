@@ -1,6 +1,7 @@
 import React from 'react';
 import Coverflow from 'react-coverflow';
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 var fn = function () {
     /* do your action */
@@ -8,8 +9,25 @@ var fn = function () {
 
 const Container = styled.div`
 text-align: center;
+font-size: 15px;
 `
+const NextBtn = styled.div`
+button{
+    display: flex ;
+    justify-content: center ;
+    height: 50px;
+    position: relative;
+    z-index: 1000;
+    margin-left: 50%;
+    margin-top: 0%;
+    border-radius: 15px;
+    font-size: 30px;   
+}
+a:link{
+    text-decoration: none;
+}
 
+`
 
 export default class Portfolio extends React.Component {
     constructor(props) {
@@ -28,6 +46,7 @@ export default class Portfolio extends React.Component {
                     <h1>Portfolio</h1>
                     <h2>Click thumbnail to view Apps</h2>
                 
+                
                 <Coverflow
                     width={560}
                     height={680}
@@ -44,9 +63,7 @@ export default class Portfolio extends React.Component {
                         tabIndex="0"
                     >
                     {/* Scroll or click Next button to view my work */}
-
                     </div>
-                    
                     <img src='https://i.ibb.co/ZWD3mL4/sceneitweb.png' alt='SceneIt Pictures Interactive Website' data-action="https://sceneitpix.com" /> 
                     <img src='https://i.ibb.co/s3FcP6n/Major-Keys.png' alt='Major Keys Javacript Trivia Game' data-action="https://majorkeys.netlify.com" />
                     <img src='https://i.ibb.co/wY2FYNY/Callum-Ent.png' alt='Callum Enterprise website' data-action="https://callumenterprise.com" />
@@ -58,7 +75,12 @@ export default class Portfolio extends React.Component {
                     {/* <img src='images/.png' alt='two' data-action="http://"/>
               <img src='images/.png' alt='three' data-action="https://"/>
               <img src='images/.png' alt='four' data-action="http://"/> */}
+               
                 </Coverflow>
+                <NextBtn>
+                        <Link to="/Skills"><button>Skills</button></Link>
+
+                    </NextBtn>
                 </Container>
             </div>
         );
