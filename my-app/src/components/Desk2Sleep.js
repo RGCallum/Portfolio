@@ -14,7 +14,12 @@ position: fixed;
 z-index: -100;
 width: 100vw;
 height: 100vw;
-margin-top: -15%;
+margin-top:0%;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
+text-align: center;
 `
 
 const GirlSleep = styled.div`
@@ -66,6 +71,8 @@ class Desk2Sleep extends Component {
                     <NextBtn>
                         <Link to="/end"><button>Next Chapter</button></Link>
                     </NextBtn>
+                    So she ate, breathed and slept code, and discovered a whole new world that has given her some of the best and most challenging days that she has ever faced in her life.  Coding Bootcamp was an emotional rollercoaster with some days being the highest of high feeling like she was on top of the world, and the lowest of lows, feeling like she was a complete idiot.  And she loved every minute of it.
+
                 </Container>
             </div>
         );

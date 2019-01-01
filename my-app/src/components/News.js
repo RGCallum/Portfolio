@@ -8,17 +8,18 @@ import { Link } from "react-router-dom";
 
 
 const Background = styled.div`
-color: red;
-font-size: 45px;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
 background-image: url(${img});
 background-repeat: no-repeat;
-background-size: 80%;
-position: fixed;
+background-size: contain;
+position: absolute;
 z-index: -100;
-  width: 145vw;
+  width: 100vw;
   margin: 0;
-  margin-top: -5%;
-  margin-left: -15%;
+  margin-top: 0%;
   text-align: center;
   height: 100vw;
 
@@ -29,7 +30,7 @@ const BothBtns = styled.div`
 button{
     display: flex ;
     justify-content: center ;
-    height: 50px;
+    height: 40px;
     position: relative;
     z-index: 1000;
     margin-left: 50%;
@@ -60,7 +61,7 @@ button{
 `
 const GirlStill1 = styled.div`
 button{
-    margin-top 10%;
+    margin-top 0%;
     width: 100px;
     height: 50px;
     position: fixed;
@@ -69,7 +70,7 @@ button{
 `
 const GirlRun = styled.div`
 button{
-    margin-top 20%;
+    margin-top 10%;
     width: 100px;
     height: 50px;
     position: fixed;
@@ -80,12 +81,13 @@ const Sky = styled.div`
 color: red;
 font-size: 45px;
 background-image: url(${img2});
+background-size: contain;
 position: fixed;
 z-index: -200;
 repeat 0 0;
-  width: 100%;
+  width: 100vw;
   margin: 0;
-  height: 90vh;
+  height: 100vw;
   animation: slide2 320s linear infinite;
   @keyframes slide2 {
     from { background-position: 0 0; }
@@ -96,9 +98,9 @@ const Tornado = styled.div`
     margin-top: -35%;
     position: fixed;
     z-index: -180;
-    margin-left: 5%;
-    height: 90vw;
-    width: 95vw;
+    margin-left: 0%;
+    height: 100vw;
+    width: 100vw;
     // border: 3px solid black;
     background-image: url('https://data.whicdn.com/images/308544314/original.gif');
     background-repeat: no-repeat;
@@ -124,8 +126,8 @@ const Child1 = styled.div`
 background-image: url(${camGirl});
 background-repeat: no-repeat;
 background-size: 22%;
-margin-top: 40.2%;
-margin-left: 49.7%;
+margin-top: 36.2%;
+margin-left: 51.7%;
 position: absolute;
 z-index: 3;
 height: 100%;
@@ -142,8 +144,8 @@ const Child2 = styled.div`
 background-image: url(${camGirl2});
 background-repeat: no-repeat;
 background-size: 25%;
-margin-top: 39%;
-margin-left: 48%;
+margin-top: 35%;
+margin-left: 50%;
 position: absolute;
 z-index: 3;
 height: 100%;
@@ -152,7 +154,7 @@ width: 100%;
 
 const Reporter = styled.div`
 background-image: url('https://i.ibb.co/5MG8S57/reporter.png');
-margin-top: 38%;
+margin-top: 34%;
 margin-left: 32%;
 position: absolute;
 z-index: -4;
@@ -165,8 +167,9 @@ background-repeat: no-repeat;
 
 const NextBtn = styled.div`
 button{
+    border-radius: 9px;
     font-size: 15px;  
-margin-top: -6.8em;
+margin-top: -6em;
 margin-left: 75vw;
 background-color: rgba(255, 255, 255, 0.619);
 `
@@ -201,7 +204,9 @@ class News extends Component {
     render() {
         return (
             <div>
-                <Background></Background>
+                <Background>Then, she figured she try shooting News Television... After working 12 hour shifts through fires and disasters and hurricanes, she quickly realized that the News Industry was not for her.                    <NextBtn>
+                        <Link to="/ship"><button>Next Chapter</button></Link>
+                    </NextBtn></Background>
                 <Sky></Sky>
 
                 <Reporter></Reporter>
@@ -243,9 +248,7 @@ class News extends Component {
                     <RunBtn>
                         <button onClick={() => { this.operation2(); this.operation3(); }}>Run! </button>
                     </RunBtn>
-                    <NextBtn>
-                        <Link to="/ship"><button>Next Chapter</button></Link>
-                    </NextBtn>
+
                 </BothBtns>
             </div>
         );

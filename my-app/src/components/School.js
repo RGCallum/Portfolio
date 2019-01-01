@@ -8,6 +8,13 @@ const Container = styled.div`
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 background-size: 400% 400%;
 height: 100vh;
+
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
+text-align: center;
+
 animation: Gradient 15s ease infinite;
 @keyframes Gradient {
 	0% {
@@ -30,7 +37,7 @@ background-image: url(${img});
 background-repeat: no-repeat;
 background-size: 80%;
 margin: auto;
-margin-top: 5%;
+margin-top: 15%;
     position: fixed;
     z-index: 100;
     width: 80vw;
@@ -74,11 +81,12 @@ class School extends Component {
             <div>
                 <Container>
                     <Classroom />
+                    So she decided to go back to school and learn about web and app development.  She learned all about CSS, Javascript, Python, React, just to name a few and really enjoyed working on challenging projects. She met many like minded classmates who laughed with her on the best days and helped her fight through the rough ones. 
+
                     <NextBtn>
                         <Link to="/desk1"><button>Next Chapter</button></Link>
 
                     </NextBtn>
-
                 </Container>
             </div>
         );

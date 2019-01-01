@@ -9,6 +9,11 @@ const Container = styled.div`
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 background-size: 400% 400%;
 height: 100vh;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
+text-align: center;
 animation: Gradient 15s ease infinite;
 @keyframes Gradient {
 	0% {
@@ -100,12 +105,14 @@ class SceneItPix extends Component {
                 <Container>
                     <People />
                     <SceneItDesk />
+
+                    <FlashBtn>
+                    </FlashBtn>
+                    She then decided to try her hand at event photography since. making people smile was a fun and rewarding business for her to work in. After awhile, she realized that setup time and equipment became difficult to lug around. So she sought to build her own Magic Mirror photo booth.  It was a success, and sparked her interest for computer and software programming.
                     <NextBtn>
                         <Link to="/school"><button>Next Chapter</button></Link>
 
                     </NextBtn>
-                    <FlashBtn>
-                    </FlashBtn>
                 </Container>
             </div>
         );

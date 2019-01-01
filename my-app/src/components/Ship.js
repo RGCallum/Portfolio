@@ -6,15 +6,17 @@ import img3 from '../images/waterLayer.png';
 import { Link } from "react-router-dom";
 
 const Background = styled.div`
-color: red;
-font-size: 45px;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
 background-repeat: repeat-x;
 background-size: 10%;
 position: fixed;
 z-index: -100;
 repeat 0 0;
   margin-left: 0%;;
-  margin-top: 45%;
+  margin-top: 10%;
   text-align: center;
   height: 120vw;
   width: 300vh;
@@ -142,15 +144,19 @@ class Ship extends Component {
     render() {
         return (
             <div>
-                <Background></Background>
-                    <Birds>
-                    <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds"/>
-                    </Birds>
-                        <Sky/>
-                        <Water></Water>
-                       
-                            <CruiseBtn>
-                            {() => this.operation()}
+                <Background>So she ran far far away to shoot people having fun cruise ships. She partied every night, met people from all over the world,  spent months in the Caribbean and learned alot about theatre broadcasting and satellites.
+                    <NextBtn><br></br>
+                        <Link to="/scene"><button>Next Chapter</button></Link>
+                    </NextBtn>
+                </Background>
+                <Birds>
+                    <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds" />
+                </Birds>
+                <Sky />
+                <Water></Water>
+
+                <CruiseBtn>
+                    {() => this.operation()}
                     {this.state.startCruise ?
                         <div>
                             <ShipGif></ShipGif>
@@ -158,12 +164,10 @@ class Ship extends Component {
                         </div>
                         : !null
                     }
-                        <button onClick={() => this.operation()}>Cruise</button>
-                    </CruiseBtn>
+                    <button onClick={() => this.operation()}>Cruise</button>
+                </CruiseBtn>
 
-                            <NextBtn>
-                            <Link to="/scene"><button>Next Chapter</button></Link> 
-                            </NextBtn>
+
             </div>
         );
     }

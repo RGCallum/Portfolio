@@ -15,6 +15,11 @@ position: fixed;
 z-index: -100;
 width: 100vw;
 height: 100vw;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
+text-align: center;
 `
 const FlashBtn = styled.div`
 button{
@@ -90,12 +95,13 @@ class Desk1Bedroom extends Component {
                 <Container>
                     <DeskL />
                     <DeskR />
-                    <NextBtn>
-                        <Link to="/desk2"><button>Next Chapter</button></Link>
 
-                    </NextBtn>
                     <FlashBtn>
                     </FlashBtn>
+                    It was amazing, she realized that every one of her prior experiences lead her to the world of coding, and it was here that she really excelled.  She was finally able to create projects that utilized her skill in storytelling, her eye for detail and composition, her expertise in photoshop, her determination to solve problems no matter how long it took, and overall slight nerdiness. 
+                    <NextBtn>
+                        <Link to="/desk2"><button>Next Chapter</button></Link>
+                    </NextBtn>
                 </Container>
             </div>
         );

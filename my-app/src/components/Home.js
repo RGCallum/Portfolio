@@ -5,12 +5,14 @@ import camGirl from '../images/camGirlRunSteady.gif';
 import { Link } from "react-router-dom";
 
 const Background = styled.div`
-color: red;
-font-size: 45px;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
 background-image: url(${img});
 position: fixed;
 z-index: -100;
-repeat 0 0;
+// repeat 0 0;
   width: 100%;
   margin: 0;
   margin-top: -5%;
@@ -92,7 +94,15 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Background></Background>
+                <Background>
+                    <br/> <br/> 
+                    a short story about <br/> Rashaunda Guy-Callum 
+ 
+Once upon a time there was a girl who wanted to be a filmmaker, so she went to Brooklyn College to learn everything she could about film. Then she shot short films and music videos and TV shows and interviews and any and everything she possibly could.
+<NextBtn>
+                            <Link to="/news"><button>Next Chapter</button></Link> 
+                            </NextBtn>
+</Background>
                     <Birds>
                     <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds"/>
                     </Birds>
@@ -100,9 +110,7 @@ class Home extends Component {
                             <Bus>
                                 <img src="https://media.giphy.com/media/1k0AlwzpknA4TeDERT/giphy.gif" alt="bus" />
                             </Bus>
-                            <NextBtn>
-                            <Link to="/news"><button>Next Chapter</button></Link> 
-                            </NextBtn>
+                            
             </div>
         );
     }

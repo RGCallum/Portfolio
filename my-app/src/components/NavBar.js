@@ -7,7 +7,7 @@ z-index: 1000;
 max-width: 800px;
 margin: auto;
 margin-top: 1em;
-margin-left: 85vw;
+margin-left: 5vw;
 overflow: hidden;
 background-color: rgba(255, 255, 255, 0.619);
 border-radius: 5px;
@@ -55,7 +55,7 @@ nav ul {
   }
   @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
-        &:hover{margin-left: 65vw;
+        // &:hover{margin-left: 65vw;
         }
    }
 `

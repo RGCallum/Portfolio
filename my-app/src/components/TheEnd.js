@@ -7,20 +7,22 @@ import spriteWin from '../images/Win.gif';
 import { Link } from "react-router-dom";
 
 const Background = styled.div`
-color: red;
-font-size: 45px;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
+text-align: center;
 background-image: url(${img});
 background-repeat: no-repeat;
 background-size: 100%;
 position: fixed;
 z-index: -100;
-  width: 115vw;
+  width: 100vw;
   height: 100vh;
   margin: 0;
-  margin-top: -5%;
-  margin-left: -15%;
+  margin-top: 0%;
   text-align: center;
-  height: 100vw;
+  height: 100vh;
 
 `
 
@@ -115,6 +117,7 @@ width: 100%;
 `
 const NextBtn = styled.div`
 button{
+    border-radius: 9px;
 margin-top: -6.5em;
 margin-left: 75vw;
 background-color: rgba(255, 255, 255, 0.619);
@@ -148,9 +151,14 @@ class TheEnd extends Component {
     render() {
         return (
             <div>
-                                <Background></Background>
+                <Background>She came to love coding and couldn't even imagine her life before.  She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional. And she lived Codingly Ever After.
+The End.
+<NextBtn>
+                    <Link to="/portfolio"><button>Portfolio</button></Link> 
+                    </NextBtn>
+                </Background>
 
-               <GirlStill1>
+                <GirlStill1>
                     {() => this.operation2()}
 
                     {
@@ -185,9 +193,7 @@ class TheEnd extends Component {
                     <JumpBtn>
                         <button onClick={() => { this.operation2(); this.operation3(); }}>Jump! </button>
                     </JumpBtn>
-                    <NextBtn>
-                    <Link to="/portfolio"><button>Portfolio</button></Link> 
-                    </NextBtn>
+
 
                 </BothBtns>
             </div>
