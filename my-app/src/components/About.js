@@ -103,6 +103,8 @@ class Home extends Component {
             <div>
                 <Background>
                 <br/><br/>
+                <br/><br/>
+
                  <h1> 
  
 Once upon a time there was a girl who wanted to be a filmmaker, <br/> so she learned everything she could about film in school. <br/> Then she ran all over the city and shot short films and music videos and TV shows and interviews and any and everything she possibly could.</h1> 
