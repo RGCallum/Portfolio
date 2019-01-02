@@ -83,10 +83,10 @@ const Confetti = styled.div`
     z-index: 2;
     margin-left: 0%;
     height: 90vw;
-    width: 100vw;
+    width: 102vw;
     background-image: url(${img2});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: block;
 
 

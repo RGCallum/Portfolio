@@ -38,6 +38,7 @@ const Bus = styled.div`
    to { margin-left: -110%;  }
 }
 
+
 `
 const Birds = styled.div`
 position: fixed;
@@ -66,6 +67,9 @@ animation: slide 25s linear infinite;
 @keyframes slide {
     from { margin-left: -10%; }
    to { margin-left: 110%;  }
+}
+&:hover{
+    animation-play-state: paused;
 }
 `
 const NextBtn = styled.div`
@@ -98,7 +102,7 @@ class Home extends Component {
                     <br/> <br/> <br/><br/>
                     a short story about <br/> Rashaunda Guy-Callum <br/>
  
-Once upon a time there was a girl who wanted to be a filmmaker, so she went to Brooklyn College to learn everything she could about film. Then she shot short films and music videos and TV shows and interviews and any and everything she possibly could.
+Once upon a time there was a girl who wanted to be a filmmaker, so she learned everything she could about film in school. Then she shot short films and music videos and TV shows and interviews and any and everything she possibly could.
 <NextBtn>
                             <Link to="/news"><button>Next Chapter</button></Link> 
                             </NextBtn>

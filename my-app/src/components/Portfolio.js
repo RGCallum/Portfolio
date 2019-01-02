@@ -9,11 +9,15 @@ var fn = function () {
 
 const Container = styled.div`
 text-align: center;
-font-size: 15px;
+font-size: 25px;
+// font-weight: 600;
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 color: white;
 text-shadow: 1px 1px 1px black;
-
+h1{
+    font-size: 45px;
+font-weight: 600;
+}
 `
 const NextBtn = styled.div`
 button{
