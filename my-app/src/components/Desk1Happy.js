@@ -8,6 +8,16 @@ import { Link } from "react-router-dom";
 
 
 const Container = styled.div`
+width: 100vw;
+height: 100vw;
+color: white;
+text-shadow: 1px 1px 1px black;
+font-size: 25px;
+font-weight: 800;
+text-align: center;
+
+`
+const Background = styled.div`
 background-image: url(${img3});
 background-repeat: no-repeat;
 background-size: 100%;
@@ -20,7 +30,17 @@ text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;
+animation: move 60s infinite;
+
+@keyframes move{
+    50%{
+        transform: scale(1.1);
+        
+        
+    }
+}
 `
+
 const FlashBtn = styled.div`
 button{
     background: #f49;
@@ -93,6 +113,7 @@ class Desk1Bedroom extends Component {
         return (
             <div>
                 <Container>
+                    <Background/>
                     <DeskL />
                     <DeskR />
 

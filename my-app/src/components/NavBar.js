@@ -45,7 +45,7 @@ nav ul {
         font-size: 16px !important;
         padding: 3px;
         &:hover {
-          color: #23A6D5;
+          color: #E73C7E;
           background: #000;
 
         }
@@ -72,6 +72,7 @@ class NavBar extends Component {
                             <nav>
                                 <ul>
                                     <li><a href="/"><i class="fas fa-home"></i> Home </a></li>
+                                    <li><a href="/about"><i class="fas fa-grin-tongue-wink"></i> About Me</a></li>
                                     <li><a href="/portfolio"><i class="far fa-images"></i> Portfolio </a></li>
                                     <li><a href="/skills"><i class="fas fa-magic"></i> Skills </a></li>
                                     <li><a href="/resume"><i class="far fa-list-alt"></i> Resume </a> </li>

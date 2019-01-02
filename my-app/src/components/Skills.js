@@ -33,18 +33,28 @@ height: 100vh;
 `
 
 const SkillStyle = styled.div`
-// background-image: radial-gradient(ellipse farthest-side at 100% 100%, #b1b1b1 20%, #a79b9f 40%, #d78745 120%);
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-
 background-repeat: no-repeat;
-background-size: contain;
 position: absolute;
 z-index: -100;
 width: 100vw;
 height: 100vw;
 margin-top: -15em;
-
 text-align: center;
+background-size: 400% 400%;
+
+animation: Gradient 15s ease infinite;
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 `
 const SkillWeb = styled.div`
 background-image: url(${img2});

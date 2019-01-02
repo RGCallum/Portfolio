@@ -22,7 +22,10 @@ z-index: -100;
   margin-top: 0%;
   text-align: center;
   height: 100vw;
+  h1{
+    background-color: rgba(0,0,0);
 
+}
 `
 
 
@@ -82,6 +85,7 @@ color: red;
 font-size: 45px;
 background-image: url(${img2});
 background-size: contain;
+overflow-x: hidden;
 position: fixed;
 z-index: -200;
 repeat 0 0;
@@ -174,6 +178,7 @@ button{
 margin-top: -6em;
 margin-left: 75vw;
 background-color: rgba(255, 255, 255, 0.619);
+
 `
 class News extends Component {
     constructor() {
@@ -207,9 +212,10 @@ class News extends Component {
         return (
             <div>
                 <Background><br/><br/><br/><br/>                  
-                    <NextBtn>Then, she figured she try shooting live News Television...  <br/>  
-                    After working 12 hour shifts through fires and disasters and hurricanes, she quickly realized that the News Industry was not for her.  <br/>
-                    So she ran away!
+                    <NextBtn> <h1> Then, she went on to shoot live News Television...  <br/>  
+                    After working 12 hour shifts through fires and disasters and hurricanes, <br/> 
+                    she quickly realized that the News Industry was not for her.  <br/>
+                    So she ran away!</h1> 
                     <a href='/'><button>Back</button></a> 
                     <Link to="/ship"><button>Next Chapter</button></Link>
                     </NextBtn>

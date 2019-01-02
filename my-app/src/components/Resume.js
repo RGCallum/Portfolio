@@ -22,15 +22,21 @@ a:hover{
     text-decoration: none;
     color: #E73C7E;
 }
-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-@keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
+  background-size: 400% 400%;
+
+animation: Gradient 15s ease infinite;
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 `
 
 const ResStyle = styled.div`

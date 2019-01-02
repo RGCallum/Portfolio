@@ -1,123 +1,219 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import img from '../images/streetBkgd3.jpg';
-import camGirl from '../images/camGirlRunSteady.gif';
 import { Link } from "react-router-dom";
+import img from '../images/Skills3.png';
+import img2 from '../images/skillWebDev.png';
+import img3 from '../images/skillSoftware.png';
+import img4 from '../images/skillOther.png';
+import img5 from '../images/skillDesk.png';
 
-const Background = styled.div`
+
+const SkillText = styled.div`
+h2{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 3vw;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+}
+`
+
+const Container = styled.div`
+text-align: center;
+// background-color: rgba(0,0,0,.1);
+height: 100vh;
+color: white;
+h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+h2{
+    font-size: 25px;
+    font-weight: 700;
+
+}
+button{
+    border-radius: 5px;
+}
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 3vw;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+`
+
+const HomeStyle = styled.div`
+background-repeat: no-repeat;
+position: absolute;
+z-index: -100;
+width: 100vw;
+height: 100vw;
+margin-top: -15em;
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+background-size: 400% 400%;
 color: white;
 text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
-background-image: url(${img});
-position: fixed;
-z-index: -100;
-// repeat 0 0;
-  width: 100%;
-  margin: 0;
-  margin-top: -5%;
-  text-align: center;
-  height: 100vw;
-  box-sizing: border-box;
-  animation: slide2 120s linear infinite;
+text-align: center;
 
-  @keyframes slide2 {
-    from { background-position: 0 0; }
-    to { background-position: -8000px 0; }
+animation: Gradient 15s ease infinite;
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 `
-
-const Bus = styled.div`
-    margin-top: 38%;
-    position: fixed;
-    z-index: 200;
-    margin-left: 100%;
-    animation: slide3 15s linear infinite;
-    @keyframes slide3 {
-    from { margin-left: 100%; }
-   to { margin-left: -110%;  }
-}
-
-
-`
-const Birds = styled.div`
-position: fixed;
-z-index: 200;
-margin-top: -5%;
-margin-left: 100%;
-animation: slide4 20s linear infinite;
-@keyframes slide4 {
-from { margin-left: 150%; }
-to { margin-left: -110%;  }
-}
-`
-
-const Child = styled.div`
-background-image: url(${camGirl});
+const SkillWeb = styled.div`
+background-image: url(${img2});
 background-repeat: no-repeat;
-background-size: 11%;
-margin-top: 37%;
+background-size: 80%;
 position: fixed;
 z-index: 100;
-height: 100%;
-width: 100%;
-margin-left: -100%;
-animation: slide 25s linear infinite;
-
-@keyframes slide {
-    from { margin-left: -10%; }
-   to { margin-left: 110%;  }
-}
-&:hover{
-    animation-play-state: paused;
+width: 100vw;
+height: 100vw;
+text-align: center;
+margin-top: 2%;
+margin-left: 10%;
+animation: slide2 1s linear 1;
+  
+@keyframes slide2 {
+  from { margin-left: -50%; }
+  to { margin-left: -10% 0; }
 }
 `
+const SkillSoftware = styled.div`
+background-image: url(${img3});
+background-repeat: no-repeat;
+background-size: 80%;
+position: fixed;
+z-index: 100;
+width: 100vw;
+height: 100vw;
+margin-top: -4%;
+margin-left: 8%;
+text-align: center;
+animation: slide4 1s linear 1;
+  
+@keyframes slide4 {
+  from { margin-top: 50%; }
+  to { margin-top: 10% 0; }
+}
+`
+const SkillOther = styled.div`
+background-image: url(${img4});
+background-repeat: no-repeat;
+background-size: 80%;
+position: fixed;
+z-index: 100;
+width: 100vw;
+height: 100vw;
+margin-top: -4%;
+margin-left: 12%;
+
+text-align: center;
+animation: slide5 1s linear 1;
+  
+@keyframes slide5 {
+  from { margin-top: -50%; }
+  to { margin-top: -10% 0; }
+}
+
+`
+const SkillDesk = styled.div`
+// background-image: url(${img5});
+background-repeat: no-repeat;
+background-size: 100%;
+position: fixed;
+z-index: 100;
+width: 100vw;
+height: 100vw;
+text-align: center;
+animation: slide3 1s linear 1;
+  
+@keyframes slide3 {
+  from { margin-left: 50%; }
+  to { margin-left: 10% 0; }
+}
+`
+
 const NextBtn = styled.div`
 button{
     display: flex ;
     justify-content: center ;
-    height: 40px;
-    font-size: 15px;   
-    position: absolute;
+    height: 50px;
+    position: relative;
     z-index: 1000;
+    margin-left: 70%;
     border-radius: 15px;
-    border: inset rgb(228, 228, 228)2px;
-    margin: auto;
-margin-top: .5em;
-margin-left: 75vw;
-background-color: rgba(255, 255, 255, 0.619);
+    font-size: 30px;   
 }
 a:link{
     text-decoration: none;
 }
 
 `
-
-
 class Home extends Component {
     render() {
         return (
-            <div>
-                <Background>
-                    <br/> <br/> <br/><br/>
-                    a short story about <br/> Rashaunda Guy-Callum <br/>
- 
-Once upon a time there was a girl who wanted to be a filmmaker, so she learned everything she could about film in school. Then she shot short films and music videos and TV shows and interviews and any and everything she possibly could.
-<NextBtn>
-                            <Link to="/news"><button>Next Chapter</button></Link> 
-                            </NextBtn>
-</Background>
-                    <Birds>
-                    <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds"/>
-                    </Birds>
-                        <Child/>
-                            <Bus>
-                                <img src="https://media.giphy.com/media/1k0AlwzpknA4TeDERT/giphy.gif" alt="bus" />
-                            </Bus>
-                            
+            <div>                 <br />
+                <br />
+                <br />
+
+                <SkillText>
+                    {/* <h2>Home</h2> */}
+                </SkillText>
+
+                <Container>
+                    <br />
+                    <h1>
+                    Hi, I'm Rashaunda Guy-Callum. 
+                    </h1>
+                    
+                    <h2>I create awesome things for your home and computer. <br /> To view my work or skills please click on the navbar on the top left. <br />
+                    To read my story and learn more about me, click the button below.
+                    <br />
+                    <br />
+                    <a href='/about'><button>My Story</button></a>
+                    </h2>
+                    <HomeStyle />
+                    {/* <SkillWeb/> */}
+                    {/* <SkillSoftware/> */}
+                    {/* <SkillOther/> */}
+                    {/* <SkillDesk/> */}
+
+                    {/* <NextBtn>
+                        <Link to="/resume"><button>Resume</button></Link>
+
+                    </NextBtn> */}
+                </Container>
             </div>
+
         );
     }
 }
+
 
 export default Home;
