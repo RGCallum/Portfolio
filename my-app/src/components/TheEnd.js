@@ -14,15 +14,14 @@ font-weight: 800;
 text-align: center;
 background-image: url(${img});
 background-repeat: no-repeat;
-background-size: 100%;
-position: fixed;
+background-size: contain;
+position: absolute;
 z-index: -100;
   width: 100vw;
-  height: 100vh;
+  height: 110vw;
   margin: 0;
   margin-top: 0%;
   text-align: center;
-  height: 100vh;
 
 `
 
@@ -96,8 +95,8 @@ const Child1 = styled.div`
 background-image: url(${sprite});
 background-repeat: no-repeat;
 background-size: 22%;
-margin-top: 40.2%;
-margin-left: 49.7%;
+margin-top: 20.2%;
+margin-left: 40.7%;
 position: absolute;
 z-index: 3;
 height: 100%;
@@ -108,8 +107,8 @@ const Child2 = styled.div`
 background-image: url(${spriteWin});
 background-repeat: no-repeat;
 background-size: 20%;
-margin-top: 41%;
-margin-left:51%;
+margin-top: 21%;
+margin-left:42%;
 position: absolute;
 z-index: 3;
 height: 100%;
@@ -151,10 +150,17 @@ class TheEnd extends Component {
     render() {
         return (
             <div>
-                <Background>She came to love coding and couldn't even imagine her life before.  She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional. And she lived Codingly Ever After.
+                <Background>
+                <br />
+                <br />
+                <br />
+                She came to love coding and couldn't even imagine her life before.  She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional. And she lived Codingly Ever After.
 The End.
-<NextBtn>
-                    <Link to="/portfolio"><button>Portfolio</button></Link> 
+                    <NextBtn>
+                        <br />
+                        <a href='/desk2'><button>Back</button></a>
+                        <br />
+                        <Link to="/portfolio"><button>Portfolio</button></Link>
                     </NextBtn>
                 </Background>
 

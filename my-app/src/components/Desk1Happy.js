@@ -98,8 +98,14 @@ class Desk1Bedroom extends Component {
 
                     <FlashBtn>
                     </FlashBtn>
+                    <br/>
+                    <br/>
+
                     It was amazing, she realized that every one of her prior experiences lead her to the world of coding, and it was here that she really excelled.  She was finally able to create projects that utilized her skill in storytelling, her eye for detail and composition, her expertise in photoshop, her determination to solve problems no matter how long it took, and overall slight nerdiness. 
                     <NextBtn>
+                    <br/>
+                    <a href='/school'><button>Back</button></a> 
+                    <br/>
                         <Link to="/desk2"><button>Next Chapter</button></Link>
                     </NextBtn>
                 </Container>

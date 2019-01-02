@@ -114,7 +114,7 @@ background-image: url('https://gifimage.net/wp-content/uploads/2018/04/rain-tran
 margin-top: -3%;
 margin-left: 0%;
 position: absolute;
-z-index: 100;
+z-index: 2;
 background-size: 115%;
 width: 100vw;
 height: 100vh;
@@ -129,7 +129,7 @@ background-size: 22%;
 margin-top: 36.2%;
 margin-left: 51.7%;
 position: absolute;
-z-index: 3;
+z-index: -4;
 height: 100%;
 width: 100%;
 animation: slide 5s linear 1;
@@ -147,7 +147,7 @@ background-size: 25%;
 margin-top: 35%;
 margin-left: 50%;
 position: absolute;
-z-index: 3;
+z-index: -4;
 height: 100%;
 width: 100%;
 `
@@ -167,6 +167,8 @@ background-repeat: no-repeat;
 
 const NextBtn = styled.div`
 button{
+    position: relative;
+    z-index: 1000;
     border-radius: 9px;
     font-size: 15px;  
 margin-top: -6em;
@@ -204,9 +206,12 @@ class News extends Component {
     render() {
         return (
             <div>
-                <Background>Then, she figured she try shooting News Television... After working 12 hour shifts through fires and disasters and hurricanes, she quickly realized that the News Industry was not for her.                    <NextBtn>
-                        <Link to="/ship"><button>Next Chapter</button></Link>
-                    </NextBtn></Background>
+                <Background><br/><br/><br/><br/>                  
+                    <NextBtn>Then, she figured she try shooting News Television... After working 12 hour shifts through fires and disasters and hurricanes, she quickly realized that the News Industry was not for her.  
+                    <a href='/'><button>Back</button></a> 
+                    <Link to="/ship"><button>Next Chapter</button></Link>
+                    </NextBtn>
+                    </Background>
                 <Sky></Sky>
 
                 <Reporter></Reporter>
@@ -234,6 +239,7 @@ class News extends Component {
                     }
                 </GirlRun>
                 <BothBtns>
+                    <br/>
                     <WeatherBtn>
                         <button onClick={() => this.operation()}>Hurricane</button>
                     </WeatherBtn>

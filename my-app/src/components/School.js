@@ -42,7 +42,7 @@ margin-top: 15%;
     z-index: 100;
     width: 80vw;
     height: 100vw;
-    animation: slide3 2s linear 1;
+    animation: slide3 1s linear 1;
   
     @keyframes slide3 {
       from { margin-top: 50%; }
@@ -81,9 +81,15 @@ class School extends Component {
             <div>
                 <Container>
                     <Classroom />
+                    <br/>
+                    <br/>
+
                     So she decided to go back to school and learn about web and app development.  She learned all about CSS, Javascript, Python, React, just to name a few and really enjoyed working on challenging projects. She met many like minded classmates who laughed with her on the best days and helped her fight through the rough ones. 
 
                     <NextBtn>
+                    <a href='/scene'><button>Back</button></a> 
+                    <br/>
+
                         <Link to="/desk1"><button>Next Chapter</button></Link>
 
                     </NextBtn>

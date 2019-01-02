@@ -45,7 +45,7 @@ background-size: 80%;
 background-repeat: no-repeat;
     margin-top: 18%;
     position: fixed;
-    z-index: 100;
+    z-index: 1001;
     margin-left: 80%;
     width: 100vw;
     height: 100vw;
@@ -75,12 +75,12 @@ height: 100vw;
 
 const Birds = styled.div`
 position: fixed;
-z-index: 200;
+z-index: -100;
 margin-top: -5%;
 margin-left: 100%;
 animation: slide4 40s linear infinite;
 @keyframes slide4 {
-from { margin-left: 150%; }
+from { margin-left: 100%; }
 to { margin-left: -110%;  }
 }
 `
@@ -144,9 +144,10 @@ class Ship extends Component {
     render() {
         return (
             <div>
-                <Background>So she ran far far away to shoot people having fun cruise ships. She partied every night, met people from all over the world,  spent months in the Caribbean and learned alot about theatre broadcasting and satellites.
-                    <NextBtn><br></br>
-                        <Link to="/scene"><button>Next Chapter</button></Link>
+                <Background>
+                    <NextBtn>So she ran far far away to shoot people having fun cruise ships. She partied every night, met people from all over the world,  spent months in the Caribbean and learned alot about theatre broadcasting and satellites.<br></br>
+                    <a href='/news'><button>Back</button></a> 
+                    <br/>  <Link to="/scene"><button>Next Chapter</button></Link>
                     </NextBtn>
                 </Background>
                 <Birds>

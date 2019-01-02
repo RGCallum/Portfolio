@@ -11,42 +11,46 @@ import img5 from '../images/skillDesk.png';
 const Container = styled.div`
 text-align: center;
 h1{
-    font-size: 2vw;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 3vw;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 }
 `
 
 const SkillStyle = styled.div`
-// background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+// background-image: radial-gradient(ellipse farthest-side at 100% 100%, #b1b1b1 20%, #a79b9f 40%, #d78745 120%);
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+
 background-repeat: no-repeat;
-background-size: 100%;
+background-size: contain;
 position: absolute;
 z-index: -100;
 width: 100vw;
 height: 100vw;
+margin-top: -15em;
+
 text-align: center;
-animation: Gradient 15s ease infinite;
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
 `
 const SkillWeb = styled.div`
 background-image: url(${img2});
 background-repeat: no-repeat;
-background-size: 100%;
+background-size: 80%;
 position: fixed;
 z-index: 100;
 width: 100vw;
 height: 100vw;
 text-align: center;
-margin-top: 1%;
+margin-top: 2%;
+margin-left: 10%;
 animation: slide2 1s linear 1;
   
 @keyframes slide2 {
@@ -57,11 +61,14 @@ animation: slide2 1s linear 1;
 const SkillSoftware = styled.div`
 background-image: url(${img3});
 background-repeat: no-repeat;
-background-size: 100%;
+background-size: 80%;
 position: fixed;
 z-index: 100;
 width: 100vw;
 height: 100vw;
+margin-top: -4%;
+margin-left: 8%;
+
 text-align: center;
 animation: slide4 1s linear 1;
   
@@ -73,11 +80,14 @@ animation: slide4 1s linear 1;
 const SkillOther = styled.div`
 background-image: url(${img4});
 background-repeat: no-repeat;
-background-size: 100%;
+background-size: 80%;
 position: fixed;
 z-index: 100;
 width: 100vw;
 height: 100vw;
+margin-top: -4%;
+margin-left: 12%;
+
 text-align: center;
 animation: slide5 1s linear 1;
   
@@ -88,7 +98,7 @@ animation: slide5 1s linear 1;
 
 `
 const SkillDesk = styled.div`
-background-image: url(${img5});
+// background-image: url(${img5});
 background-repeat: no-repeat;
 background-size: 100%;
 position: fixed;
@@ -130,6 +140,7 @@ class Skills extends Component {
 
                 <Container>
                  <h1>Skills</h1> 
+                 <br/>
 
                 <SkillStyle/>
                 <SkillWeb/>

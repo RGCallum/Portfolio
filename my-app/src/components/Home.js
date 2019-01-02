@@ -95,8 +95,8 @@ class Home extends Component {
         return (
             <div>
                 <Background>
-                    <br/> <br/> 
-                    a short story about <br/> Rashaunda Guy-Callum 
+                    <br/> <br/> <br/><br/>
+                    a short story about <br/> Rashaunda Guy-Callum <br/>
  
 Once upon a time there was a girl who wanted to be a filmmaker, so she went to Brooklyn College to learn everything she could about film. Then she shot short films and music videos and TV shows and interviews and any and everything she possibly could.
 <NextBtn>

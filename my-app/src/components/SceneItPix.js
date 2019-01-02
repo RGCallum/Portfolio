@@ -108,8 +108,12 @@ class SceneItPix extends Component {
 
                     <FlashBtn>
                     </FlashBtn>
+                    <br/>
+                    <br/>
                     She then decided to try her hand at event photography since. making people smile was a fun and rewarding business for her to work in. After awhile, she realized that setup time and equipment became difficult to lug around. So she sought to build her own Magic Mirror photo booth.  It was a success, and sparked her interest for computer and software programming.
                     <NextBtn>
+                    <a href='/ship'><button>Back</button></a> 
+                    <br></br>
                         <Link to="/school"><button>Next Chapter</button></Link>
 
                     </NextBtn>

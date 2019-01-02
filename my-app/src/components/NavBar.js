@@ -11,7 +11,7 @@ margin-left: 5vw;
 overflow: hidden;
 background-color: rgba(255, 255, 255, 0.619);
 border-radius: 5px;
-// border: inset rgb(228, 228, 228)1px;
+border: inset rgb(228, 228, 228)1px;
 
 nav ul {
     list-style-type: none;
