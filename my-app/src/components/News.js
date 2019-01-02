@@ -208,7 +208,8 @@ class News extends Component {
             <div>
                 <Background><br/><br/><br/><br/>                  
                     <NextBtn>Then, she figured she try shooting live News Television...  <br/>  
-                    After working 12 hour shifts through fires and disasters and hurricanes, she quickly realized that the News Industry was not for her.  
+                    After working 12 hour shifts through fires and disasters and hurricanes, she quickly realized that the News Industry was not for her.  <br/>
+                    So she ran away!
                     <a href='/'><button>Back</button></a> 
                     <Link to="/ship"><button>Next Chapter</button></Link>
                     </NextBtn>

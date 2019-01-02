@@ -84,7 +84,9 @@ class School extends Component {
                     <br/>
                     <br/>
 
-                    So she decided to go back to school and learn about web and app development.  She learned all about CSS, Javascript, Python, React, just to name a few and really enjoyed working on challenging projects. She met many like minded classmates who laughed with her on the best days and helped her fight through the rough ones. 
+                    So she joined FreeCodeCamp and Codecademy and any and every online tool she could possibly find to learn about coding.
+                    When that wasn't enough, she decided to go back to school and learn in person about web and software development.  
+                    She learned all about CSS, Javascript, Python, React, just to name a few and really enjoyed working on challenging projects. She met many like minded classmates who laughed with her on the best days and helped her fight through the rough ones. 
 
                     <NextBtn>
                     <a href='/scene'><button>Back</button></a> 

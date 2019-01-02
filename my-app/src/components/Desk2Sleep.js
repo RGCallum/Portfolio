@@ -72,7 +72,7 @@ class Desk2Sleep extends Component {
                     <br/>
                     <br/>
                     <br/>
-                    So she ate, breathed and slept code, and discovered a whole new world that has given her some of the best and most challenging days that she has ever faced in her life.  Coding Bootcamp was an emotional rollercoaster with some days being the highest of high feeling like she was on top of the world, and the lowest of lows, when she couldn't figure something out.  And she loved every minute of it.
+                    So she ate, breathed and slept code, and discovered a whole new world that has given her some of the best and most challenging days that she has ever faced in her life. It was fun and hard and exciting and disappointing all at the same time. And she loved every minute of it.
                     <br/>
                     <a href='/desk1'><button>Back</button></a> 
                     <br/>

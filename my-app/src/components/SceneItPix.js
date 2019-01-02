@@ -110,7 +110,7 @@ class SceneItPix extends Component {
                     </FlashBtn>
                     <br/>
                     <br/>
-                    She then decided to try her hand at event photography since. making people smile was a fun and rewarding business for her to work in. After awhile, she realized that setup time and equipment became difficult to lug around. So she sought to build her own Magic Mirror photo booth.  It was a success, and sparked her interest for computer and software programming.
+                    She then decided to try green screen event photography since she enjoyed editing images. She loved having fun at the events and making people smile for a living. After awhile, she wanted to make her equipment self contained and the guest experience more interactive, so she sought to build her own Magic Mirror photo booth.  It was a success, and the guests loved it. The challenge and excitement of building the photo booth sparked her interest for computer programming.
                     <NextBtn>
                     <a href='/ship'><button>Back</button></a> 
                     <br></br>

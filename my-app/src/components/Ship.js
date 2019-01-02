@@ -132,7 +132,7 @@ class Ship extends Component {
     constructor() {
         super()
         this.state = {
-            startCruise: false, //change back to false to make button onclick
+            startCruise: true, //change back to false to make button onclick
 
         }
     }
@@ -145,7 +145,8 @@ class Ship extends Component {
         return (
             <div>
                 <Background>
-                    <NextBtn>So she ran far far away to shoot people having fun cruise ships. She partied every night, met people from all over the world,  spent months in the Caribbean and learned alot about theatre broadcasting and satellites.<br></br>
+                    <NextBtn>She ran far far away to shoot people having fun on cruise ships. 
+                     <br/> She met people from all over the world, partied every night, spent months in the Caribbean and learned a lot about theatre production and broadcasting.<br></br>
                     <a href='/news'><button>Back</button></a> 
                     <br/>  <Link to="/scene"><button>Next Chapter</button></Link>
                     </NextBtn>
@@ -165,7 +166,7 @@ class Ship extends Component {
                         </div>
                         : !null
                     }
-                    <button onClick={() => this.operation()}>Cruise</button>
+                    {/* <button onClick={() => this.operation()}>Cruise</button> */}
                 </CruiseBtn>
 
 

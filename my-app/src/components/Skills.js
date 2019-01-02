@@ -7,12 +7,11 @@ import img3 from '../images/skillSoftware.png';
 import img4 from '../images/skillOther.png';
 import img5 from '../images/skillDesk.png';
 
-
-const Container = styled.div`
-text-align: center;
-h1{
+const SkillText = styled.div`
+h2{
     color: white;
     text-shadow: 1px 1px 1px black;
+    text-align: center;
     font-size: 3vw;
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     @keyframes fade-in {
@@ -24,6 +23,13 @@ h1{
         }
       }
 }
+`
+
+const Container = styled.div`
+text-align: center;
+background-color: rgba(0,0,0,.1);
+height: 100vh;
+
 `
 
 const SkillStyle = styled.div`
@@ -68,7 +74,6 @@ width: 100vw;
 height: 100vw;
 margin-top: -4%;
 margin-left: 8%;
-
 text-align: center;
 animation: slide4 1s linear 1;
   
@@ -133,13 +138,15 @@ a:link{
 class Skills extends Component {
     render() {
         return (
-            <div>
-                    <br/>
-                    <br/>
-                    <br/>
+            <div>                 <br/>
+                 <br/>
+                 <br/>
+
+                    <SkillText>
+                    <h2>Skills</h2> 
+                    </SkillText>
 
                 <Container>
-                 <h1>Skills</h1> 
                  <br/>
 
                 <SkillStyle/>

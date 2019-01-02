@@ -154,7 +154,8 @@ class TheEnd extends Component {
                 <br />
                 <br />
                 <br />
-                She came to love coding and couldn't even imagine her life before.  She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional. And she lived Codingly Ever After.
+                She couldn't even imagine her life before coding. Even after completing her course she continues to work on projects and learn new things. She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional.  <br/>
+                And she lived Codingly Ever After.
 The End.
                     <NextBtn>
                         <br />
