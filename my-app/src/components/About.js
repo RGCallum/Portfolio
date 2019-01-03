@@ -33,7 +33,7 @@ margin-top: -13em;
    }
 h1{
     background-color: rgba(0,0,0, .4);
-    @media only screen and (min-device-width: 320px) and (max-width: 1080px) {
+    @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {
             margin-top: -3em;
             font-size: 15px;
@@ -52,7 +52,7 @@ const Bus = styled.div`
     from { margin-left: 100%; }
    to { margin-left: -110%;  }
 }
-@media only screen and (min-device-width: 320px) and (max-width: 1080px) {
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         background-size: 50%;
         margin-top: 180%;
@@ -62,8 +62,25 @@ const Bus = styled.div`
        to { margin-left: -1590%;  }
         }
    }
-
-
+   @media only screen and (min-width: 375px) and (max-width: 424px){
+    {
+        margin-top: 155%;
+        animation: slide3 35s linear infinite;
+        @keyframes slide3 {
+        from { margin-left: 100%; }
+       to { margin-left: -1590%;  }
+        }
+   }
+   @media only screen and (min-width: 425px) and (max-width: 767px){
+    {
+        margin-top: 100%;
+        animation: slide3 35s linear infinite;
+        @keyframes slide3 {
+        from { margin-left: 100%; }
+       to { margin-left: -1590%;  }
+        }
+   }
+ 
 `
 const Birds = styled.div`
 position: fixed;
@@ -75,7 +92,7 @@ animation: slide4 20s linear infinite;
 from { margin-left: 150%; }
 to { margin-left: -110%;  }
 }
-@media only screen and (min-device-width: 320px) and (max-width: 1080px) {
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         animation: slide4 35s linear infinite;
         @keyframes slide4 {
@@ -85,6 +102,10 @@ to { margin-left: -110%;  }
     }
 }
 `
+const Parent = styled.div`
+position: fixed;
+`
+
 
 const Child = styled.div`
 background-image: url(${camGirl});
@@ -103,23 +124,40 @@ animation: slide 25s linear infinite;
    to { margin-left: 110%;  }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 440px) {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
     {
         background-size: 50%;
         margin-top: 160%;
         animation-play-state: paused;
-        margin-left: -90px;
         background-repeat: no-repeat;
         position: fixed;
         }
    }
 
-   @media only screen and (min-width: 420px) and (max-width: 1440px) {
+   @media only screen and (min-width: 375px) and (max-width: 424px){
     {
         background-size: 50%;
-        margin-top: 160%;
+        margin-top: 130%;
         animation-play-state: paused;
-        margin-left: -90px;
+        background-repeat: no-repeat;
+        position: fixed;
+        }
+   }
+   @media only screen and (min-width: 425px) and (max-width: 767px){
+    {
+        background-size: 50%;
+        margin-top: 110%;
+        animation-play-state: paused;
+        background-repeat: no-repeat;
+        position: fixed;
+        }
+   }
+   @media only screen and (min-width: 768px) and (max-width: 1024px){
+    {
+        background-size: 30%;
+        margin-top: 60%;
+        margin-left: -10%;
+        animation-play-state: paused;
         background-repeat: no-repeat;
         position: fixed;
         }
@@ -151,6 +189,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <Parent>
                 <Background>
                 <br/><br/>
                 <br/><br/>
@@ -165,11 +204,12 @@ Once upon a time there was a girl who wanted to be a filmmaker, <br/> so she lea
                     <Birds>
                     <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds"/>
                     </Birds>
+                    
                         <Child/>
                             <Bus>
                                 <img src="https://media.giphy.com/media/1k0AlwzpknA4TeDERT/giphy.gif" alt="bus" />
                             </Bus>
-                            
+                            </Parent>
             </div>
         );
     }
