@@ -55,7 +55,7 @@ nav ul {
   }
   @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
-        // &:hover{margin-left: 65vw;
+        margin-top: 2.5em;
         }
    }
 `

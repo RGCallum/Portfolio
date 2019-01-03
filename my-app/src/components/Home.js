@@ -34,11 +34,27 @@ color: white;
 h1{
     font-size: 45px;
     font-weight: 800;
+    @media only screen and (min-device-width: 320px) and (max-width: 480px) {
+        {
+            font-size: 25px;
+            margin-left: -20%;
+            margin-top: 1em;
+            }
+       }
 }
 h2{
     font-size: 25px;
     font-weight: 700;
+    @media only screen and (min-device-width: 320px) and (max-width: 480px) {
+        {
+            margin-top: 1em;
+            font-size: 15px;
+            width: 80%;
+            // text-align: center;
 
+            }
+       }
+}
 }
 button{
     border-radius: 5px;
@@ -72,7 +88,14 @@ text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;
-
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
+    {
+        margin-top: -25em;
+        height: 170vh;
+        width: 100vw;
+        word-wrap: normal;
+    }
+   }
 animation: Gradient 15s ease infinite;
 @keyframes Gradient {
 	0% {
@@ -189,7 +212,7 @@ class Home extends Component {
                 <Container>
                     <br />
                     <h1>
-                    Hi, I'm Rashaunda Guy-Callum. 
+                    Rashaunda Guy-Callum
                     </h1>
                     
                     <h2>I create awesome things for your home and computer. <br /> To view my work or skills please click on the navbar on the top left. <br />

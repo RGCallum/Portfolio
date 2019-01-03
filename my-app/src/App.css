@@ -24,6 +24,7 @@ overflow-y: hidden;
 
 .App-link {
   color: #61dafb;
+  word-wrap: normal;
 }
 
 @keyframes App-logo-spin {
