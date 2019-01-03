@@ -37,7 +37,6 @@ h1{
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {
             font-size: 25px;
-            margin-left: -20%;
             margin-top: 1em;
             }
        }
@@ -49,7 +48,7 @@ h2{
         {
             margin-top: 1em;
             font-size: 15px;
-            width: 80%;
+            // width: 80%;
             // text-align: center;
 
             }

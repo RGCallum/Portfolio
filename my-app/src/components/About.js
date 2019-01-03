@@ -25,8 +25,20 @@ z-index: -100;
     from { background-position: 0 0; }
     to { background-position: -8000px 0; }
 }
+@media only screen and (min-device-width: 320px) and (max-width: 2560px) {
+    {
+height: 150vh;
+margin-top: -13em;
+        }
+   }
 h1{
     background-color: rgba(0,0,0, .4);
+    @media only screen and (min-device-width: 320px) and (max-width: 1080px) {
+        {
+            margin-top: -3em;
+            font-size: 15px;
+            }
+       }
 }
 `
 
@@ -40,6 +52,16 @@ const Bus = styled.div`
     from { margin-left: 100%; }
    to { margin-left: -110%;  }
 }
+@media only screen and (min-device-width: 320px) and (max-width: 1080px) {
+    {
+        background-size: 50%;
+        margin-top: 180%;
+        animation: slide3 35s linear infinite;
+        @keyframes slide3 {
+        from { margin-left: 100%; }
+       to { margin-left: -1590%;  }
+        }
+   }
 
 
 `
@@ -52,6 +74,15 @@ animation: slide4 20s linear infinite;
 @keyframes slide4 {
 from { margin-left: 150%; }
 to { margin-left: -110%;  }
+}
+@media only screen and (min-device-width: 320px) and (max-width: 1080px) {
+    {
+        animation: slide4 35s linear infinite;
+        @keyframes slide4 {
+        from { margin-left: 150%; }
+        to { margin-left: -1510%;  }
+        }
+    }
 }
 `
 
@@ -71,9 +102,28 @@ animation: slide 25s linear infinite;
     from { margin-left: -10%; }
    to { margin-left: 110%;  }
 }
-&:hover{
-    animation-play-state: paused;
-}
+
+@media only screen and (min-width: 320px) and (max-width: 440px) {
+    {
+        background-size: 50%;
+        margin-top: 160%;
+        animation-play-state: paused;
+        margin-left: -90px;
+        background-repeat: no-repeat;
+        position: fixed;
+        }
+   }
+
+   @media only screen and (min-width: 420px) and (max-width: 1440px) {
+    {
+        background-size: 50%;
+        margin-top: 160%;
+        animation-play-state: paused;
+        margin-left: -90px;
+        background-repeat: no-repeat;
+        position: fixed;
+        }
+   }
 `
 const NextBtn = styled.div`
 button{
