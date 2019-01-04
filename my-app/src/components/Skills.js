@@ -13,6 +13,7 @@ h2{
     text-shadow: 1px 1px 1px black;
     text-align: center;
     font-size: 3vw;
+    
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     @keyframes fade-in {
         0% {
