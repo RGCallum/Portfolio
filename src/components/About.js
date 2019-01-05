@@ -33,6 +33,8 @@ margin-top: -13em;
    }
 h1{
     background-color: rgba(0,0,0, .4);
+    margin-top: -3em;
+
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {
             margin-top: -3em;
