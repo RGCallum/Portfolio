@@ -32,14 +32,20 @@ nav ul {
       display: block;
       color: #000;
       text-decoration: none;
+
     }
     li:nth-child(n+4) {
       a {
         font-size: 0;
+        @media only screen and (min-device-width: 320px) and (max-width: 480px) {
+            {
+                  pointer-events: none;
+            }
+           }
       }
     }
-    &:hover, &:focus {
-        
+    &:hover{
+
       a {
         background: rgba(255, 255, 255, 0.2);
         font-size: 16px !important;
