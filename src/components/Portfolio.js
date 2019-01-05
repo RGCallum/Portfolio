@@ -25,6 +25,8 @@ h2{
     text-align: center
     background-color: rgba(0, 0, 0, 0.509);
     padding: 10px;
+    font-weight: 100;
+    font-size: 2vw;
 }
 
 alt{
@@ -169,7 +171,7 @@ export default class Portfolio extends React.Component {
 
                             <div>
                                 <img src='https://i.ibb.co/ZWD3mL4/sceneitweb.png' alt='SceneIt Pictures Interactive Website: HTML|CSS|JS' data-action="https://sceneitpix.com" />
-                                <h2>  SceneIt Pictures Interactive Website: <br /> created with: HTML | CSS | JS </h2>
+                                <h2> SceneIt Pictures Interactive Website: <br /> created with: HTML | CSS | JS </h2>
                             </div>
 
                             <div>
