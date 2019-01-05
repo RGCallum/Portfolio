@@ -5,17 +5,15 @@ import { Link } from "react-router-dom";
 import { StyleRoot } from 'radium';
 
 var fn = function () {
-    /* do your action */
 }
 
 const Container = styled.div`
 text-align: center;
 font-size: 15px;
-// font-weight: 600;
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 color: white;
-// height: 100vh;
 text-shadow: 1px 1px 1px black;
+
 h1{
     font-size: 45px;
 font-weight: 100;
@@ -25,16 +23,16 @@ h2{
     text-align: center
     background-color: rgba(0, 0, 0, 0.509);
     padding: 10px;
-    font-weight: 100;
-    font-size: 2vw;
+    font-weight: 300;
+    font-size: 1.5vw;
+    
 }
 
-alt{
-    color: red;
-}
 background-size: 400% 400%;
+
 img{
     width: 100%;
+
 }
 animation: Gradient 15s ease infinite;
 @keyframes Gradient {
@@ -48,7 +46,13 @@ animation: Gradient 15s ease infinite;
 		background-position: 0% 50%
 	}
 }
+
  `
+
+const ContainerStyle = styled.div`
+
+`
+
 const NextBtn = styled.div`
 button{
     display: flex ;
@@ -85,7 +89,7 @@ export default class Portfolio extends React.Component {
                     <h1>Portfolio</h1>
                     <h3>Click thumbnail to view Apps</h3>
 
-                    <StyleRoot>
+                    <ContainerStyle>
                         <Coverflow
                             width={560}
                             height={830}
@@ -123,7 +127,7 @@ export default class Portfolio extends React.Component {
 
                             <div>
                                 <img src='https://i.ibb.co/DKNZsX8/CCXMobile2.png' alt='Social Media Network for Creative Freelancers: JS|Python|React|Django|SQL' data-action="https://creative-freedom.herokuapp.com" />
-                                <h2> Social Media Network for Creative Freelancers  <br /> created with: JS | Python | React | Django | SQL</h2>
+                                <h2> Social Media Network for Creative Freelancers <br /> created with: JS | Python | React | Django | SQL </h2>
                             </div>
 
                             <div>
@@ -154,7 +158,7 @@ export default class Portfolio extends React.Component {
 
                         </Coverflow>
 
-                    </StyleRoot>
+                    </ContainerStyle>
                     {/* <NextBtn>
                         <Link to="/Skills"><button>Skills</button></Link>
 
