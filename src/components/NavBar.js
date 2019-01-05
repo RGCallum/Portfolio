@@ -38,7 +38,7 @@ nav ul {
         font-size: 0;
       }
     }
-    &:hover, &:active {
+    &:hover, &:focus {
         
       a {
         background: rgba(255, 255, 255, 0.2);
