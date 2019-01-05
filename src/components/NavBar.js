@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import $ from 'jquery';
 
 const NavStyle = styled.div`
 position: absolute;
@@ -33,14 +32,14 @@ nav ul {
       display: block;
       color: #000;
       text-decoration: none;
-
+      z-index: -40;
+pointer-events: none;
     }
     li:nth-child(n+4) {
       a {
         font-size: 0;
         @media only screen and (min-device-width: 320px) and (max-width: 480px) {
             {
-                  pointer-events: none;
             }
            }
       }
@@ -51,6 +50,8 @@ nav ul {
         background: rgba(255, 255, 255, 0.2);
         font-size: 16px !important;
         padding: 3px;
+        pointer-events: all;
+
         &:hover {
           color: #E73C7E;
           background: #000;
@@ -66,19 +67,7 @@ nav ul {
         }
    }
 `
-$('ul li.has-children').on("touchstart", function (e) {
-    'use strict'; //satisfy code inspectors
-    var link = $(this); //preselect the link
-    if (link.hasClass('hover')) {
-        return true;
-     } 
-    else {
-       link.addClass('hover');
-       $('ul > li').not(this).removeClass('hover');
-       e.preventDefault();
-       return false; //extra, and to make sure the function has consistent return points
-      }
-    });
+
 
 class NavBar extends Component {
     render() {
