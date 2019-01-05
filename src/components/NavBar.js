@@ -50,7 +50,7 @@ pointer-events: none;
         background: rgba(255, 255, 255, 0.2);
         font-size: 16px !important;
         padding: 3px;
-        pointer-events: all;
+        // pointer-events: all;
 
         &:hover {
           color: #E73C7E;
