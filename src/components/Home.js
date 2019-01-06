@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import img from '../images/Skills3.png';
-import img2 from '../images/skillWebDev.png';
-import img3 from '../images/skillSoftware.png';
-import img4 from '../images/skillOther.png';
-import img5 from '../images/skillDesk.png';
+
 
 
 const SkillText = styled.div`
@@ -28,12 +25,16 @@ h2{
 
 const Container = styled.div`
 text-align: center;
-// background-color: rgba(0,0,0,.1);
+background-color: rgba(0,0,0,.5);
 height: 100vh;
 color: white;
+
+
 h1{
     font-size: 45px;
     font-weight: 800;
+    background-color: rgba(0,0,0,.5);
+
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {
             font-size: 25px;
@@ -42,8 +43,11 @@ h1{
        }
 }
 h2{
+    background-color: rgba(0,0,0,.5);
+
     font-size: 25px;
     font-weight: 700;
+
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {
             margin-top: 1em;
@@ -56,7 +60,18 @@ h2{
 }
 }
 button{
-    border-radius: 5px;
+    border-radius: 15px;
+    border: inset rgb(228, 228, 228)2px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    color: black;
+    :hover {
+        background-color: #eeeeee;
+        border-radius: 15px; 
+        color: #E73C7E;
+        font-weight: 600;
+      }
 }
     text-shadow: 1px 1px 1px black;
     text-align: center;
@@ -80,8 +95,7 @@ z-index: -100;
 width: 100vw;
 height: 100vw;
 margin-top: -15em;
-background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-background-size: 400% 400%;
+background-image: url('https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 color: white;
 text-shadow: 1px 1px 1px black;
 font-size: 25px;
@@ -95,90 +109,17 @@ text-align: center;
         word-wrap: normal;
     }
    }
-animation: Gradient 15s ease infinite;
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-`
-const SkillWeb = styled.div`
-background-image: url(${img2});
-background-repeat: no-repeat;
-background-size: 80%;
-position: fixed;
-z-index: 100;
-width: 100vw;
-height: 100vw;
-text-align: center;
-margin-top: 2%;
-margin-left: 10%;
-animation: slide2 1s linear 1;
-  
-@keyframes slide2 {
-  from { margin-left: -50%; }
-  to { margin-left: -10% 0; }
-}
-`
-const SkillSoftware = styled.div`
-background-image: url(${img3});
-background-repeat: no-repeat;
-background-size: 80%;
-position: fixed;
-z-index: 100;
-width: 100vw;
-height: 100vw;
-margin-top: -4%;
-margin-left: 8%;
-text-align: center;
-animation: slide4 1s linear 1;
-  
-@keyframes slide4 {
-  from { margin-top: 50%; }
-  to { margin-top: 10% 0; }
-}
-`
-const SkillOther = styled.div`
-background-image: url(${img4});
-background-repeat: no-repeat;
-background-size: 80%;
-position: fixed;
-z-index: 100;
-width: 100vw;
-height: 100vw;
-margin-top: -4%;
-margin-left: 12%;
+   animation: move 60s infinite;
 
-text-align: center;
-animation: slide5 1s linear 1;
-  
-@keyframes slide5 {
-  from { margin-top: -50%; }
-  to { margin-top: -10% 0; }
+@keyframes move{
+    50%{
+        transform: scale(1.1);
+        
+        
+    }
 }
 
-`
-const SkillDesk = styled.div`
-// background-image: url(${img5});
-background-repeat: no-repeat;
-background-size: 100%;
-position: fixed;
-z-index: 100;
-width: 100vw;
-height: 100vw;
-text-align: center;
-animation: slide3 1s linear 1;
-  
-@keyframes slide3 {
-  from { margin-left: 50%; }
-  to { margin-left: 10% 0; }
-}
+
 `
 
 const NextBtn = styled.div`
@@ -214,17 +155,14 @@ class Home extends Component {
                     Rashaunda Guy-Callum
                     </h1>
                     
-                    <h2>I create awesome things for your home and computer. <br /> To view my work or skills please click on the navbar on the top left. <br />
-                    To read my story and learn more about me, click the button below.
+                    <h2>I create awesome web apps and innovative technology. <br /> To view my work, skills or resume please click on the hamburger button in the top left corner. <br />
+                    To learn a bit more about me and check out a few of my animations, click the button below.
                     <br />
                     <br />
                     <a href='/about'><button>My Story</button></a>
                     </h2>
                     <HomeStyle />
-                    {/* <SkillWeb/> */}
-                    {/* <SkillSoftware/> */}
-                    {/* <SkillOther/> */}
-                    {/* <SkillDesk/> */}
+                  
 
                     {/* <NextBtn>
                         <Link to="/resume"><button>Resume</button></Link>

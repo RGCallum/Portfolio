@@ -28,7 +28,7 @@ z-index: -100;
 @media only screen and (min-device-width: 320px) and (max-width: 2560px) {
     {
 height: 150vh;
-margin-top: -13em;
+margin-top: 1px;
         }
    }
 h1{
