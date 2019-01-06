@@ -4,10 +4,11 @@ import styled from "styled-components";
 import img from '../images/RGCallum2.png';
 
 const Container = styled.div`
-// background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-background-image: url('https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=649&q=80');
-background-size: 100%;
-baclground-repeat: no-repeat;
+background-image: url('https://i.ibb.co/QfSzryH/resume-Stack4.png');
+background-size: cover;
+width: 100vw;
+height: 100vh;
+background-repeat: no-repeat;
 text-align: center;
 font-size: 40px;
 margin: auto;
@@ -26,20 +27,8 @@ a:hover{
     color: #E73C7E;
 }
 
-//   background-size: 400% 400%;
 
-// animation: Gradient 15s ease infinite;
-// @keyframes Gradient {
-// 	0% {
-// 		background-position: 0% 50%
-// 	}
-// 	50% {
-// 		background-position: 100% 50%
-// 	}
-// 	100% {
-// 		background-position: 0% 50%
-// 	}
-// }
+
 `
 
 const ResStyle = styled.div`
@@ -47,10 +36,15 @@ background-image: url(${img});
 background-repeat: no-repeat;
 background-size: contain;
 width: 100vh;
-height: 100vh;
+height: 100vw;
 text-align: center;
 margin: auto;
-margin-left: 30%;
+@media only screen and (min-device-width: 320px) and (max-width: 2580px) {
+    {
+        width: 50vw;
+        
+   }
+
 animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 @keyframes fade-in {
     0% {
@@ -65,9 +59,8 @@ const Contact = styled.div`
 display: flex;
 justify-content: space-evenly;
 text-align: center;
-margin-left: 24%;
 padding: 10px;
-width: 50vw;
+width: 100vw;
 font-size: 30px;
 text-decoration: none;
 animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

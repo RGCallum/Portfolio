@@ -6,7 +6,9 @@ import img from '../images/Skills3.png';
 
 
 const SkillText = styled.div`
+
 h2{
+    
     color: white;
     text-shadow: 1px 1px 1px black;
     text-align: center;
@@ -34,6 +36,7 @@ h1{
     font-size: 45px;
     font-weight: 800;
     background-color: rgba(0,0,0,.5);
+    // font-weight: 400;
 
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {
@@ -47,6 +50,7 @@ h2{
 
     font-size: 25px;
     font-weight: 700;
+    font-weight: 300;
 
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {

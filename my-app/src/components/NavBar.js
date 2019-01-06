@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const NavStyle = styled.div`
 
-
   
   a {
     text-decoration: none;
@@ -69,7 +68,7 @@ const NavStyle = styled.div`
     padding: 0;
     margin: 2px 0 0 0;
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.66);
     list-style-type: none;
   }
   
@@ -89,7 +88,8 @@ const NavStyle = styled.div`
   
   .dd-menu li:hover {
     // background-color: #f6f6f6;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: inset rgb(228, 228, 228)1px;
 
     
   }
