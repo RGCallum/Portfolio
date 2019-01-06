@@ -120,6 +120,7 @@ button{
 margin-top: -6.5em;
 margin-left: 75vw;
 background-color: rgba(255, 255, 255, 0.619);
+}
 `
 class TheEnd extends Component {
     constructor() {
@@ -151,19 +152,20 @@ class TheEnd extends Component {
         return (
             <div>
                 <Background>
+                </Background>
                 <br />
                 <br />
                 <br />
-                She couldn't even imagine her life before coding. Even after completing her course she continues to work on projects and learn new things. She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional.  <br/>
+                <h1>   She couldn't even imagine her life before coding. Even after completing her course she continues to work on projects and learn new things. She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional.  <br/>
                 And she lived Codingly Ever After.
-The End.
+The End. </h1> 
                     <NextBtn>
                         <br />
                         <a href='/desk2'><button>Back</button></a>
                         <br />
                         <Link to="/portfolio"><button>Portfolio</button></Link>
                     </NextBtn>
-                </Background>
+
 
                 <GirlStill1>
                     {() => this.operation2()}
