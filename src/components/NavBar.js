@@ -68,7 +68,7 @@ const NavStyle = styled.div`
     padding: 0;
     margin: 2px 0 0 0;
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-    background-color: rgba(255, 255, 255, 0.66);
+    background-color: rgba(255, 255, 255, 0.9);
     list-style-type: none;
   }
   

@@ -40,7 +40,7 @@ background-size: cover;
 position: fixed;
 z-index: -100;
 width: 100vw;
-height: 130vh;
+height: 150vh;
 margin-top: -35em;
 text-align: center;
 // animation: slide2 20s linear infinite;
@@ -52,6 +52,7 @@ text-align: center;
 @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         margin-top: -30em;
+        background-size: cover;
 
         }
    }
