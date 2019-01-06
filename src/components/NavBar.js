@@ -21,13 +21,15 @@ const NavStyle = styled.div`
   /* Dropdown */
   
   .dropdown {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: space-between;
+
     position: absolute;
     z-index: 1000;
   }
   
   .dd-button {
-    display: inline-block;
+    display: inline-flex;
     border: inset rgb(228, 228, 228)2px;
     border-radius: 150px;
     padding: 5px 10px 5px 10px;
@@ -62,13 +64,13 @@ const NavStyle = styled.div`
   
   .dd-menu {
     position: absolute;
-    top: 100%;
+    // top: 100%;
     border: inset rgb(228, 228, 228)1px;
     border-radius: 15px;
     padding: 0;
     margin: 2px 0 0 0;
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, .999);
     list-style-type: none;
   }
   
@@ -77,7 +79,7 @@ const NavStyle = styled.div`
   } 
   
   .dd-input:checked + .dd-menu {
-    display: block;
+    display: flex;
   } 
   
   .dd-menu li {
@@ -95,7 +97,7 @@ const NavStyle = styled.div`
   }
   
   .dd-menu li a {
-    display: block;
+    display: flex;
     margin: -10px -20px;
     padding: 10px 20px;
   }

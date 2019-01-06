@@ -24,6 +24,11 @@ h2{
         }
       }
 }
+@media only screen and (min-device-width: 320px) and (max-width: 780px){
+h2{
+    font-size: 6vw;
+} 
+}
 `
 
 const Container = styled.div`
@@ -111,7 +116,7 @@ animation: slide4 .5s linear 1;
     {
         background-size: 160vw;
         width: 160vw;
-        margin-top: 25%;
+        margin-top: 20%;
         margin-left: -2%;
         }
    }
@@ -139,8 +144,9 @@ animation: slide5 .5s linear 1;
     {
         background-size: 160vw;
         width: 160vw;
-        margin-top: 50%;
+        margin-top: 40%;
         margin-left: -58%;
+
         }
    }
 `
