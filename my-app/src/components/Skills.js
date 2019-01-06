@@ -35,14 +35,20 @@ height: 100vh;
 
 const SkillStyle = styled.div`
 background-image: url('https://images.unsplash.com/photo-1428452932365-4e7e1c4b0987?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-background-repeat: no-repeat;
+// background-repeat: no-repeat;
 background-size: cover;
-position: absolute;
+position: fixed;
 z-index: -100;
 width: 100vw;
 height: 130vh;
 margin-top: -35em;
 text-align: center;
+// animation: slide2 20s linear infinite;
+
+// @keyframes slide2 {
+//   from { background-position: 0 0; }
+//   to { background-position: -8000px 0; }
+// }
 @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         margin-top: -30em;
