@@ -12,6 +12,7 @@ const Container = styled.div`
 text-align: center;
 font-size: 15px;
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+// background-image: url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 color: white;
 text-shadow: 1px 1px 1px black;
 h1{
@@ -23,8 +24,8 @@ h2{
     text-align: center
     background-color: rgba(0, 0, 0, 0.509);
     padding: 10px;
-    font-weight: 100;
-    font-size: 2vw;
+    // font-weight: 100;
+    // font-size: 2vw;
     
 }
 
@@ -107,43 +108,58 @@ export default class Portfolio extends React.Component {
                             </div>
 
                             <div>
-                                <img src='https://i.ibb.co/ZWD3mL4/sceneitweb.png' alt='SceneIt Pictures Interactive Website: HTML|CSS|JS' data-action="https://sceneitpix.com" />
+                                <a href='https://www.sceneitpix.com'>
+                                    <img src='https://i.ibb.co/ZWD3mL4/sceneitweb.png' alt='SceneIt Pictures Interactive Website: HTML|CSS|JS' data-action="https://sceneitpix.com" />
+                                </a>
                                 <h2> SceneIt Pictures Interactive Website: <br /> created with: HTML | CSS | JS </h2>
                             </div>
 
                             <div>
-                                <img src='https://i.ibb.co/s3FcP6n/Major-Keys.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
+                                <a href='https://majorkeys.netlify.com'>
+                                    <img src='https://i.ibb.co/s3FcP6n/Major-Keys.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
+                                </a>
                                 <h2>  Major Keys Javacript Trivia Game <br /> created with: HTML | CSS | JS  </h2>
                             </div>
 
                             <div>
-                                <img src='https://i.ibb.co/wY2FYNY/Callum-Ent.png' alt='Callum Enterprise website: HTML|CSS|JS' data-action="https://callumenterprise.com" />
+                                <a href='https://callumenterprise.com'>
+                                    <img src='https://i.ibb.co/wY2FYNY/Callum-Ent.png' alt='Callum Enterprise website: HTML|CSS|JS' data-action="https://callumenterprise.com" />
+                                </a>
                                 <h2> Callum Enterprise website  <br /> created with: HTML | CSS | JS </h2>
-
                             </div>
 
                             <div>
+                                <a href='https://creative-freedom.herokuapp.com'>
                                 <img src='https://i.ibb.co/DKNZsX8/CCXMobile2.png' alt='Social Media Network for Creative Freelancers: JS|Python|React|Django|SQL' data-action="https://creative-freedom.herokuapp.com" />
+                                </a>
                                 <h2> Social Media Network for Creative Freelancers <br /> created with: JS | Python | React | Django | SQL </h2>
                             </div>
 
                             <div>
+                                <a href='https://nobu-filmmakers.herokuapp.com'>
                                 <img src='https://i.ibb.co/931K29J/Nobu.png' alt='Independent Filmmaker Database: JS|MongoDB|Express|React|Node' data-action="https://nobu-filmmakers.herokuapp.com" />
+                                </a>
                                 <h2> Independent Filmmaker Database <br /> created with: JS | MongoDB | Express | React | Node </h2>
                             </div>
 
                             <div>
+                                <a href='https://piclist.herokuapp.com'>
                                 <img src='https://i.ibb.co/w0XPx52/PicList2.png' alt='Event Management Database: JS|MongoDB|Express|Node' data-action="https://piclist.herokuapp.com" />
+                                </a>
                                 <h2> PicList Employee Management Database  <br /> created with: JS | MongoDB | Express | React | Node </h2>
                             </div>
 
                             <div>
+                                <a href='https://hitchhiker42.netlify.com'>
                                 <img src='https://i.ibb.co/HFKctrf/hhgttgweb.png' alt="Hitchhiker's Guide to The Galaxy Fansite: HTML|CSS|JS" data-action="https://hitchhiker42.netlify.com" />
+                                </a>
                                 <h2> Social Media Network for Creative Freelancers  <br /> created with: HTML | CSS | JS</h2>
                             </div>
 
                             <div>
+                                <a href='https://schmalculator.netlify.com'>
                                 <img src='https://i.ibb.co/F5WT0jc/Schmalculator.png' alt='Javascript Calculator: HTML|CSS|JS' data-action="https://schmalculator.netlify.com" />
+                                </a>
                                 <h2> Javascript Calculator <br /> created with: HTML | CSS | JS</h2>
                             </div>
 
@@ -160,7 +176,7 @@ export default class Portfolio extends React.Component {
                         <Link to="/Skills"><button>Skills</button></Link>
 
                     </NextBtn> */}
- 
+
                 </Container>
             </div>
         );

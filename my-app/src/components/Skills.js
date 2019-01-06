@@ -34,28 +34,32 @@ height: 100vh;
 `
 
 const SkillStyle = styled.div`
-background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+// background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+background-image: url('https://images.unsplash.com/photo-1428452932365-4e7e1c4b0987?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 background-repeat: no-repeat;
+background-size: cover;
 position: absolute;
 z-index: -100;
 width: 100vw;
 height: 100vw;
 margin-top: -15em;
 text-align: center;
-background-size: 400% 400%;
 
-animation: Gradient 15s ease infinite;
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
+
+// background-size: 400% 400%;
+
+// animation: Gradient 15s ease infinite;
+// @keyframes Gradient {
+// 	0% {
+// 		background-position: 0% 50%
+// 	}
+// 	50% {
+// 		background-position: 100% 50%
+// 	}
+// 	100% {
+// 		background-position: 0% 50%
+// 	}
+// }
 `
 const SkillWeb = styled.div`
 background-image: url(${img2});

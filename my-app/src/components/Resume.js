@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 // import { BrowserRouter } from "react-router-dom";
-import img from '../images/RGCallum.png';
+import img from '../images/RGCallum2.png';
 
 const Container = styled.div`
-background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+// background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+background-image: url('https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=649&q=80');
+background-size: 100%;
+baclground-repeat: no-repeat;
 text-align: center;
 font-size: 40px;
 margin: auto;
@@ -23,20 +26,20 @@ a:hover{
     color: #E73C7E;
 }
 
-  background-size: 400% 400%;
+//   background-size: 400% 400%;
 
-animation: Gradient 15s ease infinite;
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
+// animation: Gradient 15s ease infinite;
+// @keyframes Gradient {
+// 	0% {
+// 		background-position: 0% 50%
+// 	}
+// 	50% {
+// 		background-position: 100% 50%
+// 	}
+// 	100% {
+// 		background-position: 0% 50%
+// 	}
+// }
 `
 
 const ResStyle = styled.div`
