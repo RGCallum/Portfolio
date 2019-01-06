@@ -11,8 +11,9 @@ var fn = function () {
 const Container = styled.div`
 text-align: center;
 font-size: 15px;
-background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-// background-image: url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+background-image: url('https://www.hdwpsite.com/wp-content/uploads/2018/09/dark-blur-4k.jpg');
+background-size: cover;
+// background-repeat: no-repeat;
 color: white;
 text-shadow: 1px 1px 1px black;
 h1{
@@ -25,30 +26,23 @@ h2{
     background-color: rgba(0, 0, 0, 0.509);
     padding: 10px;
     // font-weight: 100;
-    // font-size: 2vw;
+    font-size: 2.2vw;
     
 }
-
-background-size: 400% 400%;
 img{
     width: 100%;
 }
-animation: Gradient 15s ease infinite;
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
+
+
  `
 
 const ContainerStyle = styled.div`
-// margin-top: -5em;
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
+    {
+        margin-top: -10em;
+        background-position: center;
+
+   }
 `
 
 const NextBtn = styled.div`
@@ -91,7 +85,7 @@ export default class Portfolio extends React.Component {
                         <Coverflow
                             width={560}
                             height={830}
-                            displayQuantityOfSide={.8}
+                            displayQuantityOfSide={.5}
                             navigation={true}
                             enableHeading={false}
                             active={this.state.active}

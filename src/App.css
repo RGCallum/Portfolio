@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(196, 196, 196);
+  color: rgba(255, 255, 255, 0.66);
 box-sizing: border-box;
 animation-direction: reverse;
 justify-content: flex-end;
