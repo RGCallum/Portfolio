@@ -34,32 +34,28 @@ height: 100vh;
 `
 
 const SkillStyle = styled.div`
-// background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 background-image: url('https://images.unsplash.com/photo-1428452932365-4e7e1c4b0987?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 background-repeat: no-repeat;
 background-size: cover;
 position: absolute;
 z-index: -100;
 width: 100vw;
-height: 100vw;
-margin-top: -15em;
+height: 130vh;
+margin-top: -35em;
 text-align: center;
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
+    {
+        margin-top: -30em;
 
+        }
+   }
 
-// background-size: 400% 400%;
-
-// animation: Gradient 15s ease infinite;
-// @keyframes Gradient {
-// 	0% {
-// 		background-position: 0% 50%
-// 	}
-// 	50% {
-// 		background-position: 100% 50%
-// 	}
-// 	100% {
-// 		background-position: 0% 50%
-// 	}
-// }
+   @media only screen and (min-device-width: 2560px) {
+    {
+        margin-top: -35em;
+        background-size: cover;
+    }
+   }
 `
 const SkillWeb = styled.div`
 background-image: url(${img2});
@@ -72,12 +68,20 @@ height: 100vw;
 text-align: center;
 margin-top: 2%;
 margin-left: 10%;
-animation: slide2 1s linear 1;
+animation: slide2 .4s linear 1;
   
 @keyframes slide2 {
   from { margin-left: -50%; }
   to { margin-left: -10% 0; }
 }
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
+    {
+        background-size: 160vw;
+        width: 160vw;
+        margin-top: 10%;
+        margin-left: -33%;
+        }
+   }
 `
 const SkillSoftware = styled.div`
 background-image: url(${img3});
@@ -90,12 +94,20 @@ height: 100vw;
 margin-top: -4%;
 margin-left: 8%;
 text-align: center;
-animation: slide4 1s linear 1;
+animation: slide4 .5s linear 1;
   
 @keyframes slide4 {
   from { margin-top: 50%; }
   to { margin-top: 10% 0; }
 }
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
+    {
+        background-size: 160vw;
+        width: 160vw;
+        margin-top: 25%;
+        margin-left: -2%;
+        }
+   }
 `
 const SkillOther = styled.div`
 background-image: url(${img4});
@@ -109,13 +121,21 @@ margin-top: -4%;
 margin-left: 12%;
 
 text-align: center;
-animation: slide5 1s linear 1;
+animation: slide5 .5s linear 1;
   
 @keyframes slide5 {
   from { margin-top: -50%; }
   to { margin-top: -10% 0; }
 }
 
+@media only screen and (min-device-width: 320px) and (max-width: 480px) {
+    {
+        background-size: 160vw;
+        width: 160vw;
+        margin-top: 50%;
+        margin-left: -58%;
+        }
+   }
 `
 const SkillDesk = styled.div`
 // background-image: url(${img5});
@@ -162,7 +182,6 @@ class Skills extends Component {
                     </SkillText>
 
                 <Container>
-                 <br/>
 
                 <SkillStyle/>
                 <SkillWeb/>
