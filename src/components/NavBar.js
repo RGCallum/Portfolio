@@ -7,9 +7,8 @@ const NavStyle = styled.div`
   a {
     text-decoration: none;
     color: black;
-    text-shadow: 1px black;
     font-size: 16px
-    font-weight: 100;
+    // font-weight: 500;
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         font-size: 12px
@@ -128,10 +127,11 @@ class NavBar extends Component {
 
                         <ul class="dd-menu">
                             <li><a href="/"><i class="fas fa-home"></i> Home </a></li>
-                            <li><a href="/about"><i class="fas fa-grin-tongue-wink"></i> My Story </a></li>
                             <li><a href="/portfolio"><i class="far fa-images"></i> Portfolio </a></li>
                             <li><a href="/skills"><i class="fas fa-magic"></i> Skills </a></li>
                             <li><a href="/resume"><i class="far fa-list-alt"></i> Resume </a> </li>
+                            <li><a href="/about"><i class="fas fa-grin-tongue-wink"></i> My Story </a></li>
+
                         </ul>
 
                     </label>
