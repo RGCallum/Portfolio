@@ -20,7 +20,6 @@ z-index: -100;
   height: 150vh;
   box-sizing: border-box;
   animation: slide2 120s linear infinite;
-
   @keyframes slide2 {
     from { background-position: 0 0; }
     to { background-position: -8000px 0; }
@@ -78,8 +77,29 @@ const Bus = styled.div`
     from { margin-left: 100%; }
    to { margin-left: -110%;  }
 }
-
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 359px){
+    {
+        background-size: 50%;
+        margin-top: 170%;
+        animation: slide3 35s linear infinite;
+        @keyframes slide3 {
+        from { margin-left: 100%; }
+       to { margin-left: -1590%;  }
+        }
+        }
+   }
+@media only screen and (min-width: 360px) and (max-width: 374px){
+    {
+        background-size: 50%;
+        margin-top: 150%;
+        animation: slide3 35s linear infinite;
+        @keyframes slide3 {
+        from { margin-left: 100%; }
+       to { margin-left: -1590%;  }
+        }
+        }
+   }
+@media only screen and (min-width: 375px) and (max-width: 425px) {
     {
         background-size: 50%;
         margin-top: 170%;
@@ -168,7 +188,15 @@ animation: slide 25s linear infinite;
         position: fixed;
         }
    }
-
+   @media only screen and (min-width: 360px) and (max-width: 374px){
+    {
+        background-size: 50%;
+        margin-top: 135%;
+        animation-play-state: paused;
+        background-repeat: no-repeat;
+        position: fixed;
+        }
+   }
    @media only screen and (min-width: 375px) and (max-width: 425px){
     {
         background-size: 50%;
