@@ -7,9 +7,8 @@ const NavStyle = styled.div`
   a {
     text-decoration: none;
     color: black;
-    text-shadow: 1px black;
     font-size: 16px
-    font-weight: 100;
+    // font-weight: 500;
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         font-size: 12px

@@ -86,6 +86,7 @@ animation: slide2 .4s linear 1;
   from { margin-left: -50%; }
   to { margin-left: -10% 0; }
 }
+
 @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         background-size: 160vw;
