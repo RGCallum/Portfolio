@@ -34,6 +34,12 @@ h1{
         padding: 10px;
         width: 100vw;
 }
+@media only screen and (min-height: 560px) and (max-height: 660px) {
+    {
+        height: 250vh;
+
+        }
+   }
 @media only screen and (max-width: 767px) {
     {
         h1{
@@ -144,6 +150,18 @@ to { margin-left: -110%;  }
 `
 const Parent = styled.div`
 position: fixed;
+@media only screen and (min-height: 560px) and (max-height: 660px) {
+    {
+        margin-top: -10em;
+        width: 100vh;
+        height: 100vh;
+        overflow-y: hidden;
+        h1{
+            margin-top: 30em;
+        }
+
+        }
+   }
 @media only screen and (min-height: 760px) and (max-height: 853px) {
     {
         margin-top: 10em;
@@ -178,6 +196,14 @@ animation: slide 25s linear infinite;
     from { margin-left: -10%; }
    to { margin-left: 110%;  }
 }
+@media only screen and (min-height: 560px) and (max-height: 660px) {
+    {
+        margin-top: -15em;
+
+        }
+
+        }
+   }
 
 @media only screen and (max-width: 320px) {
     {
