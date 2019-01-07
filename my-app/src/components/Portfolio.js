@@ -13,6 +13,8 @@ text-align: center;
 font-size: 15px;
 background-image: url('https://www.hdwpsite.com/wp-content/uploads/2018/09/dark-blur-4k.jpg');
 background-size: cover;
+height: 100vh;
+width: 100vw;
 // background-repeat: no-repeat;
 color: white;
 text-shadow: 1px 1px 1px black;
@@ -37,9 +39,12 @@ img{
  `
 
 const ContainerStyle = styled.div`
+margin-top: -5em;
+
 @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
-        margin-top: -10em;
+        margin-top: -18em;
+        
         background-position: center;
 
    }
@@ -85,7 +90,7 @@ export default class Portfolio extends React.Component {
                         <Coverflow
                             width={560}
                             height={830}
-                            displayQuantityOfSide={.5}
+                            displayQuantityOfSide={1}
                             navigation={true}
                             enableHeading={false}
                             active={this.state.active}

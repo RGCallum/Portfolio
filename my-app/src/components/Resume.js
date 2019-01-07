@@ -39,9 +39,14 @@ width: 100vh;
 height: 100vw;
 text-align: center;
 margin: auto;
+&:hover{
+    transform: scale(1.2);
+    }
 @media only screen and (min-device-width: 320px) and (max-width: 2580px) {
-    {
-        width: 50vw;
+    
+        width: 100vw;
+        background-position: center;
+  
         
    }
 
@@ -63,6 +68,7 @@ padding: 10px;
 width: 100vw;
 font-size: 30px;
 text-decoration: none;
+
 animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 @keyframes fade-in {
     0% {
