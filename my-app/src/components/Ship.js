@@ -32,12 +32,24 @@ repeat 0 0;
     padding: 10px;
     width: 100vw;       
 }
+
+
 @media only screen and (width: 1024px){
     {
         margin-top: 22%;
 
     }
 }
+//imac
+@media only screen and (width: 1920px) and (width: 1921px) and (height: 1080px){
+    {
+        h1{
+            margin-top: -20em;
+        font-size: 45px;
+        }
+    }
+}
+
 // ipad pro
 @media only screen and (min-width: 1024px) and (min-height: 1366px){
     {
@@ -177,7 +189,7 @@ background-repeat: no-repeat;
 
     }
 }
-@media only screen and (min-width: 1024px) and (min-height: 1366px){
+@media only screen and (width: 1024px) and (height: 1366px){
     {
         margin-top: 50%;
         background-size: 100%;
@@ -186,7 +198,7 @@ background-repeat: no-repeat;
      
  }
  //ipad
-@media only screen and (min-width: 768px) {
+@media only screen and (width: 768px) {
  {    
     margin-top: 50%;
     background-size: 100%;
@@ -194,7 +206,7 @@ background-repeat: no-repeat;
  }
 }
 //iphone6+
-@media only screen and (min-width: 414px)   {
+@media only screen and (width: 414px)   {
     {
     margin-top: 68%;
     background-size: 100%;
@@ -204,7 +216,7 @@ background-repeat: no-repeat;
     }
 
 //iphone6, iphoneX
-@media only screen and (min-width: 375px)   {
+@media only screen and (width: 375px)   {
         {
             margin-top: 70%;
             background-size: 100%;
@@ -214,7 +226,7 @@ background-repeat: no-repeat;
             }
 
 //s5
-@media only screen and (min-width: 360px)   {
+@media only screen and (width: 360px)   {
     { 
         margin-top: 72%;
         background-size: 100%;
@@ -223,7 +235,7 @@ background-repeat: no-repeat;
     }}
     
     //really small mobile screens
-@media only screen and (min-width: 320px)    {
+@media only screen and (width: 320px)    {
         {
             margin-top: 75%;
             background-size: 100%;
@@ -261,14 +273,14 @@ from { margin-left: 100%; }
 to { margin-left: -110%;  }
 }
 //iphone6+
-@media only screen and (min-width: 414px)   {
+@media only screen and (width: 414px)   {
     {
         margin-top: -24%;
 
     }
 }
 //iphone6, iphoneX
-@media only screen and (min-width: 375px)   {
+@media only screen and (width: 375px)   {
    {
     margin-top: -35%;
 
@@ -276,14 +288,14 @@ to { margin-left: -110%;  }
    }
 
 //s5
-   @media only screen and (min-width: 360px)   {
+   @media only screen and (width: 360px)   {
     { 
         margin-top: -35%;
 
     }}
 
     //really small mobile screens
-@media only screen and (min-width: 320px)    {
+@media only screen and (width: 320px)    {
         {
             margin-top: -43%;
  
