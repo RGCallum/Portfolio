@@ -227,7 +227,7 @@ margin-left: 22%;
 //s5
 @media only screen and (width: 360px)   {
           { 
-            margin-top: 85%;
+            margin-top: 80%;
             background-size: 120%;
             margin-left: 10%;
            }
