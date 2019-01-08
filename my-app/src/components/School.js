@@ -14,7 +14,7 @@ h1{
     color: black;
     text-shadow: 1px 1px 1px white;
     font-size: 35px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     // border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;
@@ -38,6 +38,14 @@ animation: Gradient 15s ease infinite;
 	}
 }
 
+@media only screen and (width: 1920px){
+    {
+        h1{
+            font-size: 30px;
+            margin-top: -1%;
+        }
+    }
+}
 //laptop
 @media only screen and (width: 1440px)   {
     { 
@@ -152,7 +160,13 @@ margin-left: 22%;
         }
       }
 
-      //laptop
+@media only screen and (width: 1920px)  {
+{
+    margin-top: 15%;
+}
+}
+
+//laptop
 @media only screen and (width: 1440px)   {
     { 
         margin-top: 24%;

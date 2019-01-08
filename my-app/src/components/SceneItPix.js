@@ -17,7 +17,6 @@ font-weight: 800;
 text-align: center;
 position: absolute;
 h1{
-    
     color: black;
     text-shadow: 1px 1px 1px white;
     font-size: 25px;
