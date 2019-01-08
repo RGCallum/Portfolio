@@ -173,7 +173,7 @@ background-size: 80%;
 background-repeat: no-repeat;
     margin-top: 3%;
     position: fixed;
-    z-index: 1001;
+    z-index: 100;
     margin-left: 80%;
     width: 100vw;
     height: 100vw;
@@ -342,7 +342,9 @@ background-color: rgba(255, 255, 255, 0.619);
 a:link{
     text-decoration: none;
 }
-
+a:hover{
+    color: #E73C7E;
+    }
 `
 
 
@@ -366,8 +368,8 @@ class Ship extends Component {
                     <NextBtn> 
                         <h1>She ran far far away to shoot people having fun on cruise ships. 
                      <br/> She met people from all over the world, partied every night, spent months in the Caribbean and learned a lot about theatre production and broadcasting.<br></br>
-                    <a href='/news'>Back</a> <br/>
-                    <a href='/scene'>Next Chapter</a> 
+                    <a href='/news'>Back </a> |
+                    <a href='/scene'> Next Chapter</a> 
                     </h1> 
                     </NextBtn>
                 </Background>

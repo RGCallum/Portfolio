@@ -23,7 +23,9 @@ z-index: -100;
     from { background-position: 0 0; }
     to { background-position: -8000px 0; }
 }
-
+a:hover{
+    color: #E73C7E;
+    }
 h1{
     background-color: rgba(255, 255, 255, 0.9);
     margin-top: -3em;

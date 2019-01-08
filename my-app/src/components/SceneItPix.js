@@ -3,6 +3,7 @@ import styled from "styled-components";
 import img from '../images/SIPDeskR.png';
 import img2 from '../images/SIPBackdropL.png';
 import mirror from '../images/MagicMirror2glow.png';
+import { Link } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -14,17 +15,22 @@ text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;
+position: absolute;
 h1{
     
     color: black;
     text-shadow: 1px 1px 1px white;
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0.7);
-    z-index: 1000;
+    z-index: 1;
     border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;
     padding: 10px;
-    width: 100vw;       
+    width: 100vw;     
+      
+}
+a:hover{
+color: #E73C7E;
 }
 
 animation: Gradient 15s ease infinite;
@@ -178,8 +184,8 @@ font-size: 45px;
 background-image: url(${img2});
 background-repeat: no-repeat;
 background-size: contain;
-position: fixed;
-z-index: 100;
+position: absolute;
+z-index: -100;
 width: 100%;
   height: 100vw;
 
@@ -258,8 +264,8 @@ const SceneItDesk = styled.div`
 background-image: url(${img});
 background-repeat: no-repeat;
 background-size: contain;
-    position: fixed;
-    z-index: 100;
+    position: absolute;
+    z-index: -100;
     width: 100%;
     height: 100vw;
 
@@ -337,7 +343,7 @@ const Mirror = styled.div`
 background-image: url(${mirror});
 background-repeat: no-repeat;
 background-size: contain;
-    position: fixed;
+    position: absolute;
     z-index: 100;
     width: 60%;
     height: 60vw;
@@ -468,23 +474,26 @@ class SceneItPix extends Component {
     render() {
         return (
             <div>
-                <Container>
-                    <Parent>
-                        <People />
-                        <SceneItDesk />
-                        </Parent>
+                
 
-                        <Mirror/>
+                        <Container>
                     <FlashBtn>
                     </FlashBtn>
                     <br />
                     <br />
                     <h1>
                         After returning to land, she decided to try event photography. She loved being at the events and making people smile for a living. After awhile, she wanted to make her equipment self contained and the guest experience more interactive, so she built her own Magic Mirror photo booth.  It was a success, and the guests loved it. The challenge and excitement of building the photo booth sparked her interest for computer programming. <br />
-                        <a href='/ship'>Back</a> <br />
-                        <a href='/school'>Next Chapter</a> <br />
+                        <a href='/ship'>Back  </a> | <a href='/school'> Next Chapter</a> <br />
+                        
+
                     </h1>
                 </Container>
+                <Parent>
+                        <People />
+                        <SceneItDesk />
+                        </Parent>
+
+                        <Mirror/>
             </div>
         );
     }
