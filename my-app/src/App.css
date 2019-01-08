@@ -20,6 +20,7 @@ box-sizing: border-box;
 animation-direction: reverse;
 justify-content: flex-end;
 overflow-y: hidden;
+animation-delay: 40s;
 }
 
 .App-link {

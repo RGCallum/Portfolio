@@ -12,15 +12,13 @@ font-weight: 800;
 background-image: url(${img});
 position: fixed;
 z-index: -100;
-// repeat 0 0;
   width: 100%;
   margin: 0;
-  margin-top: -5%;
+  margin-top: -10%;
   text-align: center;
   height: 150vh;
   box-sizing: border-box;
   animation: slide2 120s linear infinite;
-
   @keyframes slide2 {
     from { background-position: 0 0; }
     to { background-position: -8000px 0; }
@@ -34,7 +32,16 @@ h1{
         border: inset rgb(228, 228, 228)2px;
         padding: 10px;
         width: 100vw;
+        
 }
+
+
+@media only screen and (min-height: 560px) and (max-height: 660px) {
+    {
+        height: 250vh;
+
+        }
+   }
 @media only screen and (max-width: 767px) {
     {
         h1{
@@ -64,8 +71,42 @@ h1{
 
             }
        }
+    
+       @media only screen and (width: 1024px){
+        {
+            margin-top: -2em;
+            background-repeat-y: no-repeat;
+            background-size: 250%;
+            }
+       }
+       @media only screen and (width: 1440px) and (height: 900px){
+        {
+            h1{
+                margin-top: 8em;
+            }
+            }
+       }
+       @media only screen and (min-width: 1920px) and (max-width: 1921px) and (height: 1080px){
+        {
+            margin-top: 0em;
 
- 
+            h1{
+                margin-top: 2em;
+            }
+            }
+       }
+
+       @media only screen and (width: 2560px) and (height: 1440px){
+        {
+            margin-top: 0em;
+            background-repeat-y: no-repeat;
+            background-size: 100%;
+
+            h1{
+                margin-top: 2em;
+            }
+            }
+       }
 `
 
 const Bus = styled.div`
@@ -78,8 +119,42 @@ const Bus = styled.div`
     from { margin-left: 100%; }
    to { margin-left: -110%;  }
 }
+@media only screen and (width: 2560px) and (height: 1440px){
+    {
+        margin-top: 48%;
+    }
+}
+@media only screen and (min-width: 1920px) and (max-width: 1921px) and (height: 1080px){
+    {
+        margin-top: 48%;
+    }
+}
+@media only screen and (width: 1440px) and (height: 900px){
+    {
+            margin-top: 52%;
+        }
+   }
+@media only screen and (width: 1366px) and (height: 768px) {
+    {
+        margin-top: 54%;
+    }
+}
 
-@media only screen and (max-width: 425px) {
+@media only screen and (width: 1024px){
+    {
+        margin-top: 118%;
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px){
+    {
+        margin-top: 108%;
+        background-size: 50%;
+
+        }
+   }
+@media only screen and (min-width: 320px) and (max-width: 359px){
     {
         background-size: 50%;
         margin-top: 170%;
@@ -88,13 +163,29 @@ const Bus = styled.div`
         from { margin-left: 100%; }
        to { margin-left: -1590%;  }
         }
+        }
    }
-
-   @media only screen and (width: 1024px){
+@media only screen and (min-width: 360px) and (max-width: 374px){
     {
-display: none;
-    }
-}
+        background-size: 50%;
+        margin-top: 150%;
+        animation: slide3 35s linear infinite;
+        @keyframes slide3 {
+        from { margin-left: 100%; }
+       to { margin-left: -1590%;  }
+        }
+        }
+   }
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    {
+        background-size: 50%;
+        margin-top: 160%;
+        animation: slide3 35s linear infinite;
+        @keyframes slide3 {
+        from { margin-left: 100%; }
+       to { margin-left: -1590%;  }
+        }
+   }
 
  
 `
@@ -124,11 +215,22 @@ to { margin-left: -110%;  }
 `
 const Parent = styled.div`
 position: fixed;
-@media only screen and (min-height: 760px) and (max-height: 853px) {
+@media only screen and (min-height: 560px) and (max-height: 660px) {
     {
-        margin-top: 10em;
+        margin-top: -10em;
         width: 100vh;
-        height:
+        height: 100vh;
+        overflow-y: hidden;
+        h1{
+            margin-top: 30em;
+        }
+
+        }
+   }
+@media only screen and (min-height: 768px) and (max-height: 853px) {
+    {
+        margin-top: -10em;
+        width: 100vh;
         overflow-y: hidden;
         h1{
             margin-top: 18em;
@@ -146,8 +248,8 @@ const Child = styled.div`
 background-image: url(${camGirl});
 background-repeat: no-repeat;
 background-size: 11%;
-margin-top: 37%;
-position: absolute;
+margin-top: 47%;
+position: fixed;
 z-index: 100;
 height: 100%;
 width: 100%;
@@ -159,6 +261,7 @@ animation: slide 25s linear infinite;
    to { margin-left: 110%;  }
 }
 
+
 @media only screen and (max-width: 320px) {
     {
         background-size: 50%;
@@ -168,7 +271,15 @@ animation: slide 25s linear infinite;
         position: fixed;
         }
    }
-
+   @media only screen and (min-width: 360px) and (max-width: 374px){
+    {
+        background-size: 50%;
+        margin-top: 145%;
+        animation-play-state: paused;
+        background-repeat: no-repeat;
+        position: fixed;
+        }
+   }
    @media only screen and (min-width: 375px) and (max-width: 425px){
     {
         background-size: 50%;
@@ -189,24 +300,58 @@ animation: slide 25s linear infinite;
    }
    @media only screen and (min-width: 768px) and (max-width: 800px){
     {
-        background-size: 30%;
-        margin-top: 60%;
+        background-size: 25%;
+        margin-top: 104%;
         margin-left: -10%;
-        animation-play-state: paused;
         background-repeat: no-repeat;
         position: fixed;
         }
    }
-   @media only screen and (width: 1024px){
+
+
+   @media only screen and (min-width: 1024px) and (height: 768px){
     {
         background-size: 20%;
-        margin-top: 75%;
+        // margin-top: 75%;
         margin-left: -10%;
-        // animation-play-state: paused;
-        background-repeat: no-repeat;
-        position: fixed;
         }
    }
+
+
+   @media only screen and (height: 1366px){
+    {
+        margin-top: 103%;
+        background-size: 25%;
+
+
+    }
+}
+@media only screen and (width: 1366px) and (height: 768px) {
+    {
+        margin-top: 50%;
+        background-size: 15%;
+    }
+}
+@media only screen and (width: 1440px) and (height: 900px){
+    {
+            margin-top: 48%;
+            background-size: 13%;
+
+        }
+   }
+   @media only screen and (min-width: 1920px) and (max-width: 1921px) and (height: 1080px){
+    {
+        margin-top: 43%;
+        background-size: 10%;
+        }
+   }
+   @media only screen and (width: 2560px) and (height: 1440px){
+    {
+        margin-top: 43%;
+        background-size: 10%;
+    }
+}
+
 `
 const NextBtn = styled.div`
 button{
