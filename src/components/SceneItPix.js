@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import img from '../images/SIPDeskR.png';
 import img2 from '../images/SIPBackdropL.png';
-// import img3 from '../images/MirrorGlow.png';
+import img3 from '../images/MirrorGlow.png';
 
 
 const Container = styled.div`
@@ -326,118 +326,118 @@ background-size: contain;
 }
 
 `
-// const Mirror = styled.div`
-// background-image: url(${img3});
-// background-repeat: no-repeat;
-// background-size: contain;
-//     position: absolute;
-//     z-index: 100;
-//     width: 60%;
-//     height: 60vw;
-//     margin-top: 10%;
-//     margin-left: 20%;
-//     animation: bounce-in-top 1.1s 16s both;
-//     @keyframes bounce-in-top {
-//         0% {
+const Mirror = styled.div`
+background-image: url(${img3});
+background-repeat: no-repeat;
+background-size: contain;
+    position: absolute;
+    z-index: 100;
+    width: 60%;
+    height: 60vw;
+    margin-top: 10%;
+    margin-left: 20%;
+    animation: bounce-in-top 1.1s 16s both;
+    @keyframes bounce-in-top {
+        0% {
          
-//                   transform: translateY(-500px);
-//                           animation-timing-function: ease-in;
-//           opacity: 0;
-//         }
-//         38% {
-//                 transform: translateY(0);
-//                            animation-timing-function: ease-out;
-//           opacity: 1;
-//         }
-//         55% {
-//                     transform: translateY(-65px);
-//                           animation-timing-function: ease-in;
-//         }
-//         72% {
-//                 transform: translateY(0);
-//                            animation-timing-function: ease-out;
-//         }
-//         81% {
-//                     transform: translateY(-28px);
-//                 }
-//         90% {
-//                 transform: translateY(0);
-//                            animation-timing-function: ease-out;
-//         }
-//         95% {
-//                    transform: translateY(-8px);
-//                           animation-timing-function: ease-in;
-//         }
-//         100% {
-//                 transform: translateY(0);
-//                            animation-timing-function: ease-out;
-//         }
-//       }
+                  transform: translateY(-500px);
+                          animation-timing-function: ease-in;
+          opacity: 0;
+        }
+        38% {
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
+          opacity: 1;
+        }
+        55% {
+                    transform: translateY(-65px);
+                          animation-timing-function: ease-in;
+        }
+        72% {
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
+        }
+        81% {
+                    transform: translateY(-28px);
+                }
+        90% {
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
+        }
+        95% {
+                   transform: translateY(-8px);
+                          animation-timing-function: ease-in;
+        }
+        100% {
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
+        }
+      }
       
 
-//     //laptop
-//     @media only screen and (width: 1440px)   {
-//           { 
-//               margin-top: 15%;
-//           }
-//           }
+    //laptop
+    @media only screen and (width: 1440px)   {
+          { 
+              margin-top: 15%;
+          }
+          }
     
-//     //laptop
-//     @media only screen and (width: 1366px)   {
-//               { 
-//                   margin-top: 15%;
-//               }
-//               }
+    //laptop
+    @media only screen and (width: 1366px)   {
+              { 
+                  margin-top: 15%;
+              }
+              }
     
-//     //laptop
-//      @media only screen and (width: 1280px)   {
-//            { 
-//                 margin-top: 15%;
-//             }
-//             }
-//     //ipad pro
-//     @media only screen and (width: 1024px)   {
-//             { 
-//                  margin-top: 55%;
-//              }
-//     }
+    //laptop
+     @media only screen and (width: 1280px)   {
+           { 
+                margin-top: 15%;
+            }
+            }
+    //ipad pro
+    @media only screen and (width: 1024px)   {
+            { 
+                 margin-top: 55%;
+             }
+    }
     
-//     //ipad 
-//     @media only screen and (width: 768px)   {
-//             { 
-//                  margin-top: 55%;
-//              }
-//     }
+    //ipad 
+    @media only screen and (width: 768px)   {
+            { 
+                 margin-top: 55%;
+             }
+    }
     
-//     //iphone 6+ and big mobile phones
-//     @media only screen and (min-width: 414px) and (max-width: 425px)  {
-//               { 
-//                 margin-top: 75%;
+    //iphone 6+ and big mobile phones
+    @media only screen and (min-width: 414px) and (max-width: 425px)  {
+              { 
+                margin-top: 75%;
     
-//                }
-//     }
-//     //iphone 6
-//     @media only screen and (width: 375px)   {
-//               { 
-//                 margin-top: 95%;
+               }
+    }
+    //iphone 6
+    @media only screen and (width: 375px)   {
+              { 
+                margin-top: 95%;
     
-//                }
-//     }
+               }
+    }
     
-//     //s5
-//     @media only screen and (width: 360px)   {
-//               { 
-//                 margin-top: 105%;
+    //s5
+    @media only screen and (width: 360px)   {
+              { 
+                margin-top: 105%;
     
-//                }
-//     }
-//     //really small mobile
-//     @media only screen and (width: 320px)   {
-//               {           
-//                     margin-top: 135%;           
-//                }
-//     }
-// `
+               }
+    }
+    //really small mobile
+    @media only screen and (width: 320px)   {
+              {           
+                    margin-top: 135%;           
+               }
+    }
+`
 
 
 class SceneItPix extends Component {
@@ -462,8 +462,7 @@ class SceneItPix extends Component {
                         <People />
                         <SceneItDesk />
                         </Parent>
-
-                        {/* <Mirror/> */}
+                        <Mirror />
             </div>
         );
     }
