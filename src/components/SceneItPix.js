@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import img from '../images/SIPDeskR.png';
 import img2 from '../images/SIPBackdropL.png';
-import img3 from '../MagicMirrorGlow.png';
+// import img3 from '../MagicMirrorGlow.png';
 
 
 const Container = styled.div`
@@ -327,7 +327,7 @@ background-size: contain;
 
 `
 const Mirror = styled.div`
-background-image: url(${img3});
+background-image: url('https://i.ibb.co/RNsNKgC/SIPMirror.png');
 background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
@@ -452,7 +452,7 @@ class SceneItPix extends Component {
                     <br />
                     <br />
                     <h1>
-                        After returning to land, she decided to try event photography. She loved being at the events and making people smile for a living. After awhile, she wanted to make her equipment self contained and the guest experience more interactive, so she built her own Magic Mirror photo booth.  It was a success, and the guests loved it. The challenge and excitement of building the photo booth sparked her interest for computer programming. <br />
+                        After returning to land, she decided to try event photography. She loved being at the events and making people smile for a living. Then shwanted to make her equipment self contained and the guest experience more interactive, so she built her own Magic Mirror photo booth.  It was a success, and the guests loved it. The challenge and excitement of building the photo booth sparked her interest for computer programming. <br />
                         <a href='/ship'>Back  </a> | <a href='/school'> Next Chapter</a> <br />
                         
 
