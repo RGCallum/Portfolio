@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import img from '../images/SIPDeskR.png';
 import img2 from '../images/SIPBackdropL.png';
-import mirror from '../images/MagicMirror2glow.png';
-import { Link } from "react-router-dom";
+import img3 from '../images/MirrorGlow.png';
 
 
 const Container = styled.div`
@@ -125,53 +124,42 @@ const Parent = styled.div`
 animation: bounce-out-bottom 1.5s 15s both;
 @keyframes bounce-out-bottom {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+    transform: translateY(0);
+
               animation-timing-function: ease-out;
     }
     5% {
-      -webkit-transform: translateY(30px);
-              transform: translateY(30px);
-      -webkit-animation-timing-function: ease-in;
+       transform: translateY(30px);
               animation-timing-function: ease-in;
     }
     15% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+    transform: translateY(0);
+
               animation-timing-function: ease-out;
     }
     25% {
-      -webkit-transform: translateY(38px);
-              transform: translateY(38px);
-      -webkit-animation-timing-function: ease-in;
+       transform: translateY(38px);
               animation-timing-function: ease-in;
     }
     38% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+    transform: translateY(0);
+
               animation-timing-function: ease-out;
     }
     52% {
-      -webkit-transform: translateY(75px);
-              transform: translateY(75px);
-      -webkit-animation-timing-function: ease-in;
+       transform: translateY(75px);
               animation-timing-function: ease-in;
     }
     70% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      -webkit-animation-timing-function: ease-out;
+    transform: translateY(0);
+
               animation-timing-function: ease-out;
     }
     85% {
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateY(800px);
-              transform: translateY(800px);
+            transform: translateY(800px);
       opacity: 0;
     }
   }
@@ -339,7 +327,7 @@ background-size: contain;
 
 `
 const Mirror = styled.div`
-background-image: url(${mirror});
+background-image: url(${img3});
 background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
@@ -351,53 +339,38 @@ background-size: contain;
     animation: bounce-in-top 1.1s 16s both;
     @keyframes bounce-in-top {
         0% {
-          -webkit-transform: translateY(-500px);
+         
                   transform: translateY(-500px);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+                          animation-timing-function: ease-in;
           opacity: 0;
         }
         38% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
           opacity: 1;
         }
         55% {
-          -webkit-transform: translateY(-65px);
-                  transform: translateY(-65px);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+                    transform: translateY(-65px);
+                          animation-timing-function: ease-in;
         }
         72% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
         }
         81% {
-          -webkit-transform: translateY(-28px);
-                  transform: translateY(-28px);
-          -webkit-animation-timing-function: ease-in;
-        }
+                    transform: translateY(-28px);
+                }
         90% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
         }
         95% {
-          -webkit-transform: translateY(-8px);
-                  transform: translateY(-8px);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+                   transform: translateY(-8px);
+                          animation-timing-function: ease-in;
         }
         100% {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+                transform: translateY(0);
+                           animation-timing-function: ease-out;
         }
       }
       
@@ -473,9 +446,7 @@ class SceneItPix extends Component {
     render() {
         return (
             <div>
-                
-
-                        <Container>
+                     <Container>
                     <FlashBtn>
                     </FlashBtn>
                     <br />
