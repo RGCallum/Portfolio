@@ -8,22 +8,44 @@ import { Link } from "react-router-dom";
 
 const Background = styled.div`
 color: white;
-text-shadow: 1px 1px 1px black;
-font-size: 25px;
-font-weight: 800;
-text-align: center;
 background-image: url(${img});
 background-repeat: no-repeat;
 background-size: contain;
-position: absolute;
+position: fixed;
 z-index: -100;
   width: 100vw;
-  height: 110vw;
+  height: 100vw;
   margin: 0;
   margin-top: 0%;
   text-align: center;
+  overflow-y: hidden;
+  //ipad pro
+    @media only screen and (width: 1024px)   {
+        { 
+        background-size: cover;
+        height: 110%;
+        
+        }
+        }
+  
+//ipad 
+@media only screen and (max-width: 768px)   {
+    { 
+            background-size: cover;
+            height: 115%;
+            width: 115%;
+            }
+}
 
-`
+//iphone6+
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+    { 
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            }
+}
+        `
 
 
 const BothBtns = styled.div`
@@ -78,7 +100,7 @@ button{
 }
 `
 const Confetti = styled.div`
-    margin-top: -5%;
+    // margin-top: -5%;
     position: fixed;
     z-index: 2;
     margin-left: 0%;
@@ -97,11 +119,95 @@ background-repeat: no-repeat;
 background-size: 22%;
 margin-top: 20.2%;
 margin-left: 40.7%;
-position: absolute;
+position: fixed;
 z-index: 3;
 height: 100%;
 width: 100%;
 
+@media only screen and (width: 2560px){
+    {
+        margin-top: 10%;
+
+    }
+}
+@media only screen and (width: 1920px){
+    {
+       
+        margin-top: 10%;
+        
+    }
+}
+
+@media only screen and (width: 1440px){
+    {
+        margin-top: 12%;
+        
+    }
+    }
+
+//laptop
+@media only screen and (width: 1280px)   {
+{ 
+    margin-top: 15%;
+        
+}
+}
+
+//ipad pro
+    @media only screen and (width: 1024px)   {
+        { 
+            margin-top: 20%;
+            margin-left: 23%;
+        background-size: 50%;
+        }
+        }
+
+        //ipad
+@media only screen and (max-width: 768px)   {
+        { 
+            margin-top: 4%;
+            margin-left: 23%;
+        background-size: 50%;
+            }
+}
+
+//iphone 6+ and big mobile phones
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+          { 
+            margin-top: 14%;
+            margin-left: 23%;
+        background-size: 50%;
+            }
+}
+//iphone 6
+@media only screen and (width: 375px)   {
+          { 
+            margin-top: 33%;
+            margin-left: 23%;
+        background-size: 50%;
+            }
+}
+
+//s5
+@media only screen and (width: 360px)   {
+          { 
+            margin-top: 35%;
+            margin-left: 23%;
+        background-size: 50%;         
+                     
+            
+        }
+}
+
+//really small mobile
+@media only screen and (width: 320px)   {
+          {  
+            margin-top: 37%;
+            margin-left: 23%;
+        background-size: 50%;          
+            
+        }
+}
 `
 const Child2 = styled.div`
 background-image: url(${spriteWin});
@@ -109,17 +215,213 @@ background-repeat: no-repeat;
 background-size: 20%;
 margin-top: 21%;
 margin-left:42%;
-position: absolute;
+position: fixed;
 z-index: 3;
 height: 100%;
 width: 100%;
+
+@media only screen and (width: 2560px){
+    {
+        margin-top: 10%;
+
+    }
+}
+@media only screen and (width: 1920px){
+    {
+       
+        margin-top: 10%;
+        
+    }
+}
+
+@media only screen and (width: 1440px){
+    {
+        margin-top: 12%;
+        
+    }
+    }
+
+//laptop
+@media only screen and (width: 1280px)   {
+{ 
+    margin-top: 15%;
+        
+}
+}
+
+//ipad pro
+    @media only screen and (width: 1024px)   {
+        { 
+            margin-top: 20%;
+            margin-left: 23%;
+        background-size: 50%;
+        }
+        }
+
+        //ipad
+@media only screen and (max-width: 768px)   {
+        { 
+            margin-top: 4%;
+            margin-left: 23%;
+        background-size: 50%;
+            }
+}
+
+//iphone 6+ and big mobile phones
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+          { 
+            margin-top: 14%;
+            margin-left: 23%;
+        background-size: 50%;
+            }
+}
+//iphone 6
+@media only screen and (width: 375px)   {
+          { 
+            margin-top: 33%;
+            margin-left: 23%;
+        background-size: 50%;
+            }
+}
+
+//s5
+@media only screen and (width: 360px)   {
+          { 
+            margin-top: 35%;
+            margin-left: 23%;
+        background-size: 50%;         
+                     
+            
+        }
+}
+
+//really small mobile
+@media only screen and (width: 320px)   {
+          {  
+            margin-top: 37%;
+            margin-left: 23%;
+        background-size: 50%;          
+            
+        }
+}
 `
 const NextBtn = styled.div`
-button{
-    border-radius: 9px;
-margin-top: -6.5em;
-margin-left: 75vw;
-background-color: rgba(255, 255, 255, 0.619);
+h1{
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    border-radius: 15px;
+    border: inset rgb(228, 228, 228)2px;
+    padding: 10px;
+    width: 100vw;     
+      text-align: center;
+      
+}
+a:hover{
+color: #E73C7E;
+}
+@media only screen and (width: 2560px){
+    {
+        h1{
+            font-size: 40px;
+            margin-top: 3%;
+        }
+    }
+}
+
+@media only screen and (width: 1920px){
+    {
+        h1{
+            font-size: 35px;
+            margin-top: 3%;
+        }
+    }
+}
+
+@media only screen and (width: 1440px){
+    {
+        h1{
+            font-size: 25px;
+            margin-top: 3%;
+        }
+    }
+}
+
+
+//laptop
+@media only screen and (width: 1280px)   {
+{ 
+    h1{
+        margin-top: 3%;
+    } 
+ }
+ }
+ //ipad pro
+
+ @media only screen and (width: 1024px)   {
+         { 
+            
+        h1{
+            margin-top: 5%;
+            font-size: 25px;
+
+        }
+     }
+}
+//ipad
+@media only screen and (max-width: 768px)   {
+        { 
+            
+        h1{
+            margin-top: 5%;
+            font-size: 25px;
+
+        }
+        }
+}
+//iphone 6+ and big mobile phones
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+          { 
+
+            h1{
+                font-size: 16px;      
+                margin-top: 10%; 
+ width: 93.5vw;
+              }
+           }
+}
+//iphone 6
+@media only screen and (width: 375px)   {
+          { 
+            h1{
+                font-size: 16px;   
+                margin-top: 10%; 
+    
+              }
+           }
+}
+//s5
+@media only screen and (width: 360px)   {
+          {    
+              h1{
+                font-size: 14px;       
+                margin-top: 10%; 
+
+              }
+           }
+}
+
+//really small mobile
+@media only screen and (width: 320px)   {
+          {    
+              h1{
+                font-size: 14px;       
+                margin-top: 10%; 
+
+              }
+           }
 }
 `
 class TheEnd extends Component {
@@ -151,20 +453,14 @@ class TheEnd extends Component {
     render() {
         return (
             <div>
-                <Background>
-                </Background>
-                <br />
-                <br />
-                <br />
-                <h1>   She couldn't even imagine her life before coding. Even after completing her course she continues to work on projects and learn new things. She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional.  <br/>
-                And she lived Codingly Ever After.
-The End. </h1> 
-                    <NextBtn>
-                        <br />
-                        <a href='/desk2'><button>Back</button></a>
-                        <br />
-                        <Link to="/portfolio"><button>Portfolio</button></Link>
-                    </NextBtn>
+                <Background/>
+               <br/>
+                     <NextBtn>
+                    <h1>   
+                        She couldn't even imagine her life before coding. Even after completing her course she continues to work on projects and learn new things. She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional.  <br/>
+                        And she lived Codingly Ever After.
+                        The End.  <br /><a href='/desk2'>Back</a> </h1> 
+ </NextBtn>
 
 
                 <GirlStill1>
