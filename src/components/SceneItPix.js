@@ -248,7 +248,7 @@ width: 100%;
 }
 `
 const SceneItDesk = styled.div`
-background-image: url(${img});
+background-image: url('${img}');
 background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
@@ -327,7 +327,7 @@ background-size: contain;
 
 `
 const Mirror = styled.div`
-background-image: url(${img3});
+background-image: url('https://i.ibb.co/RNsNKgC/SIPMirror.png');
 background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
