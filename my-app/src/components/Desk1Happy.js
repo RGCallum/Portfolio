@@ -39,6 +39,7 @@ color: #E73C7E;
     { 
         h1{
             font-size: 25px;
+            margin-top: 3%;
         }    
     }
     }
@@ -70,6 +71,47 @@ color: #E73C7E;
         }
      }
 }
+//iphone 6+ and big mobile phones
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+          { 
+            h1{
+                font-size: 16px;      
+                margin-top: -5%; 
+ 
+              }
+           }
+}
+//iphone 6
+@media only screen and (width: 375px)   {
+          { 
+            h1{
+                font-size: 16px;   
+                margin-top: -5%; 
+    
+              }
+           }
+}
+//s5
+@media only screen and (width: 360px)   {
+          {    
+              h1{
+                font-size: 14px;       
+                margin-top: -5%; 
+
+              }
+           }
+}
+
+//really small mobile
+@media only screen and (width: 320px)   {
+          {    
+              h1{
+                font-size: 14px;       
+                margin-top: -5%; 
+
+              }
+           }
+}
 `
 const Background = styled.div`
 background-image: url('https://www.planwallpaper.com/static/images/2014-08-Aurora-Blue-Background-HD.jpg');
@@ -84,12 +126,13 @@ text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;
-// animation: move 60s infinite;
-// @keyframes move{
-//     50%{
-//         transform: scale(1.1);       
-//     }
-// }
+
+animation: move 60s infinite;
+@keyframes move{
+    50%{
+        transform: scale(1.1);       
+    }
+}
 
 //laptop
 @media only screen and (width: 2560px)   {
@@ -111,6 +154,14 @@ text-align: center;
             background-size: cover;
             height: 100%;
          }
+}
+
+//ipad
+@media only screen and (max-width: 768px)   {
+        { 
+            background-size: cover;
+            height: 100%;
+        }
 }
 
 `
@@ -162,6 +213,56 @@ margin-top: 30%;
 
      }
 }
+
+//ipad
+@media only screen and (max-width: 768px)   {
+        { 
+margin-top: 50%; 
+margin-left: -1%;
+background-size: 100%;          
+
+}
+}
+
+//iphone 6+ and big mobile phones
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+          { 
+              margin-top: 60%; 
+margin-left: -1%;
+background-size: 100%;          
+
+}
+}
+
+//iphone 6
+@media only screen and (width: 375px)   {
+          { 
+            margin-top: 80%; 
+            margin-left: -1%;
+            background-size: 100%;          
+            
+        }
+}
+
+//s5
+@media only screen and (width: 360px)   {
+          { 
+            margin-top: 80%; 
+            margin-left: -1%;
+            background-size: 100%;          
+            
+        }
+}
+
+//really small mobile
+@media only screen and (width: 320px)   {
+          {  
+            margin-top: 90%; 
+            margin-left: -1%;
+            background-size: 100%;          
+            
+        }
+}
 `
 const DeskR = styled.div`
 background-image: url(${img});
@@ -202,6 +303,56 @@ margin-top: 25%;
     
          }
     }
+
+    //ipad
+@media only screen and (max-width: 768px)   {
+        { 
+margin-top: 50%; 
+margin-left: -1%;
+background-size: 100%;          
+
+}
+}
+
+//iphone 6+ and big mobile phones
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+          { 
+        margin-top: 60%; 
+        margin-left: -1%;
+        background-size: 100%;          
+
+}
+}
+
+//iphone 6
+@media only screen and (width: 375px)   {
+          { 
+            margin-top: 80%; 
+            margin-left: -1%;
+            background-size: 100%;          
+            
+        }
+}
+//s5
+@media only screen and (width: 360px)   {
+          { 
+            margin-top: 80%; 
+            margin-left: -1%;
+            background-size: 100%;          
+            
+        }
+}
+
+//really small mobile
+@media only screen and (width: 320px)   {
+          {  
+            margin-top: 90%; 
+            margin-left: -1%;
+            background-size: 100%;          
+            
+        }
+}
+
 `
 
 
