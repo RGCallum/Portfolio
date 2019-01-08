@@ -31,6 +31,7 @@ z-index: -100;
         width: 100vw;
         
 }
+
 `
 
 
@@ -237,6 +238,9 @@ h1{
         // margin-left: 25vw;    
 
 }
+a:hover{
+    color: #E73C7E;
+    }
 //really small mobile screens
 @media only screen and (min-width: 320px)    {
         h1{
@@ -415,8 +419,8 @@ class News extends Component {
                     and after working 12 hour shifts through fires and disasters and hurricanes, <br/> 
                     she quickly realized that the News Industry was not for her.  <br/>
                     So she ran away! <br/>
-                    <a href='/about'>Back</a> <br/>
-                    <a href='/ship'>Next Chapter</a> 
+                    <a href='/about'>Back </a> |
+                    <a href='/ship'> Next Chapter</a> 
                     </h1> 
                     </NextBtn>
             </div>

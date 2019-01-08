@@ -32,12 +32,24 @@ repeat 0 0;
     padding: 10px;
     width: 100vw;       
 }
+
+
 @media only screen and (width: 1024px){
     {
         margin-top: 22%;
 
     }
 }
+//imac
+@media only screen and (width: 1920px) and (width: 1921px) and (height: 1080px){
+    {
+        h1{
+            margin-top: -20em;
+        font-size: 45px;
+        }
+    }
+}
+
 // ipad pro
 @media only screen and (min-width: 1024px) and (min-height: 1366px){
     {
@@ -161,7 +173,7 @@ background-size: 80%;
 background-repeat: no-repeat;
     margin-top: 3%;
     position: fixed;
-    z-index: 1001;
+    z-index: 100;
     margin-left: 80%;
     width: 100vw;
     height: 100vw;
@@ -177,7 +189,7 @@ background-repeat: no-repeat;
 
     }
 }
-@media only screen and (min-width: 1024px) and (min-height: 1366px){
+@media only screen and (width: 1024px) and (height: 1366px){
     {
         margin-top: 50%;
         background-size: 100%;
@@ -186,7 +198,7 @@ background-repeat: no-repeat;
      
  }
  //ipad
-@media only screen and (min-width: 768px) {
+@media only screen and (width: 768px) {
  {    
     margin-top: 50%;
     background-size: 100%;
@@ -194,7 +206,7 @@ background-repeat: no-repeat;
  }
 }
 //iphone6+
-@media only screen and (min-width: 414px)   {
+@media only screen and (width: 414px)   {
     {
     margin-top: 68%;
     background-size: 100%;
@@ -204,7 +216,7 @@ background-repeat: no-repeat;
     }
 
 //iphone6, iphoneX
-@media only screen and (min-width: 375px)   {
+@media only screen and (width: 375px)   {
         {
             margin-top: 70%;
             background-size: 100%;
@@ -214,7 +226,7 @@ background-repeat: no-repeat;
             }
 
 //s5
-@media only screen and (min-width: 360px)   {
+@media only screen and (width: 360px)   {
     { 
         margin-top: 72%;
         background-size: 100%;
@@ -223,7 +235,7 @@ background-repeat: no-repeat;
     }}
     
     //really small mobile screens
-@media only screen and (min-width: 320px)    {
+@media only screen and (width: 320px)    {
         {
             margin-top: 75%;
             background-size: 100%;
@@ -261,14 +273,14 @@ from { margin-left: 100%; }
 to { margin-left: -110%;  }
 }
 //iphone6+
-@media only screen and (min-width: 414px)   {
+@media only screen and (width: 414px)   {
     {
         margin-top: -24%;
 
     }
 }
 //iphone6, iphoneX
-@media only screen and (min-width: 375px)   {
+@media only screen and (width: 375px)   {
    {
     margin-top: -35%;
 
@@ -276,14 +288,14 @@ to { margin-left: -110%;  }
    }
 
 //s5
-   @media only screen and (min-width: 360px)   {
+   @media only screen and (width: 360px)   {
     { 
         margin-top: -35%;
 
     }}
 
     //really small mobile screens
-@media only screen and (min-width: 320px)    {
+@media only screen and (width: 320px)    {
         {
             margin-top: -43%;
  
@@ -330,7 +342,9 @@ background-color: rgba(255, 255, 255, 0.619);
 a:link{
     text-decoration: none;
 }
-
+a:hover{
+    color: #E73C7E;
+    }
 `
 
 
@@ -354,8 +368,8 @@ class Ship extends Component {
                     <NextBtn> 
                         <h1>She ran far far away to shoot people having fun on cruise ships. 
                      <br/> She met people from all over the world, partied every night, spent months in the Caribbean and learned a lot about theatre production and broadcasting.<br></br>
-                    <a href='/news'>Back</a> <br/>
-                    <a href='/scene'>Next Chapter</a> 
+                    <a href='/news'>Back </a> |
+                    <a href='/scene'> Next Chapter</a> 
                     </h1> 
                     </NextBtn>
                 </Background>
