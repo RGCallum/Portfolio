@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import img from '../images/SIPDeskR.png';
 import img2 from '../images/SIPBackdropL.png';
-import img3 from '../images/MirrorGlow.png';
+import img3 from '../images/macCam.png';
 
 
 const Container = styled.div`
