@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Background = styled.div`
 color: black;
-text-shadow: 1px 1px 1px white;
+// text-shadow: 1px 1px 1px white;
 font-size: 25px;
 font-weight: 800;
 background-image: url(${img});

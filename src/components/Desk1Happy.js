@@ -14,7 +14,7 @@ font-size: 25px;
 text-align: center;
 h1{
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 30px;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
@@ -122,7 +122,7 @@ z-index: -100;
 width: 100vw;
 height: 100vw;
 color: white;
-text-shadow: 1px 1px 1px black;
+// text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;

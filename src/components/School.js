@@ -12,7 +12,7 @@ font-size: 25px;
 text-align: center;
 h1{   
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 35px;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
@@ -227,7 +227,7 @@ margin-left: 22%;
 //s5
 @media only screen and (width: 360px)   {
           { 
-            margin-top: 85%;
+            margin-top: 80%;
             background-size: 120%;
             margin-left: 10%;
            }

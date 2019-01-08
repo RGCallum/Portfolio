@@ -10,7 +10,7 @@ import img5 from '../images/skillDesk.png';
 const SkillText = styled.div`
 h2{
     color: white;
-    text-shadow: 1px 1px 1px black;
+    // text-shadow: 1px 1px 1px black;
     text-align: center;
     font-size: 3vw;
     

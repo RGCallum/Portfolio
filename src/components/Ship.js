@@ -3,12 +3,11 @@ import styled from "styled-components";
 import img from '../images/ShipAnimation.gif';
 import img2 from '../images/cartoonSky3.png';
 import img3 from '../images/waterLayer.png';
-import { Link } from "react-router-dom";
 
 const Background = styled.div`
 color: white;
-text-shadow: 1px 1px 1px black;
-font-size: 25px;
+// text-shadow: 1px 1px 1px black;
+// font-size: 25px;
 font-weight: 800;
 background-repeat: repeat-x;
 background-size: 10%;
@@ -23,7 +22,7 @@ repeat 0 0;
   h1{
     margin-top: -4em;
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 1000;
@@ -36,7 +35,7 @@ repeat 0 0;
 
 @media only screen and (width: 1024px){
     {
-        margin-top: 22%;
+        margin-top: 5em;
 
     }
 }
@@ -55,7 +54,6 @@ repeat 0 0;
     {
     h1{
         margin-top: 0em;
-        font-size: 35px;
     }
     }
 }
@@ -74,8 +72,6 @@ repeat 0 0;
         h1{
             margin-top: 4em;
             font-size: 18px;
-
-
         }
     }
 }
@@ -99,8 +95,10 @@ repeat 0 0;
 }
 //really small mobile screens
 @media only screen and (min-width: 320px)    {
+    {  
         h1{
-            margin-top: 4em;
+           
+            margin-top: 2em;
             font-size: 15px;
         }
         }
@@ -228,7 +226,7 @@ background-repeat: no-repeat;
 //s5
 @media only screen and (width: 360px)   {
     { 
-        margin-top: 72%;
+        margin-top: 75%;
         background-size: 100%;
         width: 150vw;
         height: 100vh;
@@ -272,6 +270,7 @@ animation: slide 30s linear infinite;
 from { margin-left: 100%; }
 to { margin-left: -110%;  }
 }
+display: none;
 //iphone6+
 @media only screen and (width: 414px)   {
     {
@@ -282,23 +281,25 @@ to { margin-left: -110%;  }
 //iphone6, iphoneX
 @media only screen and (width: 375px)   {
    {
-    margin-top: -35%;
-
+    // margin-top: -35%;
+display: none;
 }
    }
 
 //s5
    @media only screen and (width: 360px)   {
     { 
-        margin-top: -35%;
+        // margin-top: -35%;
+        display: none;
 
     }}
 
     //really small mobile screens
 @media only screen and (width: 320px)    {
         {
-            margin-top: -43%;
- 
+            // margin-top: -43%;
+            display: none;
+
         }       
    }
 `
@@ -366,16 +367,18 @@ class Ship extends Component {
             <div>
                 <Background>
                     <NextBtn> 
-                        <h1>She ran far far away to shoot people having fun on cruise ships. 
+                        <h1><a href='/news'>Back </a> |
+                    <a href='/scene'> Next Chapter</a> <br/>She ran far far away to shoot people having fun on cruise ships. 
                      <br/> She met people from all over the world, partied every night, spent months in the Caribbean and learned a lot about theatre production and broadcasting.<br></br>
-                    <a href='/news'>Back </a> |
-                    <a href='/scene'> Next Chapter</a> 
+                    
                     </h1> 
+                    <br/>
+
                     </NextBtn>
                 </Background>
-                <Birds>
+                {/* <Birds>
                     <img src="https://vignette.wikia.nocookie.net/animaljam/images/9/93/Tumblr_ms4th0h51A1sfk0ybo1_500.gif/revision/latest?cb=20160416200533" alt="birds" />
-                </Birds>
+                </Birds> */}
                 <Sky />
                 <Water></Water>
 

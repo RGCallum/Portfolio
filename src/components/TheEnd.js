@@ -308,7 +308,7 @@ width: 100%;
 const NextBtn = styled.div`
 h1{
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
