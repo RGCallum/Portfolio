@@ -20,12 +20,85 @@ repeat 0 0;
   text-align: center;
   height: 120vw;
   width: 300vh;
+  h1{
+    margin-top: -4em;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1000;
+    border-radius: 15px;
+    border: inset rgb(228, 228, 228)2px;
+    padding: 10px;
+    width: 100vw;       
+}
+@media only screen and (width: 1024px){
+    {
+        margin-top: 22%;
 
+    }
+}
+// ipad pro
+@media only screen and (min-width: 1024px) and (min-height: 1366px){
+    {
+    h1{
+        margin-top: 0em;
+        font-size: 35px;
+    }
+    }
+}
+//ipad
+@media only screen and (min-width: 768px) {
+ {
+     h1{
+     margin-top: 4em;
+
+ }
+ }
+}
+//iphone6+
+@media only screen and (min-width: 414px)   {
+    {
+        h1{
+            margin-top: 4em;
+            font-size: 18px;
+
+
+        }
+    }
+}
+//iphone6, iphoneX
+@media only screen and (min-width: 375px)   {
+    {
+        h1{
+            margin-top: 4em;
+            font-size: 18px;
+        }
+    }
+}
+//s5
+   @media only screen and (min-width: 360px)   {
+    { 
+        h1{
+            margin-top: 4em;
+            font-size: 18px;
+    }
+    }
+}
+//really small mobile screens
+@media only screen and (min-width: 320px)    {
+        h1{
+            margin-top: 4em;
+            font-size: 15px;
+        }
+        }
+   }
 `
 const Sky = styled.div`
 color: red;
 font-size: 45px;
 background-image: url(${img2});
+background-repeat-y: no-repeat;
 position: fixed;
 z-index: -101;
 repeat 0 0;
@@ -38,23 +111,126 @@ repeat 0 0;
     from { background-position: 0 -0; }
     to { background-position: 8000px 0; }
 }
+//big screens
+@media only screen and (width: 2560px) and (height: 1440px){
+    {
+        background-size: cover;
+    }
+}
+@media only screen and (min-width: 1024px) and (min-height: 1366px){
+   {
+    background-size: cover;
+
+   }
+    
+}
+//iphone6+
+@media only screen and (min-width: 414px)   {
+    {
+        background-size: cover;
+
+    }
+    }
+
+    //iphone6, iphoneX
+@media only screen and (min-width: 375px)   {
+    {
+        background-size: cover;
+
+    }
+}
+//s5
+   @media only screen and (min-width: 360px)   {
+    { 
+        background-size: cover;
+
+    }}
+
+//really small mobile screens
+@media only screen and (min-width: 320px)    {
+        {
+            background-size: cover;
+
+        }       
+   }
+    
 `
 const ShipGif = styled.div`
 background-image: url(${img});
 background-size: 80%;
 background-repeat: no-repeat;
-    margin-top: 18%;
+    margin-top: 3%;
     position: fixed;
     z-index: 1001;
     margin-left: 80%;
     width: 100vw;
     height: 100vw;
-    animation: slide3 55s linear infinite ;
+    animation: slide3 35s linear infinite ;
     @keyframes slide3 {
-    from { margin-left: 80%; }
+    from { margin-left: 50%; }
    to { margin-left: -110%;  }
 }
 
+@media only screen and (width: 1024px){
+    {
+        margin-top: 30%;
+
+    }
+}
+@media only screen and (min-width: 1024px) and (min-height: 1366px){
+    {
+        margin-top: 50%;
+        background-size: 100%;
+        width: 130vw;
+    }
+     
+ }
+ //ipad
+@media only screen and (min-width: 768px) {
+ {    
+    margin-top: 50%;
+    background-size: 100%;
+    width: 130vw;
+ }
+}
+//iphone6+
+@media only screen and (min-width: 414px)   {
+    {
+    margin-top: 68%;
+    background-size: 100%;
+    width: 150vw;
+    height: 100vh;
+    }
+    }
+
+//iphone6, iphoneX
+@media only screen and (min-width: 375px)   {
+        {
+            margin-top: 70%;
+            background-size: 100%;
+            width: 150vw;
+            height: 100vh;
+            }
+            }
+
+//s5
+@media only screen and (min-width: 360px)   {
+    { 
+        margin-top: 72%;
+        background-size: 100%;
+        width: 150vw;
+        height: 100vh;
+    }}
+    
+    //really small mobile screens
+@media only screen and (min-width: 320px)    {
+        {
+            margin-top: 75%;
+            background-size: 100%;
+            width: 150vw;
+            height: 100vh;
+        }       
+   }
 `
 
 const Water = styled.div`
@@ -71,6 +247,7 @@ height: 100vw;
 // from { margin-left: 150%; }
 // to { margin-left: -110%;  }
 // }
+
 `
 
 const Birds = styled.div`
@@ -78,11 +255,40 @@ position: fixed;
 z-index: -100;
 margin-top: -5%;
 margin-left: 100%;
-animation: slide4 40s linear infinite;
-@keyframes slide4 {
+animation: slide 30s linear infinite;
+@keyframes slide {
 from { margin-left: 100%; }
 to { margin-left: -110%;  }
 }
+//iphone6+
+@media only screen and (min-width: 414px)   {
+    {
+        margin-top: -24%;
+
+    }
+}
+//iphone6, iphoneX
+@media only screen and (min-width: 375px)   {
+   {
+    margin-top: -35%;
+
+}
+   }
+
+//s5
+   @media only screen and (min-width: 360px)   {
+    { 
+        margin-top: -35%;
+
+    }}
+
+    //really small mobile screens
+@media only screen and (min-width: 320px)    {
+        {
+            margin-top: -43%;
+ 
+        }       
+   }
 `
 
 const CruiseBtn = styled.div`
@@ -145,10 +351,12 @@ class Ship extends Component {
         return (
             <div>
                 <Background>
-                    <NextBtn>She ran far far away to shoot people having fun on cruise ships. 
+                    <NextBtn> 
+                        <h1>She ran far far away to shoot people having fun on cruise ships. 
                      <br/> She met people from all over the world, partied every night, spent months in the Caribbean and learned a lot about theatre production and broadcasting.<br></br>
-                    <a href='/news'><button>Back</button></a> 
-                    <br/>  <Link to="/scene"><button>Next Chapter</button></Link>
+                    <a href='/news'>Back</a> <br/>
+                    <a href='/scene'>Next Chapter</a> 
+                    </h1> 
                     </NextBtn>
                 </Background>
                 <Birds>

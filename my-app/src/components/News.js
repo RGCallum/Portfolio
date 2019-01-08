@@ -225,7 +225,6 @@ const NextBtn = styled.div`
 h1{
       
     color: black;
-    // text-shadow: 1px 1px white;
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 1000;
@@ -244,7 +243,6 @@ h1{
             margin-top: 10.5em;
             background-color: #bdd4e7;
             background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
-            
             font-size: 15px;
             color: white;
             width:100vw;
@@ -271,27 +269,23 @@ h1{
     h1{
         margin-top: 13em;
         background-color: #bdd4e7;
-        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
-        
+        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);  
         font-size: 15px;
         color: white;
         width:100vw;
-
     }
     }
 }
-//iphone6+
 
+//iphone6+
 @media only screen and (min-width: 414px)   {
     h1{
         margin-top: 14em;
         background-color: #bdd4e7;
-        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
-        
+        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);    
         font-size: 15px;
         color: white;
         width:100vw;
-
     }
     }
 }
@@ -307,7 +301,6 @@ h1{
         font-size: 15px;
         color: white;
         width:100vw;
-
     }
     }
 }
@@ -317,13 +310,25 @@ h1{
     h1{
         margin-top: 16em;
         background-color: #bdd4e7;
-        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
-        
+        background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);      
         font-size: 35px;
         color: white;
         width:100vw;
-
     }
+    }
+}
+
+@media only screen and (width: 1024px) and (height: 768px){
+    {
+        h1{
+            margin-top: 22em;
+            background-color: #bdd4e7;
+            background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);      
+            font-size: 25px;
+            color: white;
+            width:100vw;
+        }
+
     }
 }
 `
