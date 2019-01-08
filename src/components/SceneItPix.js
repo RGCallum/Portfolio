@@ -3,7 +3,6 @@ import styled from "styled-components";
 import img from '../images/SIPDeskR.png';
 import img2 from '../images/SIPBackdropL.png';
 import mirror from '../images/MagicMirror2glow.png';
-import { Link } from "react-router-dom";
 
 
 const Container = styled.div`
