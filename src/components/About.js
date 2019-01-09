@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import img from '../images/streetBkgd3.jpg';
+import img from '../images/streetBkgd4.png';
 import camGirl from '../images/camGirlRunSteady.gif';
 import { Link } from "react-router-dom";
 
 const Background = styled.div`
-color: black;
-// text-shadow: 1px 1px 1px white;
-font-size: 25px;
-font-weight: 800;
+
 background-image: url(${img});
+background-size: contain;
+background-repeat-y: no-repeat;
+color: black;
+
 position: fixed;
 z-index: -100;
-  width: 100%;
-  margin: 0;
-  margin-top: -10%;
+  width: 100vw;
   text-align: center;
-  height: 150vh;
-  box-sizing: border-box;
+  height: 150vw;
   animation: slide2 120s linear infinite;
   @keyframes slide2 {
     from { background-position: 0 0; }
@@ -28,168 +26,217 @@ a:hover{
     }
 h1{
     background-color: rgba(255, 255, 255, 0.9);
-    margin-top: -3em;
     z-index: 100;
     border-radius: 15px;
         border: inset rgb(228, 228, 228)2px;
         padding: 10px;
         width: 100vw;
+        font-size: 16px;
         
 }
 
-
-@media only screen and (min-height: 560px) and (max-height: 660px) {
-    {
-        height: 250vh;
-
-        }
-   }
-@media only screen and (max-width: 767px) {
-    {
+//laptop
+   @media only screen and (min-width: 2560px){
+    { 
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
         h1{
-            margin-top: 25em;
-            font-size: 16px;
-            word-wrap: normal;
-
-        }
-    }
-}
-@media only screen and (min-width: 767px) and (max-width: 2560px) {
-    {
-        h1{
-            margin-top: 5em;
-            font-size: 26px;
-            word-wrap: normal;
-
-        }
-    }
-}
-    @media only screen and (max-width: 480px) {
-        {
-            margin-top: -12.8em;
-            width: 100vh;
-            height:
-            overflow-y: hidden;
-
-            }
-       }
+            font-size 30px;
+            margin-top: 3%;
     
-       @media only screen and (width: 1024px){
-        {
-            margin-top: -2em;
-            background-repeat-y: no-repeat;
-            background-size: 250%;
             }
-       }
-       @media only screen and (width: 1440px) and (height: 900px){
-        {
-            h1{
-                margin-top: 8em;
-            }
-            }
-       }
-       @media only screen and (min-width: 1920px) and (max-width: 1921px) and (height: 1080px){
-        {
-            margin-top: 0em;
+    }
+}
 
-            h1{
-                margin-top: 2em;
+//laptop
+   @media only screen and (min-width: 1920px) and (max-width: 1921px){
+    { 
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        h1{
+            font-size 25px;
+            margin-top: 5%;
+    
             }
-            }
-       }
+    }
+}
 
-       @media only screen and (width: 2560px) and (height: 1440px){
-        {
-            margin-top: 0em;
-            background-repeat-y: no-repeat;
-            background-size: 100%;
+//laptop
+@media only screen and (width: 1440px)   {
+    { 
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        h1{
+            font-size 25px;
+            margin-top: 5%;
+    
+            }
+    }
+    }
 
-            h1{
-                margin-top: 2em;
+    // ipad pro
+@media only screen and (width: 1024px) {
+    {
+        background-size: cover;
+        width: 165%;
+        height: 100%;
+        h1{
+            font-size 30px;
+            margin-top: 8%;
+    
             }
-            }
-       }
+    }
+}
+
+//ipad
+@media only screen and (width: 768px) {
+ {
+    background-size: cover;
+    width: 165%;
+    height: 100%;
+    h1{
+        font-size 20px;
+        margin-top: 8%;
+
+        }
+}
+}
+
+//iphone6+
+@media only screen and (min-width: 412px) and (max-width: 425px) {
+    {
+    background-size: cover;
+    width: 190%;
+    height: 100%;
+    h1{
+        font-size 14px;
+        margin-top: 8%;
+
+        }
+}
+}
+
+//iphone6, iphoneX
+@media only screen and (width: 375px)   {
+    {
+    background-size: cover;
+    width: 190%;
+    height: 100%;
+    h1{
+        font-size 14px;
+        margin-top: 10%;
+
+        }
+}
+}
+
+//s5
+   @media only screen and (width: 360px)   {
+    { 
+        background-size: cover;
+        width: 190%;
+        height: 105vh;
+        h1{
+        font-size 13px;
+        margin-top: 10%;
+
+        }
+    }
+}
+
+//really small mobile screens
+@media only screen and (width: 320px)    {
+    { 
+        background-size: cover;
+        width: 190%;
+        height: 120vh;
+        h1{
+        font-size 13px;
+        margin-top: 13%;
+
+        }
+    }
+}
+
 `
 
 const Bus = styled.div`
-    margin-top: 38%;
+    // margin-top: 88%;
     position: fixed;
     z-index: 200;
     margin-left: 100%;
-    animation: slide3 15s linear infinite;
+    animation: slide3 30s linear infinite;
     @keyframes slide3 {
     from { margin-left: 100%; }
-   to { margin-left: -110%;  }
-}
-@media only screen and (width: 2560px) and (height: 1440px){
-    {
-        margin-top: 48%;
-    }
-}
-@media only screen and (min-width: 1920px) and (max-width: 1921px) and (height: 1080px){
-    {
-        margin-top: 48%;
-    }
-}
-@media only screen and (width: 1440px) and (height: 900px){
-    {
-            margin-top: 52%;
-        }
-   }
-@media only screen and (width: 1366px) and (height: 768px) {
-    {
-        margin-top: 54%;
-    }
+   to { margin-left: -810%;  }
 }
 
-@media only screen and (width: 1024px){
-    {
-        margin-top: 118%;
 
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 800px){
-    {
-        margin-top: 108%;
-        background-size: 50%;
-
-        }
-   }
+//really small mobile screens 
 @media only screen and (min-width: 320px) and (max-width: 359px){
     {
         background-size: 50%;
         margin-top: 170%;
-        animation: slide3 35s linear infinite;
-        @keyframes slide3 {
-        from { margin-left: 100%; }
-       to { margin-left: -1590%;  }
+
         }
-        }
-   }
+}
+
+//s5
 @media only screen and (min-width: 360px) and (max-width: 374px){
     {
         background-size: 50%;
-        margin-top: 150%;
-        animation: slide3 35s linear infinite;
-        @keyframes slide3 {
-        from { margin-left: 100%; }
-       to { margin-left: -1590%;  }
-        }
-        }
-   }
-@media only screen and (min-width: 375px) and (max-width: 425px) {
-    {
-        background-size: 50%;
-        margin-top: 160%;
-        animation: slide3 35s linear infinite;
-        @keyframes slide3 {
-        from { margin-left: 100%; }
-       to { margin-left: -1590%;  }
+        margin-top: 130%;
+        
         }
    }
 
- 
+//iphone6, iphoneX
+@media only screen and (min-width: 375px) and (max-width: 411px) {
+    {
+        background-size: 50%;
+        margin-top: 130%;
+
+        }
+   }
+
+   //iphone6+
+   @media only screen and (min-width: 412px) and (max-width: 425px){
+    {
+        background-size: 50%;
+        margin-top: 130%;
+
+        }
+   }
+
+   //ipad
+   @media only screen and (min-width: 768px) {
+    {      
+       
+    }
+}
+
+// ipad pro
+@media only screen and (width: 1024px) {
+    {
+       
+    }
+}
+
+//laptop
+   @media only screen and (min-width: 1920px) and (max-width: 1921px){
+    { 
+    }
+}
+
+@media only screen and (width: 2560px){
+    {
+       
+    }
+}
+
 `
 const Birds = styled.div`
 position: fixed;
@@ -197,54 +244,13 @@ z-index: 200;
 margin-top: -5%;
 margin-left: 100%;
 
-animation: slide4 20s linear infinite;
+animation: slide4 10s linear 1;
 @keyframes slide4 {
 from { margin-left: 150%; }
 to { margin-left: -110%;  }
 }
-@media only screen and (max-width: 375px) {
-    
-    {
-        width: 50%;
-        margin-top: -35%;
-        animation: slide4 35s linear infinite;
-        @keyframes slide4 {
-        from { margin-left: 150%; }
-        to { margin-left: -1510%;  }
-        
-    }
-}
-`
-const Parent = styled.div`
-position: fixed;
-@media only screen and (min-height: 560px) and (max-height: 660px) {
-    {
-        margin-top: -10em;
-        width: 100vh;
-        height: 100vh;
-        overflow-y: hidden;
-        h1{
-            margin-top: 30em;
-        }
-
-        }
-   }
-@media only screen and (min-height: 768px) and (max-height: 853px) {
-    {
-        margin-top: -10em;
-        width: 100vh;
-        overflow-y: hidden;
-        h1{
-            margin-top: 18em;
-
-        }
-
-        }
-   }
-
 
 `
-
 
 const Child = styled.div`
 background-image: url(${camGirl});
@@ -264,135 +270,101 @@ animation: slide 25s linear infinite;
 }
 
 
-@media only screen and (max-width: 320px) {
-    {
-        background-size: 50%;
-        margin-top: 160%;
-        animation-play-state: paused;
-        background-repeat: no-repeat;
-        position: fixed;
-        }
-   }
-   @media only screen and (min-width: 360px) and (max-width: 374px){
-    {
-        background-size: 50%;
-        margin-top: 145%;
-        animation-play-state: paused;
-        background-repeat: no-repeat;
-        position: fixed;
-        }
-   }
-   @media only screen and (min-width: 375px) and (max-width: 425px){
+@media only screen and (min-width: 320px) {
     {
         background-size: 50%;
         margin-top: 135%;
         animation-play-state: paused;
-        background-repeat: no-repeat;
-        position: fixed;
+
         }
    }
-   @media only screen and (min-width: 425px) and (max-width: 480px){
-    {
-        background-size: 50%;
-        margin-top: 115%;
+
+   //s5
+   @media only screen and (min-width: 360px)   {
+    { 
+        background-size: 40%;
+        margin-top: 118%;
         animation-play-state: paused;
-        background-repeat: no-repeat;
-        position: fixed;
+
         }
    }
-   @media only screen and (min-width: 768px) and (max-width: 800px){
+
+   //iphone6, iphoneX
+   @media only screen and (min-width: 375px) and (max-width: 411px){
+    {
+        background-size: 40%;
+        margin-top: 115%;
+        margin-left: 20%;
+        animation-play-state: paused;
+
+        }
+   }
+
+   //iphone6+
+   @media only screen and (min-width: 412px) and (max-width: 425px){
+    {
+        background-size: 40%;
+        margin-top: 114%;
+        animation-play-state: paused;
+
+        }
+   }
+   //ipad
+   @media only screen and (min-width: 768px){
     {
         background-size: 25%;
-        margin-top: 104%;
-        margin-left: -10%;
-        background-repeat: no-repeat;
-        position: fixed;
+        margin-top: 90%;
+        animation-play-state: running;
         }
    }
 
-
-   @media only screen and (min-width: 1024px) and (height: 768px){
-    {
-        background-size: 20%;
-        // margin-top: 75%;
-        margin-left: -10%;
+// ipad pro
+@media only screen and (width: 1024px) {
+ {
+        background-size: 30%;
+        margin-top: 85%;
         }
    }
 
+   //laptop
+@media only screen and (width: 1440px)   {
+       { 
+            margin-top: 38%;
+            background-size: 12%;
 
-   @media only screen and (height: 1366px){
-    {
-        margin-top: 103%;
-        background-size: 25%;
-
-
-    }
+        }
 }
-@media only screen and (width: 1366px) and (height: 768px) {
-    {
-        margin-top: 50%;
-        background-size: 15%;
-    }
-}
-@media only screen and (width: 1440px) and (height: 900px){
-    {
-            margin-top: 48%;
-            background-size: 13%;
 
-        }
-   }
-   @media only screen and (min-width: 1920px) and (max-width: 1921px) and (height: 1080px){
+//laptop
+   @media only screen and (min-width: 1920px) and (max-width: 1921px){
     {
-        margin-top: 43%;
-        background-size: 10%;
+        margin-top: 36%;
+        background-size: 12%;
         }
-   }
-   @media only screen and (width: 2560px) and (height: 1440px){
+}
+
+   @media only screen and (width: 2560px){
     {
-        margin-top: 43%;
-        background-size: 10%;
+        margin-top: 37%;
+        background-size: 11%;
     }
 }
 
 `
-const NextBtn = styled.div`
-button{
-    display: flex ;
-    justify-content: center ;
-    height: 40px;
-    font-size: 15px;   
-    position: absolute;
-    z-index: 1000;
-    border-radius: 15px;
-    border: inset rgb(228, 228, 228)2px;
-    margin: auto;
-margin-top: .5em;
-margin-left: 55vw;
-background-color: rgba(255, 255, 255, 0.619);
-}
-a:link{
-    text-decoration: none;
-}
 
-`
 
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <Parent>
+                
                     <Background>
-                        <h1>
-
-                            Once upon a time there was a girl who wanted to be a filmmaker, <br /> so she learned everything she could about film in school. <br /> Then she ran all over the city and shot short films and music videos and TV shows and interviews and any and everything she possibly could.  
+                        <h1>    Once upon a time there was a girl who wanted to be a filmmaker, <br /> so she learned everything she could about film in school. <br /> Then she ran all over the city and shot short films and music videos and TV shows and interviews and any and everything she possibly could.  
                             <br />
-
                            <a href="/news">Next</a>  
                             </h1>
-                        {/* <NextBtn>
-                            <Link to="/news"><button>Next Chapter</button></Link>
-                        </NextBtn> */}
+
 
                     </Background>
                     <Birds>
@@ -403,7 +375,7 @@ class Home extends Component {
                     <Bus>
                         <img src="https://media.giphy.com/media/1k0AlwzpknA4TeDERT/giphy.gif" alt="bus" />
                     </Bus>
-                </Parent>
+               
             </div>
         );
     }
