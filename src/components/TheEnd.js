@@ -41,7 +41,7 @@ z-index: -100;
 }
 
 //iphone6+
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
     { 
             background-size: cover;
             height: 100%;
@@ -204,7 +204,7 @@ const Confetti = styled.div`
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             margin-top: -65%;
             margin-left: 1%;
@@ -307,7 +307,7 @@ visibility: visible;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             margin-top: 14%;
             margin-left: 25%;
@@ -416,7 +416,7 @@ visibility: hidden;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             margin-top: 14%;
             margin-left: 27%;
@@ -530,7 +530,7 @@ color: #E73C7E;
         }
 }
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
 
             h1{

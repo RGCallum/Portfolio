@@ -67,7 +67,7 @@ repeat 0 0;
  }
 }
 //iphone6+
-@media only screen and (min-width: 414px)   {
+@media only screen and (min-width: 412px)   {
     {
         h1{
             margin-top: 4em;
@@ -135,7 +135,7 @@ repeat 0 0;
     
 }
 //iphone6+
-@media only screen and (min-width: 414px)   {
+@media only screen and (min-width: 412px)   {
     {
         background-size: cover;
 
@@ -204,7 +204,7 @@ background-repeat: no-repeat;
  }
 }
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (min-width: 412px)  {
     {
     margin-top: 68%;
     background-size: 100%;
@@ -272,7 +272,7 @@ to { margin-left: -110%;  }
 }
 display: none;
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
         margin-top: -24%;
 

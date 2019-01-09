@@ -72,7 +72,7 @@ color: #E73C7E;
      }
 }
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             h1{
                 font-size: 16px;      
@@ -225,7 +225,7 @@ background-size: 100%;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
               margin-top: 60%; 
 margin-left: -1%;
@@ -315,7 +315,7 @@ background-size: 100%;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
         margin-top: 60%; 
         margin-left: -1%;
