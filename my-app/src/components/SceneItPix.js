@@ -73,7 +73,7 @@ animation: Gradient 15s ease infinite;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             h1{
                 font-size: 16px;       
@@ -218,7 +218,7 @@ width: 100%;
 
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             margin-top: 65%;
 
@@ -297,7 +297,7 @@ background-size: contain;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             margin-top: 65%;
 
@@ -408,7 +408,7 @@ background-size: contain;
     }
     
     //iphone 6+ and big mobile phones
-    @media only screen and (min-width: 414px) and (max-width: 425px)  {
+    @media only screen and (min-width: 412px) and (max-width: 425px)  {
               { 
                 margin-top: 65%;
     

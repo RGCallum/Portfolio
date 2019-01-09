@@ -8,7 +8,7 @@ const NavStyle = styled.div`
     text-decoration: none;
     color: black;
     font-size: 16px
-    // font-weight: 500;
+    font-weight: 500;
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         font-size: 12px
@@ -126,7 +126,7 @@ const NavStyle = styled.div`
 
 .dd2-menu {
   position: absolute;
-margin-top: 5px;
+  margin-top: 15px;
   border: inset rgb(228, 228, 228)1px;
   border-radius: 15px;
   padding: 0;
@@ -143,7 +143,7 @@ margin-top: 5px;
 } 
 
 .dd2-input:checked + .dd2-menu {
-  display: flex;
+  display: block;
 } 
 
 .dd2-menu li {
@@ -195,12 +195,14 @@ class NavBar extends Component {
                             <li><a href="/portfolio"><i class="far fa-images"></i> Portfolio </a></li>
                             <li><a href="/skills"><i class="fas fa-magic"></i> Skills </a></li>
                             <li><a href="/resume"><i class="far fa-list-alt"></i> Resume </a> </li>
-                            <li><i class="fas fa-grin-tongue-wink"></i> My Story
+                            <li><a href="#"><i class="fas fa-grin-tongue-wink"></i> My Story </a> 
                             <label class="dropdown">
 
                         <div class="dd2-button">
-                        
+                      
                                                 </div>
+                                                <input type="checkbox" class="dd2-input" id="test" />
+
                             <ul class="dd2-menu">
                             <li><a href="/about"><i class="fas fa-film"></i> Film </a></li>
                             <li><a href="/news"><i class="far fa-newspaper"></i> News </a></li>

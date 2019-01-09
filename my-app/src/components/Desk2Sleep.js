@@ -90,7 +90,7 @@ color: #E73C7E;
         }
 }
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
 
             h1{
@@ -181,7 +181,7 @@ background-repeat: no-repeat;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (min-width: 414px) and (max-width: 425px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
             margin-top: 85%;
             background-size: 120%;

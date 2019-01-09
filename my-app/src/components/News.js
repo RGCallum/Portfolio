@@ -49,7 +49,7 @@ z-index: -100;
 }
 
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
         margin-left: -90%;
     background-size: cover;
@@ -178,7 +178,7 @@ repeat 0 0;
 }
 
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
     background-size: cover;
     height: 115%;
@@ -262,7 +262,7 @@ const Tornado = styled.div`
 }
 
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
         margin-top: -50%;
         background-size: cover;
@@ -360,7 +360,7 @@ animation-timing-function: ease-out;
 }
 
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
         background-size: cover;
         height: 115%;
@@ -446,7 +446,7 @@ animation-fill-mode: forwards;
 }
 
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
         margin-top: 122%;
         background-size: 53%;
@@ -533,7 +533,7 @@ visibility: visible;
 }
 
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
         margin-top: 120%;
         background-size: 58%;
@@ -607,7 +607,7 @@ background-repeat: no-repeat;
 }
 
 //iphone6+
-@media only screen and (width: 414px)   {
+@media only screen and (width: 412px) and (width: 414px)   {
     {
     margin-top: 115%;
     background-size: 50%;
@@ -693,7 +693,7 @@ color: #E73C7E;
 }
 
 //iphone 6+ and big mobile phones
-@media only screen and (width: 414px) and (max-width: 425px)  {
+@media only screen and (width: 412px) and (width: 414px) and (max-width: 425px)  {
           { 
             h1{
                 margin-top: 15%;
