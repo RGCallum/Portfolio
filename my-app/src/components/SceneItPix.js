@@ -10,14 +10,14 @@ background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 background-size: 400% 400%;
 height: 100vh;
 color: white;
-text-shadow: 1px 1px 1px black;
+// text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;
 position: absolute;
 h1{
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 1;
@@ -190,15 +190,15 @@ width: 100%;
 //laptop
 @media only screen and (width: 1366px)   {
           { 
-              margin-top: 5%;
-          }
+            margin-top: 20%;
+        }
           }
 
 //laptop
 @media only screen and (width: 1280px)   {
 { 
-     margin-top: 5%;
- }
+    margin-top: 20%;
+}
  }
 
  //ipad pro
@@ -227,7 +227,7 @@ width: 100%;
 //iphone 6
 @media only screen and (width: 375px)   {
           { 
-            margin-top: 85%;
+            margin-top: 75%;
 
            }
 }
@@ -235,7 +235,7 @@ width: 100%;
 //s5
 @media only screen and (width: 360px)   {
           { 
-            margin-top: 95%;
+            margin-top: 85%;
 
            }
 }
@@ -243,8 +243,8 @@ width: 100%;
 //really small mobile
 @media only screen and (width: 320px)   {
           {           
-                margin-top: 125%;           
-           }
+            margin-top: 100%;           
+        }
 }
 `
 const SceneItDesk = styled.div`
@@ -272,14 +272,14 @@ background-size: contain;
 //laptop
 @media only screen and (width: 1366px)   {
           { 
-              margin-top: 5%;
-          }
+            margin-top: 20%;
+        }
           }
 
 //laptop
  @media only screen and (width: 1280px)   {
        { 
-            margin-top: 5%;
+            margin-top: 20%;
         }
         }
 //ipad pro
@@ -306,7 +306,7 @@ background-size: contain;
 //iphone 6
 @media only screen and (width: 375px)   {
           { 
-            margin-top: 85%;
+            margin-top: 75%;
 
            }
 }
@@ -314,14 +314,14 @@ background-size: contain;
 //s5
 @media only screen and (width: 360px)   {
           { 
-            margin-top: 95%;
+            margin-top: 85%;
 
            }
 }
 //really small mobile
 @media only screen and (width: 320px)   {
           {           
-                margin-top: 125%;           
+                margin-top: 100%;           
            }
 }
 
@@ -332,10 +332,8 @@ background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
     z-index: 100;
-    width: 60%;
-    height: 60vw;
-    margin-top: 10%;
-    margin-left: 20%;
+    width: 100%;
+    height: 100vw;
     animation: bounce-in-top 1.1s 16s both;
     @keyframes bounce-in-top {
         0% {
@@ -398,28 +396,28 @@ background-size: contain;
     //ipad pro
     @media only screen and (width: 1024px)   {
             { 
-                 margin-top: 55%;
+                 margin-top: 45%;
              }
     }
     
     //ipad 
     @media only screen and (width: 768px)   {
             { 
-                 margin-top: 55%;
+                 margin-top: 45%;
              }
     }
     
     //iphone 6+ and big mobile phones
     @media only screen and (min-width: 414px) and (max-width: 425px)  {
               { 
-                margin-top: 75%;
+                margin-top: 65%;
     
                }
     }
     //iphone 6
     @media only screen and (width: 375px)   {
               { 
-                margin-top: 95%;
+                margin-top: 75%;
     
                }
     }
@@ -427,14 +425,14 @@ background-size: contain;
     //s5
     @media only screen and (width: 360px)   {
               { 
-                margin-top: 105%;
+                margin-top: 85%;
     
                }
     }
     //really small mobile
     @media only screen and (width: 320px)   {
               {           
-                    margin-top: 135%;           
+                    margin-top: 100%;           
                }
     }
 `
@@ -452,7 +450,7 @@ class SceneItPix extends Component {
                     <br />
                     <br />
                     <h1>
-                        After returning to land, she decided to try event photography. She loved being at the events and making people smile for a living. Then shwanted to make her equipment self contained and the guest experience more interactive, so she built her own Magic Mirror photo booth.  It was a success, and the guests loved it. The challenge and excitement of building the photo booth sparked her interest for computer programming. <br />
+                        After returning to land, she decided to try event photography. She loved being at the events and making people smile for a living. Then she wanted to make her equipment self contained and the guest experience more interactive, so she built her own Magic Mirror photo booth.  It was a success, and the guests loved it. The challenge and excitement of building the photo booth sparked her interest for computer programming. <br />
                         <a href='/ship'>Back  </a> | <a href='/school'> Next Chapter</a> <br />
                         
 

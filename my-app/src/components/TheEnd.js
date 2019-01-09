@@ -19,11 +19,13 @@ z-index: -100;
   margin-top: 0%;
   text-align: center;
   overflow-y: hidden;
-  //ipad pro
+//ipad pro
     @media only screen and (width: 1024px)   {
         { 
         background-size: cover;
         height: 110%;
+        width: 260%;
+        margin-left: -130%;
         
         }
         }
@@ -33,7 +35,8 @@ z-index: -100;
     { 
             background-size: cover;
             height: 115%;
-            width: 115%;
+            width: 260%;
+            margin-left: -130%;
             }
 }
 
@@ -42,10 +45,41 @@ z-index: -100;
     { 
             background-size: cover;
             height: 100%;
-            width: 100%;
+            width: 260%;
+            margin-left: -130%;
             }
 }
-        `
+
+//iphone6, iphoneX
+@media only screen and (width: 375px)   {
+    {
+        background-size: cover;
+            height: 100%;
+            width: 260%;
+            margin-left: -160%;
+            }
+}
+
+//s5
+   @media only screen and (width: 360px)   {
+    {
+        background-size: cover;
+            height: 100%;
+            width: 260%;
+            margin-left: -160%;
+            }
+}
+        
+
+//really small mobile screens
+@media only screen and (width: 320px)    {
+    { background-size: cover;
+        height: 100%;
+        width: 310%;
+        margin-left: -210%;
+        }
+}
+`
 
 
 const BothBtns = styled.div`
@@ -100,18 +134,106 @@ button{
 }
 `
 const Confetti = styled.div`
-    // margin-top: -5%;
     position: fixed;
-    z-index: 2;
-    margin-left: 0%;
-    height: 90vw;
-    width: 102vw;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
     background-image: url(${img2});
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: block;
+    margin-top: -14%;
+    margin-left: 1%;
+    animation: 1s show;
+    animation-fill-mode: forwards;
+    animation-delay: 16s;
+    visibility: hidden;
+    }
+    
+    @keyframes show {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+}
 
+@media only screen and (width: 2560px){
+    {
+        margin-top: -14%;
+        margin-left: 1%;
+    }
+}
+@media only screen and (width: 1920px){
+    {
+        margin-top: -16%;
+        margin-left: 1%;       
+    }
+}
 
+@media only screen and (width: 1440px){
+    {
+        margin-top: -16%;
+        margin-left: 1%;
+    }
+    }
+
+//laptop
+@media only screen and (width: 1280px)   {
+{ 
+    margin-top: -16%;
+    margin-left: 1%;
+}
+}
+
+//ipad pro
+    @media only screen and (width: 1024px)   {
+        { 
+            margin-top: -25%;
+            margin-left: 1%;
+        }
+        }
+
+        //ipad
+@media only screen and (max-width: 768px)   {
+        { 
+            margin-top: -45%;
+            margin-left: 1%;
+            }
+}
+
+//iphone 6+ and big mobile phones
+@media only screen and (min-width: 414px) and (max-width: 425px)  {
+          { 
+            margin-top: -65%;
+            margin-left: 1%;
+            }
+}
+//iphone 6
+@media only screen and (width: 375px)   {
+          { 
+            margin-top: -85%;
+            margin-left: 1%;
+            }
+}
+
+//s5
+@media only screen and (width: 360px)   {
+          {                                   
+            margin-top: -75%;
+            margin-left: 1%;
+        }
+}
+
+//really small mobile
+@media only screen and (width: 320px)   {
+          {  
+            margin-top: -85%;
+            margin-left: 1%;
+            
+        }
+}
 `
 const Child1 = styled.div`
 background-image: url(${sprite});
@@ -123,7 +245,20 @@ position: fixed;
 z-index: 3;
 height: 100%;
 width: 100%;
+animation: 1s disappear;
+animation-fill-mode: forwards;
+animation-delay: 16s;
+visibility: visible;
+}
 
+@keyframes disappear {
+99% {
+  visibility: visible;
+}
+100% {
+  visibility: hidden;
+}
+}
 @media only screen and (width: 2560px){
     {
         margin-top: 10%;
@@ -157,7 +292,7 @@ width: 100%;
     @media only screen and (width: 1024px)   {
         { 
             margin-top: 20%;
-            margin-left: 23%;
+            margin-left: 25%;
         background-size: 50%;
         }
         }
@@ -166,7 +301,7 @@ width: 100%;
 @media only screen and (max-width: 768px)   {
         { 
             margin-top: 4%;
-            margin-left: 23%;
+            margin-left: 25%;
         background-size: 50%;
             }
 }
@@ -175,15 +310,15 @@ width: 100%;
 @media only screen and (min-width: 414px) and (max-width: 425px)  {
           { 
             margin-top: 14%;
-            margin-left: 23%;
+            margin-left: 25%;
         background-size: 50%;
             }
 }
 //iphone 6
 @media only screen and (width: 375px)   {
           { 
-            margin-top: 33%;
-            margin-left: 23%;
+            margin-top: 13%;
+            margin-left: 25%;
         background-size: 50%;
             }
 }
@@ -191,8 +326,8 @@ width: 100%;
 //s5
 @media only screen and (width: 360px)   {
           { 
-            margin-top: 35%;
-            margin-left: 23%;
+            margin-top: 20%;
+            margin-left: 25%;
         background-size: 50%;         
                      
             
@@ -202,8 +337,8 @@ width: 100%;
 //really small mobile
 @media only screen and (width: 320px)   {
           {  
-            margin-top: 37%;
-            margin-left: 23%;
+            margin-top: 20%;
+            margin-left: 25%;
         background-size: 50%;          
             
         }
@@ -219,7 +354,20 @@ position: fixed;
 z-index: 3;
 height: 100%;
 width: 100%;
+animation: 1s appear;
+animation-fill-mode: forwards;
+animation-delay: 16s;
+visibility: hidden;
+}
 
+@keyframes appear {
+99% {
+  visibility: hidden;
+}
+100% {
+  visibility: visible;
+}
+}
 @media only screen and (width: 2560px){
     {
         margin-top: 10%;
@@ -253,8 +401,8 @@ width: 100%;
     @media only screen and (width: 1024px)   {
         { 
             margin-top: 20%;
-            margin-left: 23%;
-        background-size: 50%;
+            margin-left: 27%;
+        background-size: 46%;
         }
         }
 
@@ -262,8 +410,8 @@ width: 100%;
 @media only screen and (max-width: 768px)   {
         { 
             margin-top: 4%;
-            margin-left: 23%;
-        background-size: 50%;
+            margin-left: 27%;
+        background-size: 46%;
             }
 }
 
@@ -271,25 +419,25 @@ width: 100%;
 @media only screen and (min-width: 414px) and (max-width: 425px)  {
           { 
             margin-top: 14%;
-            margin-left: 23%;
-        background-size: 50%;
+            margin-left: 27%;
+        background-size: 46%;
             }
 }
 //iphone 6
 @media only screen and (width: 375px)   {
           { 
-            margin-top: 33%;
-            margin-left: 23%;
-        background-size: 50%;
+            margin-top: 13%;
+            margin-left: 27%;
+        background-size: 46%;
             }
 }
 
 //s5
 @media only screen and (width: 360px)   {
           { 
-            margin-top: 35%;
-            margin-left: 23%;
-        background-size: 50%;         
+            margin-top: 20%;
+            margin-left: 27%;
+        background-size: 46%;         
                      
             
         }
@@ -298,9 +446,9 @@ width: 100%;
 //really small mobile
 @media only screen and (width: 320px)   {
           {  
-            margin-top: 37%;
-            margin-left: 23%;
-        background-size: 50%;          
+            margin-top: 18%;
+            margin-left: 27%;
+        background-size: 48%;          
             
         }
 }
@@ -308,9 +456,9 @@ width: 100%;
 const NextBtn = styled.div`
 h1{
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     z-index: 1;
     border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;
@@ -365,7 +513,7 @@ color: #E73C7E;
             
         h1{
             margin-top: 5%;
-            font-size: 25px;
+            font-size: 35px;
 
         }
      }
@@ -375,7 +523,7 @@ color: #E73C7E;
         { 
             
         h1{
-            margin-top: 5%;
+            margin-top: 10%;
             font-size: 25px;
 
         }
@@ -387,8 +535,8 @@ color: #E73C7E;
 
             h1{
                 font-size: 16px;      
-                margin-top: 10%; 
- width: 93.5vw;
+                margin-top: 15%; 
+ width: 100vw;
               }
            }
 }
@@ -397,7 +545,7 @@ color: #E73C7E;
           { 
             h1{
                 font-size: 16px;   
-                margin-top: 10%; 
+                margin-top: 25%; 
     
               }
            }
@@ -407,7 +555,7 @@ color: #E73C7E;
           {    
               h1{
                 font-size: 14px;       
-                margin-top: 10%; 
+                margin-top: 25%; 
 
               }
            }
@@ -418,7 +566,7 @@ color: #E73C7E;
           {    
               h1{
                 font-size: 14px;       
-                margin-top: 10%; 
+                margin-top: 25%; 
 
               }
            }
@@ -428,8 +576,8 @@ class TheEnd extends Component {
     constructor() {
         super()
         this.state = {
-            showConfetti: false,
-            girlStill1: false,
+            showConfetti: true,
+            girlStill1: true,
             girlJump: true,
         }
     }
@@ -485,9 +633,9 @@ class TheEnd extends Component {
                     }
                 </GirlJump>
                 <BothBtns>
-                    <ConfettiBtn>
+                    {/* <ConfettiBtn>
                         <button onClick={() => this.operation()}>Confetti</button>
-                    </ConfettiBtn>
+                    </ConfettiBtn> */}
                     {
                         this.state.showConfetti ?
                             <div>
@@ -495,9 +643,9 @@ class TheEnd extends Component {
                             </div>
                             : null
                     }
-                    <JumpBtn>
+                    {/* <JumpBtn>
                         <button onClick={() => { this.operation2(); this.operation3(); }}>Jump! </button>
-                    </JumpBtn>
+                    </JumpBtn> */}
 
 
                 </BothBtns>

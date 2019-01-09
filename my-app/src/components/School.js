@@ -12,7 +12,7 @@ font-size: 25px;
 text-align: center;
 h1{   
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 35px;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;

@@ -6,8 +6,8 @@ import img3 from '../images/waterLayer.png';
 
 const Background = styled.div`
 color: white;
-text-shadow: 1px 1px 1px black;
-font-size: 25px;
+// text-shadow: 1px 1px 1px black;
+// font-size: 25px;
 font-weight: 800;
 background-repeat: repeat-x;
 background-size: 10%;
@@ -22,7 +22,7 @@ repeat 0 0;
   h1{
     margin-top: -4em;
     color: black;
-    text-shadow: 1px 1px 1px white;
+    // text-shadow: 1px 1px 1px white;
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 1000;
