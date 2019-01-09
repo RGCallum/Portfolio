@@ -138,10 +138,10 @@ h1{
     { 
         background-size: cover;
         width: 190%;
-        height: 120vh;
+        height: 105vh;
         h1{
         font-size 13px;
-        margin-top: 23%;
+        margin-top: 10%;
 
         }
     }
@@ -155,7 +155,7 @@ h1{
         height: 120vh;
         h1{
         font-size 13px;
-        margin-top: 23%;
+        margin-top: 13%;
 
         }
     }
@@ -188,7 +188,7 @@ const Bus = styled.div`
 @media only screen and (min-width: 360px) and (max-width: 374px){
     {
         background-size: 50%;
-        margin-top: 150%;
+        margin-top: 130%;
         
         }
    }
@@ -282,8 +282,8 @@ animation: slide 25s linear infinite;
    //s5
    @media only screen and (min-width: 360px)   {
     { 
-        background-size: 45%;
-        margin-top: 140%;
+        background-size: 40%;
+        margin-top: 118%;
         animation-play-state: paused;
 
         }
