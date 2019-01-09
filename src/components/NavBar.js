@@ -4,7 +4,7 @@ import styled from "styled-components";
 const NavStyle = styled.div`
 
   
-  a {
+  a, li {
     text-decoration: none;
     color: black;
     font-size: 16px
@@ -18,7 +18,7 @@ const NavStyle = styled.div`
 
   }
   
-  a:hover {
+  a:hover, li:hover {
     border-radius: 15px; 
     color: #E73C7E;
     font-weight: 600;
@@ -107,7 +107,72 @@ const NavStyle = styled.div`
     padding: 0;
     border-bottom: 1px solid #cccccc;
   }
+//sub menu
 
+
+
+
+
+.dd2-button:hover {
+  background-color: #eeeeee;
+  color: #E73C7E;
+
+}
+
+
+.dd2-input {
+  display: block;
+}
+
+.dd2-menu {
+  position: absolute;
+margin-top: 5px;
+  border: inset rgb(228, 228, 228)1px;
+  border-radius: 15px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, .999);
+  // background-color: rgba(255, 255, 255, 0.4);
+
+  list-style-type: none;
+}
+
+.dd2-input + .dd2-menu {
+  display: none;
+} 
+
+.dd2-input:checked + .dd2-menu {
+  display: flex;
+} 
+
+.dd2-menu li {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.dd2-menu li:hover {
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  border: inset rgb(228, 228, 228)1px; 
+}
+
+.dd2-menu li a {
+  display: flex;
+  margin: -10px -20px;
+  padding: 10px 10px;
+  @media only screen and (min-device-width: 320px) and (max-width: 480px) {
+      {
+          padding: 5px 5px;
+
+      }
+     }
+}
+
+.dd2-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
 
 `
 
@@ -130,7 +195,27 @@ class NavBar extends Component {
                             <li><a href="/portfolio"><i class="far fa-images"></i> Portfolio </a></li>
                             <li><a href="/skills"><i class="fas fa-magic"></i> Skills </a></li>
                             <li><a href="/resume"><i class="far fa-list-alt"></i> Resume </a> </li>
-                            <li><a href="/about"><i class="fas fa-grin-tongue-wink"></i> My Story </a></li>
+                            <li><i class="fas fa-grin-tongue-wink"></i> My Story
+                            <label class="dropdown">
+
+                        <div class="dd2-button">
+                        
+                                                </div>
+                            <ul class="dd2-menu">
+                            <li><a href="/about"><i class="fas fa-film"></i> Film </a></li>
+                            <li><a href="/news"><i class="far fa-newspaper"></i> News </a></li>
+                            <li><a href="/ship"><i class="fas fa-ship"></i> Ship </a></li>
+                            <li><a href="/scene"><i class="fas fa-camera-retro"></i> SceneIt </a> </li>
+                            <li><a href="/school"><i class="fas fa-chalkboard-teacher"></i> Studies </a></li>
+                            <li><a href="/desk1"><i class="fas fa-code"></i> Code </a></li>
+                            <li><a href="/desk2"><i class="fas fa-laptop-code"></i> More Code </a> </li>
+                            <li><a href="/end"><i class="fas fa-trophy"></i> Winning </a></li>
+
+                        </ul>
+                        </label>
+
+
+                        </li>
 
                         </ul>
 
