@@ -8,7 +8,7 @@ const NavStyle = styled.div`
     text-decoration: none;
     color: black;
     font-size: 16px
-    font-weight: 500;
+    font-weight: 400;
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
         font-size: 12px
@@ -22,7 +22,13 @@ const NavStyle = styled.div`
     border-radius: 15px; 
     color: #E73C7E;
     font-weight: 600;
+    
   }
+  a:hover{
+    box-shadow: 1px 1px 10px;
+  }
+  
+
   
   /* Dropdown */
   
@@ -38,9 +44,9 @@ const NavStyle = styled.div`
     display: inline-flex;
     border: inset rgb(228, 228, 228)2px;
     border-radius: 150px;
-    padding: 5px 10px 5px 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-    font-size: 16px;
+    padding: 5px 5px 5px 10px;
+    background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+  }    font-size: 16px;
     cursor: pointer;
     white-space: nowrap;
   }
@@ -49,7 +55,7 @@ const NavStyle = styled.div`
   .dd-button:hover {
     background-color: #eeeeee;
     color: #E73C7E;
-
+    box-shadow: 1px 1px 10px;
   }
   
   
@@ -66,8 +72,7 @@ const NavStyle = styled.div`
     padding: 0;
     margin: 2px 0 0 0;
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-    // background-color: rgba(255, 255, 255, .999);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-image: linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);;
 
     list-style-type: none;
   }
@@ -86,7 +91,7 @@ const NavStyle = styled.div`
   }
   
   .dd-menu li:hover {
-    background-color: #f6f6f6;
+    background-image: linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
     border-radius: 15px;
     border: inset rgb(228, 228, 228)1px; 
   }
@@ -121,30 +126,51 @@ const NavStyle = styled.div`
 
 
 .dd2-input {
-  display: block;
+  display: flex;
+  margin-left: 73px;
+  margin-top: -27px;
+  
 }
 
 .dd2-menu {
   position: absolute;
-  margin-top: 15px;
   border: inset rgb(228, 228, 228)1px;
   border-radius: 15px;
   padding: 0;
   margin: 2px 0 0 0;
   box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-  background-color: rgba(255, 255, 255, .999);
-  // background-color: rgba(255, 255, 255, 0.4);
+  background-image: linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+
 
   list-style-type: none;
 }
+
 
 .dd2-input + .dd2-menu {
   display: none;
 } 
 
 .dd2-input:checked + .dd2-menu {
-  display: block;
+  display: block;  
 } 
+
+
+//for dropdown arrow
+
+// .dd2-input:after {
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   right: 15px;
+//   transform: translateY(-50%);
+//   width: 0; 
+//   height: 0; 
+//   border-left: 5px solid transparent;
+//   border-right: 5px solid transparent;
+//   border-top: 5px solid black;
+// }
+
+
 
 .dd2-menu li {
   padding: 10px 20px;
@@ -173,6 +199,9 @@ const NavStyle = styled.div`
   padding: 0;
   border-bottom: 1px solid #cccccc;
 }
+i{
+  letter-spacing: 5px;
+}
 
 `
 
@@ -196,10 +225,10 @@ class NavBar extends Component {
                             <li><a href="/skills"><i class="fas fa-magic"></i> Skills </a></li>
                             <li><a href="/resume"><i class="far fa-list-alt"></i> Resume </a> </li>
                             <li><a href="#"><i class="fas fa-grin-tongue-wink"></i> My Story </a> 
-                            <label class="dropdown">
+                            
 
                         <div class="dd2-button">
-                      
+
                                                 </div>
                                                 <input type="checkbox" class="dd2-input" id="test" />
 
@@ -214,7 +243,7 @@ class NavBar extends Component {
                             <li><a href="/end"><i class="fas fa-trophy"></i> Winning </a></li>
 
                         </ul>
-                        </label>
+                      
 
 
                         </li>

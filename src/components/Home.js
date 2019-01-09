@@ -32,8 +32,8 @@ h1{
        }
 }
 h2{
-    background-color: rgba(0,0,0,.7);
-padding: 10px;
+    background-color: rgba(0,0,0,.5);
+// padding: 10px;
     font-size: 25px;
     font-weight: 700;
     font-weight: 400;
@@ -52,7 +52,8 @@ button{
     border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;
     padding: 5px 10px 5px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    margin: 15px;
+    background-image: linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);;
     font-size: 16px;
     color: black;
     :hover {
@@ -60,6 +61,7 @@ button{
         border-radius: 15px; 
         color: #E73C7E;
         font-weight: 600;
+        box-shadow: 1px 1px 10px;  
       }
 }
     text-shadow: 1px 1px 1px black;
@@ -144,12 +146,10 @@ class Home extends Component {
                 </SkillText>
 
                 <Container>
-                    <br />
                     <h2>
                         <h1>Rashaunda Guy-Callum</h1>
                         I create awesome web apps and innovative technology. <br /> To view my work, skills or resume please click on the menu above. <br />
                         To learn a bit more about me and check out a few of my animations, click the button below.
-                    <br />
                         <br />
                         <a href='/about'><button>My Story</button></a>
                     </h2>
