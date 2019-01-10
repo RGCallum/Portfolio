@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import img from '../images/streetBkgd4.png';
+// import img from '../images/streetBkgd4.png';
 import camGirl from '../images/camGirlRunSteady.gif';
 import { Link } from "react-router-dom";
 
