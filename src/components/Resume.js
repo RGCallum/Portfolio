@@ -6,7 +6,7 @@ import img from '../images/RGCallum2.png';
 const Container = styled.div`
 background-image: url('https://i.ibb.co/QfSzryH/resume-Stack4.png');
 background-size: cover;
-width: 100vw;
+width: 110vw;
 height: 100vh;
 background-repeat: no-repeat;
 text-align: center;

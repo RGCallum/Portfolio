@@ -33,16 +33,17 @@ h1{
 }
 h2{
     background-color: rgba(0,0,0,.5);
-// padding: 10px;
+    padding: 10px;
     font-size: 25px;
     font-weight: 700;
     font-weight: 400;
+    background-size: cover;
 
     @media only screen and (min-device-width: 320px) and (max-width: 480px) {
         {
             margin-top: 1em;
             font-size: 15px;
-            // text-align: center;
+            background-position: cover;
 
             }
        }
@@ -83,10 +84,6 @@ const HomeStyle = styled.div`
 background-repeat: no-repeat;
 position: absolute;
 z-index: -100;
-width: 100vw;
-height: 100vw;
-background-size: contain;
-// background-position: center;
 margin-top: -15em;
 background-image: url('https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 color: white;
@@ -99,8 +96,8 @@ text-align: center;
         text-align: center;
         background-size: cover;
         background-position: center;
-        height: 110vh;
-        width: 100vw;
+        height: 130vh;
+        width: 110vw;
         word-wrap: normal;
     }
    }
