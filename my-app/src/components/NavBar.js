@@ -159,10 +159,12 @@ const NavStyle = styled.div`
   display: block;  
 } 
 
-.dd2-input:hover + .dd2-menu {
-  display: block; 
+// .dd2-input:hover + .dd2-menu {
+//   display: block; 
    
-} 
+// } 
+
+
 
 
 
@@ -221,7 +223,7 @@ class NavBar extends Component {
               <li><a href="/portfolio"><i class="far fa-images"></i> Portfolio </a></li>
               <li><a href="/skills"><i class="fas fa-magic"></i> Skills </a></li>
               <li><a href="/resume"><i class="far fa-list-alt"></i> Resume </a> </li>
-              <li><a href="/about" id='subMenu'><i class="fas fa-grin-tongue-wink"></i> My Story </a>
+              <li><a href="/about"><i class="fas fa-grin-tongue-wink"></i> My Story </a>
                 <div class="dd2-button">
                 </div>
                 <input type="checkbox" class="dd2-input" id="test" />

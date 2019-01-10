@@ -85,22 +85,21 @@ background-repeat: no-repeat;
 position: absolute;
 z-index: -100;
 margin-top: -15em;
+margin-left: -7%;
 background-image: url('https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 color: white;
 text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;
-@media only screen and (min-device-width: 320px) and (max-width: 1025px) {
-    {
+
         text-align: center;
         background-size: cover;
         background-position: center;
         height: 130vh;
         width: 110vw;
         word-wrap: normal;
-    }
-   }
+
 
    animation: move 60s infinite;
 
