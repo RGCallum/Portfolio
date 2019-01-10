@@ -30,7 +30,9 @@ h1{
 a:hover{
 color: #E73C7E;
 }
-
+a{
+    text-decoration: none;
+}
 animation: Gradient 15s ease infinite;
 @keyframes Gradient {
 	0% {

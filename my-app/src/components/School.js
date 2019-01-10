@@ -150,7 +150,7 @@ margin-left: 22%;
     z-index: 100;
     width: 80vw;
     height: 100vw;
-    animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     @keyframes fade-in {
         0% {
           opacity: 0;
