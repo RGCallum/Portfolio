@@ -8,13 +8,14 @@ import img2 from '../images/SIPBackdropL.png';
 const Container = styled.div`
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 background-size: 400% 400%;
-height: 100vh;
+height: 200vh;
 color: white;
 // text-shadow: 1px 1px 1px black;
 font-size: 25px;
 font-weight: 800;
 text-align: center;
 position: absolute;
+
 h1{
     color: black;
     // text-shadow: 1px 1px 1px white;

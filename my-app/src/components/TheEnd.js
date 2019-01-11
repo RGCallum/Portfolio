@@ -150,7 +150,7 @@ const Confetti = styled.div`
     margin-left: 1%;
     animation: 1s show;
     animation-fill-mode: forwards;
-    animation-delay: 13s;
+    // animation-delay: 13s;
     visibility: hidden;
     }
     
@@ -360,7 +360,7 @@ height: 100%;
 width: 100%;
 animation: 1s appear;
 animation-fill-mode: forwards;
-animation-delay: 13s;
+// animation-delay: 13s;
 visibility: hidden;
 }
 
@@ -630,7 +630,7 @@ class TheEnd extends Component {
                     {() => this.operation3()}
                     {this.state.girlJump ?
                         <div>
-                            <Child1></Child1>
+                            {/* <Child1>v</Child1> */}
 
                         </div>
                         : !null
