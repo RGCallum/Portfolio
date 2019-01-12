@@ -181,6 +181,12 @@ background-repeat: no-repeat;
    to { margin-left: -110%;  }
 }
 
+@media only screen and (min-width: 1920px) and (min-height: 1080px){
+    {
+
+    }
+}
+
 @media only screen and (width: 1024px){
     {
         margin-top: 30%;

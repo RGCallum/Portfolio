@@ -488,7 +488,7 @@ a:link{
     }
 }
 
-@media only screen and (width: 1920px){
+@media only screen and (min-width: 1920px) and (min-height: 1080px){
     {
         h1{
             font-size: 35px;
