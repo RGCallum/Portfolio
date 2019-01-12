@@ -422,7 +422,7 @@ visibility: hidden;
 //iphone 6+ and big mobile phones
 @media only screen and (min-width: 412px) and (max-width: 425px)  {
           { 
-            margin-top: 14%;
+            margin-top: 8%;
             margin-left: 27%;
         background-size: 46%;
             }
@@ -430,7 +430,7 @@ visibility: hidden;
 //iphone 6
 @media only screen and (width: 375px)   {
           { 
-            margin-top: 13%;
+            margin-top: 3%;
             margin-left: 27%;
         background-size: 46%;
             }
@@ -439,7 +439,7 @@ visibility: hidden;
 //s5
 @media only screen and (width: 360px)   {
           { 
-            margin-top: 20%;
+            margin-top: 10%;
             margin-left: 27%;
         background-size: 46%;         
                      
@@ -450,7 +450,7 @@ visibility: hidden;
 //really small mobile
 @media only screen and (width: 320px)   {
           {  
-            margin-top: 18%;
+            margin-top: 8%;
             margin-left: 27%;
         background-size: 48%;          
             
@@ -462,7 +462,7 @@ h1{
     color: black;
     // text-shadow: 1px 1px 1px white;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;
@@ -473,6 +473,11 @@ h1{
 }
 a:hover{
 color: #E73C7E;
+
+a:link{
+    text-decoration: none;
+} 
+
 }
 @media only screen and (width: 2560px){
     {

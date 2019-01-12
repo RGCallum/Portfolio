@@ -16,7 +16,7 @@ h1{
     font-size: 35px;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
-    // border-radius: 15px;
+    border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;
     padding: 10px;
     width: 100vw;     

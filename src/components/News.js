@@ -59,7 +59,7 @@ z-index: -100;
 }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)   {
     {
         margin-left: -90%;
     background-size: cover;
@@ -186,7 +186,7 @@ repeat 0 0;
 }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)    {
     {
         background-size: cover;
     height: 115%;
@@ -273,7 +273,7 @@ const Tornado = styled.div`
 }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)    {
     {
         margin-top: -50%;
         background-size: cover;
@@ -370,7 +370,7 @@ animation-timing-function: ease-out;
 }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)   {
     {
         background-size: cover;
         height: 115%;
@@ -455,7 +455,7 @@ animation-fill-mode: forwards;
 }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)    {
     {
         margin-top: 122%;
         background-size: 53%;
@@ -542,7 +542,7 @@ visibility: visible;
 }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)  {
     {
         margin-top: 120%;
         background-size: 58%;
@@ -616,7 +616,7 @@ background-repeat: no-repeat;
 }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)   {
     {
         margin-top: 115%;
     background-size: 50%;
@@ -649,7 +649,7 @@ h1{
     color: black;
     // text-shadow: 1px 1px 1px white;
     font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     z-index: 1;
     border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;
@@ -699,16 +699,16 @@ a{
           { 
             h1{
                 margin-top: 15%;
-                font-size: 16px;       
+                font-size: 13px;       
               }
            }
 }
 
 //iphone 6
-@media only screen and (width: 375px)   {
+@media only screen and (min-width: 375px) and (max-width: 411px)  {
           { 
             h1{
-                font-size: 16px;       
+                font-size: 13px;       
               }
            }
 }
@@ -717,7 +717,7 @@ a{
 @media only screen and (width: 360px)   {
           {    
               h1{
-                font-size: 16px;       
+                font-size: 13px;       
 
               }
            }
@@ -727,7 +727,7 @@ a{
 @media only screen and (width: 320px)   {
           {    
               h1{
-                font-size: 16px;       
+                font-size: 13px;       
 
               }
            }

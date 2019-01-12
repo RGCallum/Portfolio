@@ -20,7 +20,7 @@ h1{
     color: black;
     // text-shadow: 1px 1px 1px white;
     font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     border-radius: 15px;
     border: inset rgb(228, 228, 228)2px;

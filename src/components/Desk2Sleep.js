@@ -139,7 +139,7 @@ background-size: 50%;
 background-repeat: no-repeat;
     position: fixed;
     z-index: 100;
-    margin-top: 30%;
+    margin-top: 25%;
     margin-left: 24%;
     width: 100%;
     height: 100vw;

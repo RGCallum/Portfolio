@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-// import img from '../images/streetBkgd4.png';
+import img from '../images/streetBkgd4.png';
 import camGirl from '../images/camGirlRunSteady.gif';
 import { Link } from "react-router-dom";
 
 const Background = styled.div`
-
-background-image: url('https://i.ibb.co/L6RxsNz/street-Bkgd4.png');
+background-image: url(${img});
+// background-image: url('https://i.ibb.co/L6RxsNz/street-Bkgd4.png');
 background-size: contain;
 background-repeat-y: no-repeat;
 color: black;
@@ -24,6 +24,10 @@ z-index: -100;
 a:hover{
     color: #E73C7E;
     }
+
+a:link{
+    text-decoration: none;
+}    
 h1{
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 100;
