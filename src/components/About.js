@@ -123,8 +123,22 @@ h1{
 }
 }
 
-//iphone6, iphoneX
-@media only screen and (width: 375px)   {
+//iphone6
+@media only screen and (width: 375px) and (min-height: 667px) {
+    {
+    background-size: cover;
+    width: 190%;
+    height: 100%;
+    h1{
+        font-size 14px;
+        margin-top: 10%;
+
+        }
+}
+}
+
+// iphoneX
+@media only screen and (width: 375px) and (min-height: 812px) {
     {
     background-size: cover;
     width: 190%;
@@ -182,8 +196,7 @@ const Bus = styled.div`
 //really small mobile screens 
 @media only screen and (min-width: 320px) and (max-width: 359px){
     {
-        background-size: 50%;
-        margin-top: 170%;
+        margin-top: 150%;
 
         }
 }
@@ -191,34 +204,45 @@ const Bus = styled.div`
 //s5
 @media only screen and (min-width: 360px) and (max-width: 374px){
     {
-        background-size: 50%;
         margin-top: 130%;
         
         }
    }
 
-//iphone6, iphoneX
+//iphone6
 @media only screen and (min-width: 375px) and (max-width: 411px) {
     {
-        background-size: 50%;
         margin-top: 130%;
 
         }
+   }
+
+   // iphoneX
+   @media only screen and (width: 375px) and (min-height: 812px) {
+       {
+   margin-top: 160%;
+       }
    }
 
    //iphone6+
    @media only screen and (min-width: 412px) and (max-width: 425px){
     {
-        background-size: 50%;
         margin-top: 130%;
 
         }
    }
 
+   // iphoneX
+   @media only screen and (width: 375px) and (min-height: 812px) {
+       {
+   
+       }
+   }
+
    //ipad
    @media only screen and (min-width: 768px) {
     {      
-       
+        margin-top: 110%;
     }
 }
 
@@ -303,6 +327,16 @@ animation: slide 25s linear infinite;
 
         }
    }
+
+   // iphoneX
+@media only screen and (width: 375px) and (min-height: 812px) {
+    {
+        background-size: 40%;
+        margin-top: 145%;
+        margin-left: 20%;
+        animation-play-state: paused;
+    }
+}
 
    //iphone6+
    @media only screen and (min-width: 412px) and (max-width: 425px){
