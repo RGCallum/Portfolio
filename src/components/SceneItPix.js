@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import img from '../images/SIPDeskR.png';
 import img2 from '../images/SIPBackdropL.png';
-// import img3 from '../MagicMirrorGlow.png';
+import img3 from '../MagicMirrorGlow.png';
 
 
 const Container = styled.div`
@@ -330,7 +330,9 @@ background-size: contain;
 
 `
 const Mirror = styled.div`
-background-image: url('https://i.ibb.co/RNsNKgC/SIPMirror.png');
+// background-image: url('https://i.ibb.co/RNsNKgC/SIPMirror.png');
+background-image: url(${img3});
+
 background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
