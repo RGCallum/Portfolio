@@ -145,9 +145,11 @@ class Home extends Component {
                     <h2>
                         <h1>Rashaunda Guy-Callum</h1>
                         I create awesome web apps and innovative technology. <br /> To view my work, skills or resume please click on the menu above. <br />
-                        To learn a bit more about me and check out a few of my animations, click the button below.
+                        To learn a bit more about me and check out my work, click the buttons below.
                         <br />
-                        <a href='/about'><button>My Story</button></a>
+                        <a href='/about'><button>My Story</button></a>                         
+                        <a href='/portfolio'><button>My Work</button></a> 
+
                     </h2>
                     <HomeStyle />
 
