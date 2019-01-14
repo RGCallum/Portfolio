@@ -130,28 +130,28 @@ export default class Portfolio extends React.Component {
                                 <a href='https://nobu-filmmakers.herokuapp.com'>
                                 <img src='https://i.ibb.co/931K29J/Nobu.png' alt='Independent Filmmaker Database: JS|MongoDB|Express|React|Node' data-action="https://nobu-filmmakers.herokuapp.com" />
                                 </a>
-                                <h2> Independent Filmmaker Database <br /> created with: JS | MongoDB | Express | React | Node </h2>
+                                <h2> Independent Filmmaker Database <br /> created with: React | JS | Express | MongoDB | Node </h2>
                             </div>
 
                             <div>
                                 <a href='https://creative-freedom.herokuapp.com'>
                                 <img src='https://i.ibb.co/DKNZsX8/CCXMobile2.png' alt='Social Media Network for Creative Freelancers: JS|Python|React|Django|SQL' data-action="https://creative-freedom.herokuapp.com" />
                                 </a>
-                                <h2> Social Media Network for Creative Freelancers <br /> created with: JS | Python | React | Django | SQL </h2>
+                                <h2> Social Media Network for Creative Freelancers <br /> created with: React | Python | JS | Django | SQL </h2>
                             </div>
 
                             <div>
                                 <a href='https://piclist.herokuapp.com'>
                                 <img src='https://i.ibb.co/w0XPx52/PicList2.png' alt='Event Management Database: JS|MongoDB|Express|Node' data-action="https://piclist.herokuapp.com" />
                                 </a>
-                                <h2> PicList Employee Management Database  <br /> created with: JS | MongoDB | Express | React | Node </h2>
+                                <h2> PicList Employee Management Database  <br /> created with: Handlebars | JS | Express | MongoDB | Node </h2>
                             </div>
 
                             <div>
                                 <a href='https://hitchhiker42.netlify.com'>
                                 <img src='https://i.ibb.co/HFKctrf/hhgttgweb.png' alt="Hitchhiker's Guide to The Galaxy Fansite: HTML|CSS|JS" data-action="https://hitchhiker42.netlify.com" />
                                 </a>
-                                <h2> Social Media Network for Creative Freelancers  <br /> created with: HTML | CSS | JS</h2>
+                                <h2> Hitchhiker's Guide to the Galaxy fansite  <br /> created with: HTML | CSS </h2>
                             </div>
 
                             <div>
