@@ -130,7 +130,7 @@ const GirlRun = styled.div`
 // display: none;
 animation: 1s appear;
 animation-fill-mode: forwards;
-animation-delay: 10s;
+animation-delay: 8s;
 visibility: hidden;
 }
 
@@ -410,7 +410,7 @@ z-index: -4;
 height: 100%;
 width: 100%;
 animation: slide 4s linear 1;
-animation-delay: 11s;
+animation-delay: 9s;
 animation-fill-mode: forwards;
 
 @keyframes slide {
@@ -493,7 +493,7 @@ height: 100%;
 width: 100%;
 animation: 1s disappear;
 animation-fill-mode: forwards;
-animation-delay: 10s;
+animation-delay: 8s;
 visibility: visible;
 }
 
