@@ -14,7 +14,7 @@ font-size: 15px;
 background-image: url('https://www.hdwpsite.com/wp-content/uploads/2018/09/dark-blur-4k.jpg');
 background-size: cover;
 height: 150vh;
-width: 110vw;
+width: 100vw;
 // background-repeat: no-repeat;
 color: white;
 text-shadow: 1px 1px 1px black;
