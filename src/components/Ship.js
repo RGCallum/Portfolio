@@ -20,7 +20,7 @@ repeat 0 0;
   height: 120vw;
   width: 300vh;
   h1{
-    margin-top: -4em;
+    margin-top: -6em;
     color: black;
     // text-shadow: 1px 1px 1px white;
     font-size: 25px;
@@ -50,7 +50,7 @@ repeat 0 0;
 }
 
 // ipad pro
-@media only screen and (min-width: 1024px) and (min-height: 1366px){
+@media only screen and (width: 1024px) and (height: 1366px){
     {
     h1{
         margin-top: 0em;
@@ -58,7 +58,7 @@ repeat 0 0;
     }
 }
 //ipad
-@media only screen and (min-width: 768px) {
+@media only screen and (width: 768px) {
  {
      h1{
      margin-top: 4em;
@@ -67,7 +67,7 @@ repeat 0 0;
  }
 }
 //iphone6+
-@media only screen and (min-width: 412px)   {
+@media only screen and (min-width: 412px) and (max-width: 425px)   {
     {
         h1{
             margin-top: 4em;
@@ -76,7 +76,7 @@ repeat 0 0;
     }
 }
 //iphone6, iphoneX
-@media only screen and (min-width: 375px)   {
+@media only screen and (width: 375px)   {
     {
         h1{
             margin-top: 4em;
@@ -85,7 +85,7 @@ repeat 0 0;
     }
 }
 //s5
-   @media only screen and (min-width: 360px)   {
+   @media only screen and (width: 360px)   {
     { 
         h1{
             margin-top: 4em;
@@ -94,7 +94,7 @@ repeat 0 0;
     }
 }
 //really small mobile screens
-@media only screen and (min-width: 320px)    {
+@media only screen and (width: 320px)    {
     {  
         h1{
            
@@ -135,8 +135,7 @@ repeat 0 0;
     
 }
 //iphone6+
-@media only screen and (min-width: 412px)   {
-    {
+@media only screen and (min-width: 412px) and (max-width: 425px)     {
         background-size: cover;
 
     }
@@ -169,7 +168,7 @@ const ShipGif = styled.div`
 background-image: url(${img});
 background-size: 80%;
 background-repeat: no-repeat;
-    margin-top: 3%;
+    margin-top: 5%;
     position: fixed;
     z-index: 100;
     margin-left: 80%;
@@ -204,13 +203,13 @@ background-repeat: no-repeat;
  //ipad
 @media only screen and (width: 768px) {
  {    
-    margin-top: 50%;
+    margin-top: 20%;
     background-size: 100%;
     width: 130vw;
  }
 }
 //iphone6+
-@media only screen and (min-width: 412px)  {
+@media only screen and (min-width: 412px) and (max-width: 425px) {
     {
     margin-top: 68%;
     background-size: 100%;
