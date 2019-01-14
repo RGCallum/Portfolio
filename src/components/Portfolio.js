@@ -28,7 +28,7 @@ h2{
     background-color: rgba(0, 0, 0, 0.509);
     padding: 10px;
     // font-weight: 100;
-    font-size: 2.2vw;
+    font-size: 2vw;
     
 }
 img{
@@ -90,7 +90,7 @@ export default class Portfolio extends React.Component {
                         <Coverflow
                             width={560}
                             height={830}
-                            displayQuantityOfSide={1}
+                            displayQuantityOfSide={1.2}
                             navigation={true}
                             enableHeading={false}
                             active={this.state.active}
@@ -126,19 +126,18 @@ export default class Portfolio extends React.Component {
                                 </a>
                                 <h2> Callum Enterprise website  <br /> created with: HTML | CSS | JS </h2>
                             </div>
+                            <div>
+                                <a href='https://nobu-filmmakers.herokuapp.com'>
+                                <img src='https://i.ibb.co/931K29J/Nobu.png' alt='Independent Filmmaker Database: JS|MongoDB|Express|React|Node' data-action="https://nobu-filmmakers.herokuapp.com" />
+                                </a>
+                                <h2> Independent Filmmaker Database <br /> created with: JS | MongoDB | Express | React | Node </h2>
+                            </div>
 
                             <div>
                                 <a href='https://creative-freedom.herokuapp.com'>
                                 <img src='https://i.ibb.co/DKNZsX8/CCXMobile2.png' alt='Social Media Network for Creative Freelancers: JS|Python|React|Django|SQL' data-action="https://creative-freedom.herokuapp.com" />
                                 </a>
                                 <h2> Social Media Network for Creative Freelancers <br /> created with: JS | Python | React | Django | SQL </h2>
-                            </div>
-
-                            <div>
-                                <a href='https://nobu-filmmakers.herokuapp.com'>
-                                <img src='https://i.ibb.co/931K29J/Nobu.png' alt='Independent Filmmaker Database: JS|MongoDB|Express|React|Node' data-action="https://nobu-filmmakers.herokuapp.com" />
-                                </a>
-                                <h2> Independent Filmmaker Database <br /> created with: JS | MongoDB | Express | React | Node </h2>
                             </div>
 
                             <div>
@@ -155,6 +154,12 @@ export default class Portfolio extends React.Component {
                                 <h2> Social Media Network for Creative Freelancers  <br /> created with: HTML | CSS | JS</h2>
                             </div>
 
+                            <div>
+                                <a href='https://magicmirror.netlify.com'>
+                                <img src='https://i.ibb.co/QrXwZdZ/Screen-Shot-2019-01-13-at-10-44-42-PM.png ' alt='Independent Filmmaker Database: JS|MongoDB|Express|React|Node' data-action="https://nobu-filmmakers.herokuapp.com" />
+                                </a>
+                                <h2> Magic Mirror Display Website <br /> created with: HTML | CSS | JS </h2>
+                            </div>
                             <div>
                                 <a href='https://schmalculator.netlify.com'>
                                 <img src='https://i.ibb.co/F5WT0jc/Schmalculator.png' alt='Javascript Calculator: HTML|CSS|JS' data-action="https://schmalculator.netlify.com" />
