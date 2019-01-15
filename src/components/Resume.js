@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 // import { BrowserRouter } from "react-router-dom";
-import img from '../images/RGCallum2.png';
+import img from '../images/RGCallumX.png';
 
 const Container = styled.div`
 background-image: url('https://i.ibb.co/QfSzryH/resume-Stack4.png');
