@@ -85,11 +85,15 @@ export default class Portfolio extends React.Component {
                     <br />
                     <h1>Portfolio</h1>
                     <h3>Click thumbnail to view Apps</h3>
+                    <br />                    <br />
+                    <br />
+                    <br />
+
 
                     <ContainerStyle>
                         <Coverflow
                             width={560}
-                            height={830}
+                            height={930}
                             displayQuantityOfSide={1.2}
                             navigation={true}
                             enableHeading={false}
@@ -166,12 +170,6 @@ export default class Portfolio extends React.Component {
                                 </a>
                                 <h2> Javascript Calculator <br /> created with: HTML | CSS | JS</h2>
                             </div>
-
-
-
-
-
-
 
                         </Coverflow>
 
