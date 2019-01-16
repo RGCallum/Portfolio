@@ -159,9 +159,9 @@ margin-left: 22%;
         }
       }
 
-@media only screen and (width: 1920px)  {
+@media only screen and (min-width: 1920px) and (max-width: 1935px) {
 {
-    margin-top: 15%;
+    margin-top: 17%;
 }
 }
 

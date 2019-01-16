@@ -339,7 +339,7 @@ background-size: contain;
     z-index: 1;
     width: 70%;
     height: 100vw;
-    margin-left: 20%;
+    margin-left: 15%;
     animation: bounce-in-left 1.1s 10s both;
     @keyframes bounce-in-left {
         0% {
@@ -388,7 +388,7 @@ background-size: contain;
 //laptop
  @media only screen and (min-width: 1920px) and (max-width: 1925px)   {
                   { 
-                      margin-top: 15%;
+                      margin-top: 8%;
                   }
                   }
 
