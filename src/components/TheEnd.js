@@ -468,8 +468,7 @@ h1{
     border: inset rgb(228, 228, 228)2px;
     padding: 10px;
     width: 100vw;     
-      text-align: center;
-      
+    text-align: center;
 }
 a:hover{
 color: #E73C7E;
@@ -508,7 +507,7 @@ a:link{
 
 
 //laptop
-@media only screen and (width: 1280px)   {
+@media only screen and (min-width: 1280px) and (max-width: 1439px)  {
 { 
     h1{
         margin-top: 5%;
