@@ -198,8 +198,8 @@ width: 100%;
           }
 
 //laptop
-@media only screen and (width: 1280px)   {
-{ 
+@media only screen and (min-width: 1280px) and (max-width: 1359px)  {
+    { 
     margin-top: 20%;
 }
  }
@@ -280,7 +280,7 @@ background-size: contain;
           }
 
 //laptop
- @media only screen and (width: 1280px)   {
+ @media only screen and (min-width: 1280px) and (max-width: 1359px)  {
        { 
             margin-top: 20%;
         }
@@ -340,7 +340,7 @@ background-size: contain;
     width: 70%;
     height: 100vw;
     margin-left: 20%;
-    // animation: bounce-in-left 1.1s 10s both;
+    animation: bounce-in-left 1.1s 10s both;
     @keyframes bounce-in-left {
         0% {
         
@@ -379,7 +379,12 @@ background-size: contain;
         }
       }
       
-      
+      //laptop
+      @media only screen and (width: 2560px)   {
+            { 
+                margin-top: 8%;
+            }
+            } 
 
     //laptop
     @media only screen and (width: 1440px)   {
@@ -396,7 +401,7 @@ background-size: contain;
               }
     
     //laptop
-     @media only screen and (width: 1280px)   {
+     @media only screen and (min-width: 1280px) and (max-width: 1365px)  {
            { 
                 margin-top: 25%;
             }
