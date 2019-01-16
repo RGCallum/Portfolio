@@ -337,8 +337,9 @@ background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
     z-index: 1;
-    width: 100%;
+    width: 70%;
     height: 100vw;
+    margin-left: 20%;
     // animation: bounce-in-left 1.1s 10s both;
     @keyframes bounce-in-left {
         0% {
@@ -397,34 +398,34 @@ background-size: contain;
     //laptop
      @media only screen and (width: 1280px)   {
            { 
-                margin-top: 15%;
+                margin-top: 25%;
             }
             }
     //ipad pro
     @media only screen and (width: 1024px)   {
             { 
-                 margin-top: 45%;
+                 margin-top: 55%;
              }
     }
     
     //ipad 
     @media only screen and (width: 768px)   {
             { 
-                 margin-top: 45%;
+                 margin-top: 55%;
              }
     }
     
     //iphone 6+ and big mobile phones
     @media only screen and (min-width: 412px) and (max-width: 425px)  {
               { 
-                margin-top: 65%;
+                margin-top: 75%;
     
                }
     }
     //iphone 6
     @media only screen and (width: 375px)   {
               { 
-                margin-top: 75%;
+                margin-top: 85%;
     
                }
     }
@@ -432,14 +433,14 @@ background-size: contain;
     //s5
     @media only screen and (width: 360px)   {
               { 
-                margin-top: 85%;
+                margin-top: 95%;
     
                }
     }
     //really small mobile
     @media only screen and (width: 320px)   {
               {           
-                    margin-top: 100%;           
+                    margin-top: 110%;           
                }
     }
 `
