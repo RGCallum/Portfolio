@@ -67,8 +67,7 @@ animation: Gradient 15s ease infinite;
 @media only screen and (width: 1280px)   {
 { 
     h1{
-        font-size: 30px;
-    } 
+        font-size: 25px    } 
  }
  }
 

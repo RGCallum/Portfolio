@@ -124,39 +124,39 @@ button{
 }
 `
 const Parent = styled.div`
-animation: bounce-out-bottom 1.5s 15s both;
+animation: bounce-out-bottom 1.5s 9s both;
 @keyframes bounce-out-bottom {
     0% {
     transform: translateY(0);
 
-              animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     }
     5% {
        transform: translateY(30px);
-              animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     }
     15% {
     transform: translateY(0);
 
-              animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     }
     25% {
        transform: translateY(38px);
-              animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     }
     38% {
     transform: translateY(0);
 
-              animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     }
     52% {
        transform: translateY(75px);
-              animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     }
     70% {
     transform: translateY(0);
 
-              animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
     }
     85% {
       opacity: 1;
@@ -339,43 +339,45 @@ background-size: contain;
     z-index: 100;
     width: 100%;
     height: 100vw;
-    animation: bounce-in-top 1.1s 16s both;
-    @keyframes bounce-in-top {
+    animation: bounce-in-left 1.1s 10s both;
+    @keyframes bounce-in-left {
         0% {
-         
-                  transform: translateY(-500px);
+        
+                  transform: translateX(-600px);
                           animation-timing-function: ease-in;
           opacity: 0;
         }
         38% {
-                transform: translateY(0);
+                transform: translateX(0);
                            animation-timing-function: ease-out;
           opacity: 1;
         }
         55% {
-                    transform: translateY(-65px);
+                    transform: translateX(-68px);
                           animation-timing-function: ease-in;
         }
         72% {
-                transform: translateY(0);
+                transform: translateX(0);
                            animation-timing-function: ease-out;
         }
         81% {
-                    transform: translateY(-28px);
-                }
+                    transform: translateX(-28px);
+                          animation-timing-function: ease-in;
+        }
         90% {
-                transform: translateY(0);
+                transform: translateX(0);
                            animation-timing-function: ease-out;
         }
         95% {
-                   transform: translateY(-8px);
+                   transform: translateX(-8px);
                           animation-timing-function: ease-in;
         }
         100% {
-                transform: translateY(0);
+                transform: translateX(0);
                            animation-timing-function: ease-out;
         }
       }
+      
       
 
     //laptop
@@ -449,24 +451,24 @@ class SceneItPix extends Component {
     render() {
         return (
             <div>
-                     <Container>
+                <Container>
                     <FlashBtn>
                     </FlashBtn>
                     <br />
                     <br />
                     <h1>
-                    <a href='/ship'>Back  </a> | <a href='/school'> Next Chapter</a> <br/>
+                        <a href='/ship'>Back  </a> | <a href='/school'> Next Chapter</a> <br />
                         After returning to land, she decided to try event photography. She loved being at the events and making people smile for a living. Then she wanted to make her equipment self contained and the guest experience more interactive, so she built her own Magic Mirror photo booth.  It was a success, and the guests loved it. The challenge and excitement of building the photo booth sparked her interest for computer programming. <br />
-                         <br />
-                        
+                        <br />
+
 
                     </h1>
                 </Container>
                 <Parent>
-                        <People />
-                        <SceneItDesk />
-                        </Parent>
-                        <Mirror />
+                    <People />
+                    <SceneItDesk />
+                </Parent>
+                <Mirror />
             </div>
         );
     }

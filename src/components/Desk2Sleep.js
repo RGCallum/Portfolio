@@ -57,6 +57,7 @@ color: #E73C7E;
 { 
     h1{
         margin-top: 5%;
+        font-size: 25px
     } 
  }
  }
@@ -159,7 +160,7 @@ background-repeat: no-repeat;
 //laptop
 @media only screen and (width: 1280px)   {
 { 
-    margin-top: 35%;
+    margin-top: 25%;
         
 }
 }

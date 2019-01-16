@@ -146,7 +146,7 @@ const Confetti = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
-    margin-top: -14%;
+    margin-top: -4%;
     margin-left: 1%;
     animation: 1s show;
     animation-fill-mode: forwards;
@@ -396,7 +396,7 @@ visibility: hidden;
 //laptop
 @media only screen and (width: 1280px)   {
 { 
-    margin-top: 15%;
+    margin-top: 13%;
         
 }
 }
@@ -511,7 +511,8 @@ a:link{
 @media only screen and (width: 1280px)   {
 { 
     h1{
-        margin-top: 3%;
+        margin-top: 5%;
+        font-size: 25px
     } 
  }
  }
