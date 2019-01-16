@@ -336,7 +336,7 @@ background-image: url(${img3});
 background-repeat: no-repeat;
 background-size: contain;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     width: 100%;
     height: 100vw;
     animation: bounce-in-left 1.1s 10s both;

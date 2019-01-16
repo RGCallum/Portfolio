@@ -512,7 +512,7 @@ a:link{
 { 
     h1{
         margin-top: 5%;
-        font-size: 25px
+        font-size: 25px;
     } 
  }
  }
