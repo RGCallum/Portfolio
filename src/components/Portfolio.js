@@ -85,7 +85,6 @@ export default class Portfolio extends React.Component {
                     <br />
                     <h1>Portfolio</h1>
                     <h3>Click thumbnail to view Apps</h3>
-                    <br />                    <br />
                     <br />
                     <br />
 
