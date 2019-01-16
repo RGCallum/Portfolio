@@ -330,8 +330,8 @@ background-size: contain;
 
 `
 const Mirror = styled.div`
-// background-image: url('https://i.ibb.co/RNsNKgC/SIPMirror.png');
-background-image: url(${img3});
+background-image: url('https://i.ibb.co/RNsNKgC/SIPMirror.png');
+// background-image: url(${img3});
 
 background-repeat: no-repeat;
 background-size: contain;
@@ -339,7 +339,7 @@ background-size: contain;
     z-index: 1;
     width: 100%;
     height: 100vw;
-    animation: bounce-in-left 1.1s 10s both;
+    // animation: bounce-in-left 1.1s 10s both;
     @keyframes bounce-in-left {
         0% {
         
