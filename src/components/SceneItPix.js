@@ -385,6 +385,12 @@ background-size: contain;
                 margin-top: 8%;
             }
             } 
+//laptop
+ @media only screen and (min-width: 1920px) and (max-width: 1925px)   {
+                  { 
+                      margin-top: 15%;
+                  }
+                  }
 
     //laptop
     @media only screen and (width: 1440px)   {
