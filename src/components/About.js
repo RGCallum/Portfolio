@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Background = styled.div`
 background-image: url(${img});
-background-size: contain;
+background-size: cover;
 background-repeat-y: no-repeat;
 color: black;
 
@@ -356,10 +356,18 @@ animation: slide 25s linear infinite;
    }
 
 // ipad pro
-@media only screen and (width: 1024px) {
+@media only screen and (min-width: 1024px) {
  {
         background-size: 30%;
         margin-top: 85%;
+        }
+   }
+
+   // laptop
+@media only screen and (min-height: 800px) and (max-height: 1023px){
+ {
+        background-size: 20%;
+        margin-top: 60%;
         }
    }
 
