@@ -356,18 +356,10 @@ animation: slide 25s linear infinite;
    }
 
 // ipad pro
-@media only screen and (min-width: 1024px) {
+@media only screen and (width: 1024px) {
  {
         background-size: 30%;
         margin-top: 85%;
-        }
-   }
-
-   // laptop
-@media only screen and (min-height: 700px) and (max-height: 1023px){
- {
-        background-size: 20%;
-        margin-top: 60%;
         }
    }
 
