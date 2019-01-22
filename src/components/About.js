@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Background = styled.div`
 background-image: url(${img});
-background-size: cover;
+background-size: contain;
 background-repeat-y: no-repeat;
 color: black;
 
