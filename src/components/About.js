@@ -364,7 +364,7 @@ animation: slide 25s linear infinite;
    }
 
    // laptop
-@media only screen and (min-height: 800px) and (max-height: 1023px){
+@media only screen and (min-height: 700px) and (max-height: 1023px){
  {
         background-size: 20%;
         margin-top: 60%;
