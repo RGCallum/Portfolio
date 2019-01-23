@@ -248,7 +248,6 @@ const Bus = styled.div`
 // ipad pro
 @media only screen and (width: 1024px) {
     {
-       
     }
 }
 
@@ -328,7 +327,7 @@ animation: slide 25s linear infinite;
    }
 
    // iphoneX
-@media only screen and (width: 375px) and (min-height: 812px) {
+@media only screen and (width: 375px) and (height: 812px) {
     {
         background-size: 40%;
         margin-top: 145%;
@@ -356,13 +355,27 @@ animation: slide 25s linear infinite;
    }
 
 // ipad pro
-@media only screen and (width: 1024px) {
+@media only screen and (width: 1024px) and (height: 1366px){
  {
         background-size: 30%;
         margin-top: 85%;
         }
    }
 
+      // laptop
+      @media only screen and (width: 1024px) and (max-height: 1365px){
+       {
+              background-size: 20%;
+              margin-top: 70%;
+              }
+         }
+         // laptop
+         @media only screen and (width: 1024px) and (height: 768px){
+          {
+                 background-size: 20%;
+                 margin-top: 60%;
+                 }
+            }
    //laptop
 @media only screen and (width: 1440px)   {
        { 
