@@ -377,7 +377,7 @@ animation: slide 25s linear infinite;
                  }
             }
    //laptop
-@media only screen and (width: 1440px)   {
+@media only screen and (min-width: 1440px)   {
        { 
             margin-top: 38%;
             background-size: 12%;
