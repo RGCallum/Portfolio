@@ -116,12 +116,7 @@ export default class Portfolio extends React.Component {
                                 <h2> SceneIt Pictures Interactive Website: <br /> created with: HTML | CSS | JS </h2>
                             </div>
 
-                            <div>
-                                <a href='https://majorkeys.netlify.com'>
-                                    <img src='https://i.ibb.co/s3FcP6n/Major-Keys.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
-                                </a>
-                                <h2>  Major Keys Javacript Trivia Game <br /> created with: HTML | CSS | JS  </h2>
-                            </div>
+                          
 
                             <div>
                                 <a href='https://callumenterprise.com'>
@@ -142,7 +137,12 @@ export default class Portfolio extends React.Component {
                                 </a>
                                 <h2> Social Media Network for Creative Freelancers <br /> created with: React | Python | JS | Django | SQL </h2>
                             </div>
-
+                            <div>
+                                <a href='https://majorkeys.netlify.com'>
+                                    <img src='https://i.ibb.co/WB6xmgM/Screen-Shot-2019-02-01-at-9-12-39-PM.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
+                                </a>
+                                <h2>  Major Keys Mobile App <br /> created with: HTML | CSS | JS  </h2>
+                            </div>
                             <div>
                                 <a href='https://piclist.herokuapp.com'>
                                 <img src='https://i.ibb.co/w0XPx52/PicList2.png' alt='Event Management Database: JS|MongoDB|Express|Node' data-action="https://piclist.herokuapp.com" />
