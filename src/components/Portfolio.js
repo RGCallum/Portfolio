@@ -139,9 +139,9 @@ export default class Portfolio extends React.Component {
                             </div>
                             <div>
                                 <a href='https://majorkeys.netlify.com'>
-                                    <img src='https://i.ibb.co/WB6xmgM/Screen-Shot-2019-02-01-at-9-12-39-PM.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
+                                    <img src='https://i.ibb.co/phwJVyh/Mkeys.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
                                 </a>
-                                <h2>  Major Keys Mobile App <br /> created with: HTML | CSS | JS  </h2>
+                                <h2> <i class="fab fa-google-play"></i> Mobile App  <br /> created with: HTML | CSS | JS | Photoshop | PhoneGap  </h2>
                             </div>
                             <div>
                                 <a href='https://piclist.herokuapp.com'>
