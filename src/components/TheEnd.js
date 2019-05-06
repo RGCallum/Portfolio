@@ -614,7 +614,7 @@ class TheEnd extends Component {
                <br/>
                      <NextBtn>
                     <h1>   
-                        She couldn't even imagine her life before coding. Even after completing her course she continues to work on projects and learn new things. She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional.  <br/>
+                        She couldn't even imagine her life before coding. She finally found something that would constantly challenge her and utilize her skill in animation and graphic design to create new and innovative apps, that are fun, interactive and functional.  <br/>
                         And she lived Codingly Ever After.
                         The End.  <br /><a href='/desk2'>Back</a> </h1> 
  </NextBtn>

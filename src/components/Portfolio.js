@@ -10,8 +10,8 @@ var fn = function () {
 
 const Container = styled.div`
 text-align: center;
-font-size: 15px;
-background-image: url('https://www.hdwpsite.com/wp-content/uploads/2018/09/dark-blur-4k.jpg');
+font-size: 12px;
+background-image: url('https://cdn.wallpapersafari.com/82/52/TVkAN3.png');
 background-size: cover;
 height: 150vh;
 width: 100vw;
@@ -21,6 +21,11 @@ text-shadow: 1px 1px 1px black;
 h1{
     font-size: 45px;
 font-weight: 100;
+
+}
+h3{
+    color: white;
+    // text-shadow: none;
 
 }
 h2{
@@ -138,10 +143,16 @@ export default class Portfolio extends React.Component {
                                 <h2> Social Media Network for Creative Freelancers <br /> created with: React | Python | JS | Django | SQL </h2>
                             </div>
                             <div>
+                                <a href='https://imsafenow.com/wearable'>
+                                    <img src='https://i.ibb.co/k1hhdV3/ISNSite.png' alt='ImSafeNow Website: HTML|CSS|PHP|JS|AWS|Wordpress|Linux|SQL' data-action="https://imsafenow.com" />
+                                </a>
+                                <h2>  I'mSafeNow Website  <br /> created with: HTML | CSS | PHP | JS | AWS | Wordpress | Linux | SQL  </h2>
+                            </div>
+                            <div>
                                 <a href='https://majorkeys.netlify.com'>
                                     <img src='https://i.ibb.co/phwJVyh/Mkeys.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
                                 </a>
-                                <h2> <i class="fab fa-google-play"></i> Mobile App  <br /> created with: HTML | CSS | JS | Photoshop | PhoneGap  </h2>
+                                <h2> <i class="fab fa-google-play"></i> Mobile App <br /> created with: HTML | CSS | JS | PhoneGap  </h2>
                             </div>
                             <div>
                                 <a href='https://piclist.herokuapp.com'>
@@ -149,7 +160,12 @@ export default class Portfolio extends React.Component {
                                 </a>
                                 <h2> PicList Employee Management Database  <br /> created with: Handlebars | JS | Express | MongoDB | Node </h2>
                             </div>
-
+                            <div>
+                                <a href='#'>
+                                <img src='https://i.ibb.co/gV6Q0mp/Hello-Again-Site.png' alt='Hello Again Website: HTML|CSS|JS|Photoshop' data-action="#" />
+                                </a>
+                                <h2> Hello Again Website <br /> created with: HTML | CSS | JS </h2>
+                            </div>
                             <div>
                                 <a href='https://hitchhiker42.netlify.com'>
                                 <img src='https://i.ibb.co/HFKctrf/hhgttgweb.png' alt="Hitchhiker's Guide to The Galaxy Fansite: HTML|CSS|JS" data-action="https://hitchhiker42.netlify.com" />

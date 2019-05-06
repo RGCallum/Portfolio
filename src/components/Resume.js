@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 // import { BrowserRouter } from "react-router-dom";
-import img from '../images/RGCallumX.png';
+import img from '../images/RGCRes19NP.png';
 
 const Container = styled.div`
 background-image: url('https://i.ibb.co/QfSzryH/resume-Stack4.png');
@@ -32,7 +32,7 @@ a:hover{
 `
 
 const ResStyle = styled.div`
-background-image: url(${img});
+background-image: url('${img}');
 background-repeat: no-repeat;
 background-size: contain;
 width: 100vh;
@@ -89,7 +89,7 @@ class Resume extends Component {
                 <br/>
                 
                                 <Contact>
-                                <a href='https://i.ibb.co/bm5G5Hw/RGCallum.png' download> <i class="fas fa-file-download"></i> </a>
+                                <a href='https://i.ibb.co/6Dh8M79/RGCRes19-NP.png' download> <i class="fas fa-file-download"></i> </a>
                             <a href="mailto:rguy129@yahoo.com"><i class="far fa-envelope"></i>  </a>
                             <a href="https://github.com/RGCallum"><i class="fab fa-github"></i>  </a>
                             <a href="https://www.linkedin.com/in/rashaundaguy/"><i class="fab fa-linkedin"></i>  </a>

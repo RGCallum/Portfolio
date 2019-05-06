@@ -10,10 +10,11 @@ import img5 from '../images/skillDesk.png';
 const SkillText = styled.div`
 h2{
     color: white;
-    // text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
-    font-size: 3vw;
-    
+    font-size: 45px;
+    font-weight: 100;
+
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     @keyframes fade-in {
         0% {

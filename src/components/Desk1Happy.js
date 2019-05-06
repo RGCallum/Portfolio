@@ -114,7 +114,7 @@ color: #E73C7E;
 }
 `
 const Background = styled.div`
-background-image: url('https://www.planwallpaper.com/static/images/2014-08-Aurora-Blue-Background-HD.jpg');
+background-image: url('https://i.ibb.co/FgHQ68K/aurorabkgd.jpg');
 background-repeat: no-repeat;
 background-size: 100%;
 position: fixed;
