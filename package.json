@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "heroku": "^7.24.1",
     "jquery": "^3.3.1",
     "radium": "^0.25.1",
     "react": "^16.7.0",
