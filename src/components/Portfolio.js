@@ -11,7 +11,7 @@ var fn = function () {
 const Container = styled.div`
 text-align: center;
 font-size: 12px;
-background-image: url('https://cdn.wallpapersafari.com/82/52/TVkAN3.png');
+background-image: url('https://i.ibb.co/fv7Y6qQ/purp.jpg');
 background-size: cover;
 height: 150vh;
 width: 100vw;
