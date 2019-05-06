@@ -143,16 +143,16 @@ export default class Portfolio extends React.Component {
                                 <h2> Social Media Network for Creative Freelancers <br /> created with: React | Python | JS | Django | SQL </h2>
                             </div>
                             <div>
-                                <a href='https://imsafenow.com/wearable'>
-                                    <img src='https://i.ibb.co/k1hhdV3/ISNSite.png' alt='ImSafeNow Website: HTML|CSS|PHP|JS|AWS|Wordpress|Linux|SQL' data-action="https://imsafenow.com" />
-                                </a>
-                                <h2>  I'mSafeNow Website  <br /> created with: HTML | CSS | PHP | JS | AWS | Wordpress | Linux | SQL  </h2>
-                            </div>
-                            <div>
                                 <a href='https://majorkeys.netlify.com'>
                                     <img src='https://i.ibb.co/phwJVyh/Mkeys.png' alt='Major Keys Javacript Trivia Game: HTML|CSS|JS' data-action="https://majorkeys.netlify.com" />
                                 </a>
                                 <h2> <i class="fab fa-google-play"></i> Mobile App <br /> created with: HTML | CSS | JS | PhoneGap  </h2>
+                            </div>
+                            <div>
+                                <a href='https://imsafenow.com/wearable'>
+                                    <img src='https://i.ibb.co/k1hhdV3/ISNSite.png' alt='ImSafeNow Website: HTML|CSS|PHP|JS|AWS|Wordpress|Linux|SQL' data-action="https://imsafenow.com" />
+                                </a>
+                                <h2>  I'mSafeNow Website <br /> created with: HTML | CSS | PHP | JS | AWS | Wordpress | Linux | SQL  </h2>
                             </div>
                             <div>
                                 <a href='https://piclist.herokuapp.com'>
