@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import img from '../images/Skills3.png';
-import img2 from '../images/skillWebDev.png';
+import img2 from '../images/skillswebDevmay.png';
 import img3 from '../images/skillSoftware.png';
 import img4 from '../images/skillOther.png';
 import img5 from '../images/skillDesk.png';
@@ -79,7 +79,7 @@ z-index: 100;
 width: 100vw;
 height: 100vw;
 text-align: center;
-margin-top: 2%;
+// margin-top: 1%;
 margin-left: 10%;
 animation: slide2 .4s linear 1;
   
@@ -90,10 +90,10 @@ animation: slide2 .4s linear 1;
 
 @media only screen and (min-device-width: 320px) and (max-width: 480px) {
     {
-        background-size: 160vw;
-        width: 160vw;
-        margin-top: 10%;
-        margin-left: -33%;
+        background-size: 140vw;
+        width: 140vw;
+        margin-top: 5%;
+        margin-left: -20%;
         }
    }
 `
@@ -105,8 +105,8 @@ position: fixed;
 z-index: 100;
 width: 100vw;
 height: 100vw;
-margin-top: -4%;
-margin-left: 8%;
+margin-top: -2%;
+margin-left: 4%;
 text-align: center;
 animation: slide4 .5s linear 1;
   
@@ -131,8 +131,8 @@ position: fixed;
 z-index: 100;
 width: 100vw;
 height: 100vw;
-margin-top: -4%;
-margin-left: 12%;
+margin-top: -2%;
+margin-left: 16%;
 
 text-align: center;
 animation: slide5 .5s linear 1;
