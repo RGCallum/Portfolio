@@ -15,7 +15,6 @@ margin: auto;
 margin-top: -1em;
 color: white;
 text-shadow: 1px 1px 1px black;
-
 a:link{
     color: white;
 }
@@ -35,13 +34,14 @@ const ResStyle = styled.div`
 background-image: url('${img}');
 background-repeat: no-repeat;
 background-size: contain;
-width: 100vh;
-height: 100vw;
+width: 80vh;
+height: 80vw;
+
 text-align: center;
-margin: auto;
+// margin: auto;
 &:hover{
-    transform: scale(1.2);
-    }
+    transform: scale(1.1);
+}
 @media only screen and (min-device-width: 320px) and (max-width: 2580px) {
     
         width: 100vw;
@@ -89,7 +89,7 @@ class Resume extends Component {
                 <br/>
                 
                                 <Contact>
-                                <a href='https://i.ibb.co/6Dh8M79/RGCRes19-NP.png' download> <i class="fas fa-file-download"></i> </a>
+                                <a href='https://i.ibb.co/Pxgyt5h/May2019-NP.png' download> <i class="fas fa-file-download"></i> </a>
                             <a href="mailto:rguy129@yahoo.com"><i class="far fa-envelope"></i>  </a>
                             <a href="https://github.com/RGCallum"><i class="fab fa-github"></i>  </a>
                             <a href="https://www.linkedin.com/in/rashaundaguy/"><i class="fab fa-linkedin"></i>  </a>
