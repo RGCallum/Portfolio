@@ -89,7 +89,7 @@ class Resume extends Component {
                 <br/>
                 
                                 <Contact>
-                                <a href='https://i.ibb.co/Pxgyt5h/May2019-NP.png' download> <i class="fas fa-file-download"></i> </a>
+                                <a href='https://i.ibb.co/tX7VDB6/RGCRes19-NP.png' download> <i class="fas fa-file-download"></i> </a>
                             <a href="mailto:rguy129@yahoo.com"><i class="far fa-envelope"></i>  </a>
                             <a href="https://github.com/RGCallum"><i class="fab fa-github"></i>  </a>
                             <a href="https://www.linkedin.com/in/rashaundaguy/"><i class="fab fa-linkedin"></i>  </a>
