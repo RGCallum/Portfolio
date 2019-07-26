@@ -101,6 +101,7 @@ class Resume extends Component {
               
                         </div>
                         </Container>
+                        
             </div>
         );
     }

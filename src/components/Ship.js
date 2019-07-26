@@ -4,6 +4,52 @@ import img from '../images/ShipAnimation.gif';
 import img2 from '../images/cartoonSky3.png';
 import img3 from '../images/waterLayer.png';
 
+const BNgtfoh = styled.div`
+
+//iphone6, iphoneX
+@media only screen and (width: 375px)   {
+    display: none;
+    
+}
+//iphone6+
+@media only screen and (min-width: 412px) and (max-width: 425px)   {
+    display: none;
+
+}
+`
+
+const BackNext = styled.div`
+position: absolute;
+z-index: 10000;
+margin-top: 120px;
+margin-left: 120px;
+display: none;
+
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: #E73C7E;
+    }
+
+//iphone6, iphoneX
+@media only screen and (width: 375px)   {
+    display: block;
+    h1{
+        font-size: 10px;
+
+    }
+}
+//iphone6+
+@media only screen and (min-width: 412px) and (max-width: 425px)   {
+    display: block;
+    h1{
+        font-size: 20px;
+
+    }
+}
+`
+
 const Background = styled.div`
 color: white;
 // text-shadow: 1px 1px 1px black;
@@ -72,6 +118,7 @@ repeat 0 0;
         h1{
             margin-top: 4em;
             font-size: 18px;
+            
         }
     }
 }
@@ -370,14 +417,24 @@ class Ship extends Component {
     render() {
         return (
             <div>
+                <BackNext>
+                    <h1>
+
+                        <a href='/news'>Back </a> |
+                    <a href='/scene'> Next Chapter</a></h1>
+                </BackNext>
                 <Background>
-                    <NextBtn> 
-                        <h1><a href='/news'>Back </a> |
-                    <a href='/scene'> Next Chapter</a> <br/>She ran far far away to shoot people having fun on cruise ships. 
-                     <br/> She met people from all over the world, partied every night, spent months in the Caribbean and learned a lot about theatre production and broadcasting.<br></br>
-                    
-                    </h1> 
-                    <br/>
+                    <NextBtn>
+                        <h1>
+                            <BNgtfoh>
+                                <a href='/news'>Back </a> |
+                    <a href='/scene'> Next Chapter</a>
+                            </BNgtfoh>
+                            <br />She ran far far away to shoot people having fun on cruise ships.
+                     <br /> She met people from all over the world, partied every night, spent months in the Caribbean and learned a lot about theatre production and broadcasting.<br></br>
+
+                        </h1>
+                        <br />
 
                     </NextBtn>
                 </Background>
