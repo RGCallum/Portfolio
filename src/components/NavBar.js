@@ -216,7 +216,7 @@ class NavBar extends Component {
               <i class="fas fa-bars"></i>
             </div>
 
-            <input type="checkbox" class="dd-input" id="test"/>
+            <input type="checkbox" class="dd-input" id="test" />
 
             <ul class="dd-menu">
               <li><a href="/"><i class="fas fa-home"></i> Home </a></li>
@@ -226,9 +226,9 @@ class NavBar extends Component {
               <li><a href="/about"><i class="fas fa-grin-tongue-wink"></i> My Story </a>
                 <div class="dd2-button">
                 </div>
-                <label for ='test'>↘︎</label>
+                <label for='test'>︎</label>
+                
                 <input type="checkbox" class="dd2-input" id="test" />
-
                 <ul class="dd2-menu">
                   <li><a href="/about"><i class="fas fa-film"></i> Film </a></li>
                   <li><a href="/news"><i class="far fa-newspaper"></i> News </a></li>
