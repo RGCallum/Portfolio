@@ -162,7 +162,7 @@ export default class Portfolio extends React.Component {
                             </div>
                             <div>
                                 <a href='http://ddinstallers.com'>
-                                <img src='"https://i.ibb.co/zRBz9vB/DDWeb2.png' alt='D&D Installers Website: HTML|CSS|JS|Photoshop' data-action="http://ddinstallers.com" />
+                                <img src='https://i.ibb.co/zRBz9vB/DDWeb2.png' alt='D&D Installers Website: HTML|CSS|JS|Photoshop' data-action="http://ddinstallers.com" />
                                 </a>
                                 <h2> D&D Installers Website <br /> created with: HTML | CSS | JS </h2>
                             </div>
