@@ -145,7 +145,7 @@ export default class Portfolio extends React.Component {
                                 <a href='https://creative-freedom.herokuapp.com'>
                                 <img src='https://i.ibb.co/DKNZsX8/CCXMobile2.png' alt='Social Media Network for Creative Freelancers: JS|Python|React|Django|SQL' data-action="https://creative-freedom.herokuapp.com" />
                                 </a>
-                                <h2> "Creative Connx" <br/> Social Media Network for Creative Freelancers <br /> created with: React | Python | JS | Django | SQL </h2>
+                                <h2> "Creative Connx" <br/> Social Media Network <br /> created with: React | Python | JS | Django | SQL </h2>
                             </div>
                             <div>
                                 <a href='https://majorkeys.netlify.com'>
