@@ -155,7 +155,7 @@ export default class Portfolio extends React.Component {
                             </div>
                             <div>
                                 <a href='https://callumpay.herokuapp.com'>
-                                    <img src='https://i.ibb.co/qCQ7whk/Screen-Shot-2019-09-07-at-8-58-05-PM.png' alt='Tender Web and Mobile App: : JS|MongoDB|Express|React|Node' data-action="https://callumpay.herokuapp.com" />
+                                    <img src='https://i.ibb.co/B2xsRbH/Tenderscrnshot.png' alt='Tender Web and Mobile App: : JS|MongoDB|Express|React|Node' data-action="https://callumpay.herokuapp.com" />
                                 </a>
                                 <h2>  "Tender" <br/> Web and Mobile App <br /> created with: React | JS | Express | MongoDB | Node  </h2>
                             </div> 
