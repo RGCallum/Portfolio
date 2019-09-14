@@ -154,8 +154,8 @@ export default class Portfolio extends React.Component {
                                 <h2>  "Major Keys Game" <br/> Mobile App <br /> created with: HTML | CSS | JS | PhoneGap  </h2>
                             </div>
                             <div>
-                                <a href='https://callumpay.herokuapp.com'>
-                                    <img src='https://i.ibb.co/2q16Qvt/Tenderscrnshot2.png' alt='Tender Web and Mobile App: : JS|MongoDB|Express|React|Node' data-action="https://callumpay.herokuapp.com" />
+                                <a href='https://tenderpay.herokuapp.com'>
+                                    <img src='https://i.ibb.co/2q16Qvt/Tenderscrnshot2.png' alt='Tender Web and Mobile App: : JS|MongoDB|Express|React|Node' data-action="https://tenderpay.herokuapp.com" />
                                 </a>
                                 <h2>  "Tender" <br/> Web and Mobile App <br /> created with: React | JS | Express | MongoDB | Node  </h2>
                             </div> 
