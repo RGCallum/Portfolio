@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 // import { BrowserRouter } from "react-router-dom";
-import img from '../images/RGCRes19NP.png';
+import img from '../images/RashaundaGC-NP.png';
 
 const Container = styled.div`
 background-image: url('https://i.ibb.co/QfSzryH/resume-Stack4.png');
@@ -40,7 +40,7 @@ height: 80vw;
 text-align: center;
 // margin: auto;
 &:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 @media only screen and (min-device-width: 320px) and (max-width: 2580px) {
     
@@ -89,10 +89,10 @@ class Resume extends Component {
                 <br/>
                 
                                 <Contact>
-                                <a href='https://i.ibb.co/tX7VDB6/RGCRes19-NP.png' download> <i class="fas fa-file-download"></i> </a>
-                            <a href="mailto:rguy129@yahoo.com"><i class="far fa-envelope"></i>  </a>
-                            <a href="https://github.com/RGCallum"><i class="fab fa-github"></i>  </a>
-                            <a href="https://www.linkedin.com/in/rashaundaguy/"><i class="fab fa-linkedin"></i>  </a>
+                                <a href='RashaundaGC-NP.pdf' download> <i class="fas fa-file-download"></i> </a>
+                            <a href="mailto:rguy129@yahoo.com?subject=Rashaunda You're So Awesome" target='blank'><i class="far fa-envelope"></i>  </a>
+                            <a href="https://github.com/RGCallum" target='blank'><i class="fab fa-github"></i>  </a>
+                            <a href="https://www.linkedin.com/in/rashaundaguy/" target='blank'><i class="fab fa-linkedin"></i>  </a>
                             </Contact>
                             
 
