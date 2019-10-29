@@ -155,9 +155,9 @@ export default class Portfolio extends React.Component {
                             </div>
                             <div>
                                 <a href='https://tenderpay.herokuapp.com'>
-                                    <img src='https://i.ibb.co/2q16Qvt/Tenderscrnshot2.png' alt='Tender Web and Mobile App: : JS|MongoDB|Express|React|Node' data-action="https://tenderpay.herokuapp.com" />
+                                    <img src='https://i.ibb.co/2q16Qvt/Tenderscrnshot2.png' alt='Tender Web App: : JS|MongoDB|Express|React|Node' data-action="https://tenderpay.herokuapp.com" />
                                 </a>
-                                <h2>  "Tender" <br/> Web and Mobile App <br /> created with: React | JS | Express | MongoDB | Node  </h2>
+                                <h2>  "Tender" <br/>Payroll/Invoicing Web App <br /> created with: React | JS | Express | MongoDB | Node  </h2>
                             </div> 
                             <div>
                                 <a href='https://imsafenow.com/wearable'>
@@ -165,7 +165,12 @@ export default class Portfolio extends React.Component {
                                 </a>
                                 <h2>  "I'mSafeNow" Website <br /> created with: HTML | CSS | PHP | JS | AWS | Wordpress | Linux | SQL  </h2>
                             </div>
-                           
+                            <div>
+                                <a href='#'>
+                                    <img src="https://i.ibb.co/pw4Kj9W/Bagged.png" alt='Bagged Web App: JS|MongoDB|Express|React|Node' data-action="https://bagged.herokuapp.com" />
+                                </a>
+                                <h2>  "Bagged" <br/> Job Hunt Assistant Web App <br /> created with: React | JS | Express | MongoDB | Node  </h2>
+                            </div> 
                             <div>
                                 <a href='http://ddinstallers.com'>
                                 <img src='https://i.ibb.co/G2HmCxy/Screen-Shot-2019-09-06-at-11-56-34-AM.png' alt='D&D Installers Website: HTML|CSS|JS|Photoshop' data-action="http://ddinstallers.com" />
@@ -173,16 +178,16 @@ export default class Portfolio extends React.Component {
                                 <h2> "D&D Installers" Website <br /> created with: HTML | CSS | JS </h2>
                             </div>
                             <div>
-                                <a href='#'>
-                                <img src='https://i.ibb.co/gV6Q0mp/Hello-Again-Site.png' alt='Hello Again Website: HTML|CSS|JS|Photoshop' data-action="#" />
+                                <a href='https://helloagain.co'>
+                                <img src="https://i.ibb.co/kDzRGnQ/HANew.png" alt='Hello Again Website: HTML|CSS|JS' data-action="#" />
                                 </a>
-                                <h2> "Hello Again" Website <br /> created with: HTML | CSS | JS </h2>
+                                <h2> "Hello Again" Website <br /> managed with:<br />  HTML | CSS | JS </h2>
                             </div>
                             <div>
                                 <a href='https://hitchhiker42.netlify.com'>
                                 <img src='https://i.ibb.co/HFKctrf/hhgttgweb.png' alt="Hitchhiker's Guide to The Galaxy Fansite: HTML|CSS|JS" data-action="https://hitchhiker42.netlify.com" />
                                 </a>
-                                <h2> "Hitchhiker's Guide to the Galaxy" fansite  <br /> created with: HTML | CSS </h2>
+                                <h2> "Hitchhiker's Guide to the Galaxy" Fansite  <br /> created with: HTML | CSS </h2>
                             </div>
 
                             <div>
