@@ -6,8 +6,11 @@ import img3 from '../images/waterLayer.png';
 
 const BNgtfoh = styled.div`
 
+    
+
+
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (max-width: 375px)   {
     display: none;
     
 }
@@ -33,10 +36,10 @@ a:hover{
     }
 
 //iphone6, iphoneX
-@media only screen and (width: 375px)   {
+@media only screen and (max-width: 375px)   {
     display: block;
     h1{
-        font-size: 10px;
+        font-size: 15px;
 
     }
 }
@@ -418,16 +421,14 @@ class Ship extends Component {
         return (
             <div>
                 <BackNext>
-                    <h1>
-
-                        <a href='/news'>Back </a> |
+                    <h1><a href='/news'>Back </a> |
                     <a href='/scene'> Next Chapter</a></h1>
                 </BackNext>
                 <Background>
                     <NextBtn>
                         <h1>
                             <BNgtfoh>
-                                <a href='/news'>Back </a> |
+                    <a href='/news'>Back </a> |
                     <a href='/scene'> Next Chapter</a>
                             </BNgtfoh>
                             <br />She ran far far away to shoot people having fun on cruise ships.
